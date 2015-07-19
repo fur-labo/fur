@@ -25,8 +25,9 @@ program
     .option('-W, --width', "Banner width.")
     .option('-H, --height', "Banner height.")
     .option('-t, --text', "Banner text.")
+    .option('-T, --sub-text', "Banner sub text.")
     .option('-F, --font-size', "Size of font.")
     .option('-s, --style', "Banner style.")
     .action(function (filename, options) {
-        new Fur(filename, options);
+        new Fur().banner(filename, options);
     });
