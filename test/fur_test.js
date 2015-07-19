@@ -8,8 +8,12 @@ var Fur = require('../lib/fur.js'),
 
 var tmpDir = path.resolve(__dirname, '../tmp');
 
-exports['Create a logo.'] = function (test) {
-    new Fur().logo(tmpDir + '/fur-testing-logo.svg', {}, function (err) {
+exports['Generate a banner.'] = function (test) {
+    new Fur().banner(tmpDir + '/fur-testing-logo.svg', {
+        colorTheme: 'e',
+        fontTheme: 'd',
+        text: 'Bar'
+    }, function (err) {
         test.ifError(err);
         test.done();
     });

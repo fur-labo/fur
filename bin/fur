@@ -1,0 +1,32 @@
+#!/usr/bin/env node
+
+/**
+ * fur bin script.
+ */
+
+
+var program = require('commander'),
+    pkg = require('../package'),
+    Fur = require('../lib/fur');
+
+program
+    .version(pkg['version']);
+
+//=========================
+// Handle `banner` command
+//=========================
+program
+    .command("banner [options] <filename>")
+    .description("Generate a banner.")
+    .option('-c, --color-theme', "Color theme name.")
+    .option('-C, --color-variation', "Color variation.")
+    .option('-f, --font-theme', "Font theme name.")
+    .option('-t, --type', "Output type.")
+    .option('-W, --width', "Banner width.")
+    .option('-H, --height', "Banner height.")
+    .option('-t, --text', "Banner text.")
+    .option('-F, --font-size', "Size of font.")
+    .option('-s, --style', "Banner style.")
+    .action(function (filename, options) {
+        new Fur(filename, options);
+    });

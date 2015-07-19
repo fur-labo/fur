@@ -8,13 +8,8 @@ var coz = require('coz');
 
 module.exports = coz.bud.factory.indexJsBud({
     dirname: __dirname,
-    desc: 'fur theming module',
-    module: 'fur/lib/theming',
-    subclasses: [
-        'ThemeResolver',
-        'ColorThemeResolver',
-        'FontThemeResolver'
-    ]
+    desc: 'fur compiling module',
+    module: 'fur/lib/compiling'
 });
 
 if (!module.parent) {
