@@ -9,7 +9,7 @@ var coz = require('coz'),
 
 module.exports = nodeunitTestcaseJsBud({
     src: [
-        __dirname + '/../lib/*.js'
+        __dirname + '/../lib/**/*.js'
     ],
     dest: __dirname
 });

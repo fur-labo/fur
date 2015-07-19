@@ -5,7 +5,7 @@
 
 "use strict";
 
-var themeNameWithIndex = require('../lib/theme_name_with_index');
+var themeNameWithIndex = require('../lib/theming/theme_name_with_index');
 
 exports['Covert to theme name.'] = function (test) {
     test.equal(themeNameWithIndex(0), 'a');

@@ -3,7 +3,7 @@
  * Runs with nodeunit.
  */
 
-var writeoutSvg = require('../lib/writeout_svg.js'),
+var writeoutSvg = require('../lib/generating/writeout_svg.js'),
     path = require('path');
 
 var tmpDir = path.resolve(__dirname, '../tmp');
@@ -20,7 +20,7 @@ exports['Writeout svg'] = function (test) {
                 "y": 15,
                 "fill": "#E10"
             },
-            "#":"foo"
+            "#": "foo"
         }
     }, function (err) {
         test.ifError(err);

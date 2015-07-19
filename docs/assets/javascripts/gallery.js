@@ -4,11 +4,11 @@
     var links = [
         {
             "title": "Font Themes",
-            "href": "font-theme.html"
+            "href": "font-theme-gallery.html"
         },
         {
             "title": "Color Themes",
-            "href": "color-theme.html"
+            "href": "color-theme-gallery.html"
         }
     ];
 
