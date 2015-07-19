@@ -1,7 +1,7 @@
 {
   "name": "fur",
   "version": "2.0.0",
-  "description": "Create a text based logo quickly",
+  "description": "Quick generator for log, banner, favicon, etc...",
   "main": "quicklogo.js",
   "scripts": {
     "test": "nodeunit test/*_test.js",
