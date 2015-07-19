@@ -1,0 +1,462 @@
+{
+    "a": {
+        "src": "fonts/Alef-Bold.ttf",
+        "name": "Alef  Bold"
+    },
+    "b": {
+        "src": "fonts/Alef-Regular.ttf",
+        "name": "Alef  Regular"
+    },
+    "c": {
+        "src": "fonts/Anonymous Pro B.ttf",
+        "name": "Anonymous  Pro  B"
+    },
+    "d": {
+        "src": "fonts/Anonymous Pro BI.ttf",
+        "name": "Anonymous  Pro  B I"
+    },
+    "e": {
+        "src": "fonts/Anonymous Pro I.ttf",
+        "name": "Anonymous  Pro  I"
+    },
+    "f": {
+        "src": "fonts/Anonymous Pro Minus B.ttf",
+        "name": "Anonymous  Pro  Minus  B"
+    },
+    "g": {
+        "src": "fonts/Anonymous Pro Minus BI.ttf",
+        "name": "Anonymous  Pro  Minus  B I"
+    },
+    "h": {
+        "src": "fonts/Anonymous Pro Minus I.ttf",
+        "name": "Anonymous  Pro  Minus  I"
+    },
+    "i": {
+        "src": "fonts/Anonymous Pro Minus.ttf",
+        "name": "Anonymous  Pro  Minus"
+    },
+    "j": {
+        "src": "fonts/Anonymous Pro.ttf",
+        "name": "Anonymous  Pro"
+    },
+    "k": {
+        "src": "fonts/Cantarell-Bold.ttf",
+        "name": "Cantarell  Bold"
+    },
+    "l": {
+        "src": "fonts/Cantarell-BoldOblique.ttf",
+        "name": "Cantarell  Bold Oblique"
+    },
+    "m": {
+        "src": "fonts/Cantarell-Oblique.ttf",
+        "name": "Cantarell  Oblique"
+    },
+    "n": {
+        "src": "fonts/Cantarell-Regular.ttf",
+        "name": "Cantarell  Regular"
+    },
+    "o": {
+        "src": "fonts/Comfortaa-Bold.ttf",
+        "name": "Comfortaa  Bold"
+    },
+    "p": {
+        "src": "fonts/Comfortaa-Light.ttf",
+        "name": "Comfortaa  Light"
+    },
+    "q": {
+        "src": "fonts/Comfortaa-Regular.ttf",
+        "name": "Comfortaa  Regular"
+    },
+    "r": {
+        "src": "fonts/ComicNeue-Angular-Bold-Oblique.ttf",
+        "name": "Comic Neue  Angular  Bold  Oblique"
+    },
+    "s": {
+        "src": "fonts/ComicNeue-Angular-Bold.ttf",
+        "name": "Comic Neue  Angular  Bold"
+    },
+    "t": {
+        "src": "fonts/ComicNeue-Angular-Light-Oblique.ttf",
+        "name": "Comic Neue  Angular  Light  Oblique"
+    },
+    "u": {
+        "src": "fonts/ComicNeue-Angular-Light.ttf",
+        "name": "Comic Neue  Angular  Light"
+    },
+    "v": {
+        "src": "fonts/ComicNeue-Angular-Regular-Oblique.ttf",
+        "name": "Comic Neue  Angular  Regular  Oblique"
+    },
+    "w": {
+        "src": "fonts/ComicNeue-Angular-Regular.ttf",
+        "name": "Comic Neue  Angular  Regular"
+    },
+    "x": {
+        "src": "fonts/ComicNeue-Bold-Oblique.ttf",
+        "name": "Comic Neue  Bold  Oblique"
+    },
+    "y": {
+        "src": "fonts/ComicNeue-Bold.ttf",
+        "name": "Comic Neue  Bold"
+    },
+    "z": {
+        "src": "fonts/ComicNeue-Light-Oblique.ttf",
+        "name": "Comic Neue  Light  Oblique"
+    },
+    "aa": {
+        "src": "fonts/ComicNeue-Light.ttf",
+        "name": "Comic Neue  Light"
+    },
+    "ab": {
+        "src": "fonts/ComicNeue-Regular-Oblique.ttf",
+        "name": "Comic Neue  Regular  Oblique"
+    },
+    "ac": {
+        "src": "fonts/ComicNeue-Regular.ttf",
+        "name": "Comic Neue  Regular"
+    },
+    "ad": {
+        "src": "fonts/Dosis-Bold.ttf",
+        "name": "Dosis  Bold"
+    },
+    "ae": {
+        "src": "fonts/Dosis-Book.ttf",
+        "name": "Dosis  Book"
+    },
+    "af": {
+        "src": "fonts/Dosis-ExtraBold.ttf",
+        "name": "Dosis  Extra Bold"
+    },
+    "ag": {
+        "src": "fonts/Dosis-ExtraLight.ttf",
+        "name": "Dosis  Extra Light"
+    },
+    "ah": {
+        "src": "fonts/Dosis-Light.ttf",
+        "name": "Dosis  Light"
+    },
+    "ai": {
+        "src": "fonts/Dosis-Medium.ttf",
+        "name": "Dosis  Medium"
+    },
+    "aj": {
+        "src": "fonts/Dosis-SemiBold.ttf",
+        "name": "Dosis  Semi Bold"
+    },
+    "ak": {
+        "src": "fonts/EkMukta-Bold.ttf",
+        "name": "Ek Mukta  Bold"
+    },
+    "al": {
+        "src": "fonts/EkMukta-ExtraBold.ttf",
+        "name": "Ek Mukta  Extra Bold"
+    },
+    "am": {
+        "src": "fonts/EkMukta-ExtraLight.ttf",
+        "name": "Ek Mukta  Extra Light"
+    },
+    "an": {
+        "src": "fonts/EkMukta-Light.ttf",
+        "name": "Ek Mukta  Light"
+    },
+    "ao": {
+        "src": "fonts/EkMukta-Medium.ttf",
+        "name": "Ek Mukta  Medium"
+    },
+    "ap": {
+        "src": "fonts/EkMukta-Regular.ttf",
+        "name": "Ek Mukta  Regular"
+    },
+    "aq": {
+        "src": "fonts/EkMukta-SemiBold.ttf",
+        "name": "Ek Mukta  Semi Bold"
+    },
+    "ar": {
+        "src": "fonts/FreeMono.ttf",
+        "name": "Free Mono"
+    },
+    "as": {
+        "src": "fonts/FreeMonoBold.ttf",
+        "name": "Free Mono Bold"
+    },
+    "at": {
+        "src": "fonts/FreeMonoBoldOblique.ttf",
+        "name": "Free Mono Bold Oblique"
+    },
+    "au": {
+        "src": "fonts/FreeMonoOblique.ttf",
+        "name": "Free Mono Oblique"
+    },
+    "av": {
+        "src": "fonts/FreeSans.ttf",
+        "name": "Free Sans"
+    },
+    "aw": {
+        "src": "fonts/FreeSansBold.ttf",
+        "name": "Free Sans Bold"
+    },
+    "ax": {
+        "src": "fonts/FreeSansBoldOblique.ttf",
+        "name": "Free Sans Bold Oblique"
+    },
+    "ay": {
+        "src": "fonts/FreeSansOblique.ttf",
+        "name": "Free Sans Oblique"
+    },
+    "az": {
+        "src": "fonts/Metrophobic.ttf",
+        "name": "Metrophobic"
+    },
+    "ba": {
+        "src": "fonts/MgOpenCosmeticaRegular.ttf",
+        "name": "Mg Open Cosmetica Regular"
+    },
+    "bb": {
+        "src": "fonts/MgOpenModataBold.ttf",
+        "name": "Mg Open Modata Bold"
+    },
+    "bc": {
+        "src": "fonts/MgOpenModataBoldOblique.ttf",
+        "name": "Mg Open Modata Bold Oblique"
+    },
+    "bd": {
+        "src": "fonts/MgOpenModataOblique.ttf",
+        "name": "Mg Open Modata Oblique"
+    },
+    "be": {
+        "src": "fonts/MgOpenModataRegular.ttf",
+        "name": "Mg Open Modata Regular"
+    },
+    "bf": {
+        "src": "fonts/OCRA.ttf",
+        "name": "O C R A"
+    },
+    "bg": {
+        "src": "fonts/OpenSans-Bold.ttf",
+        "name": "Open Sans  Bold"
+    },
+    "bh": {
+        "src": "fonts/OpenSans-BoldItalic.ttf",
+        "name": "Open Sans  Bold Italic"
+    },
+    "bi": {
+        "src": "fonts/OpenSans-CondBold.ttf",
+        "name": "Open Sans  Cond Bold"
+    },
+    "bj": {
+        "src": "fonts/OpenSans-CondLight.ttf",
+        "name": "Open Sans  Cond Light"
+    },
+    "bk": {
+        "src": "fonts/OpenSans-CondLightItalic.ttf",
+        "name": "Open Sans  Cond Light Italic"
+    },
+    "bl": {
+        "src": "fonts/OpenSans-ExtraBold.ttf",
+        "name": "Open Sans  Extra Bold"
+    },
+    "bm": {
+        "src": "fonts/OpenSans-ExtraBoldItalic.ttf",
+        "name": "Open Sans  Extra Bold Italic"
+    },
+    "bn": {
+        "src": "fonts/OpenSans-Italic.ttf",
+        "name": "Open Sans  Italic"
+    },
+    "bo": {
+        "src": "fonts/OpenSans-Light.ttf",
+        "name": "Open Sans  Light"
+    },
+    "bp": {
+        "src": "fonts/OpenSans-LightItalic.ttf",
+        "name": "Open Sans  Light Italic"
+    },
+    "bq": {
+        "src": "fonts/OpenSans-Regular.ttf",
+        "name": "Open Sans  Regular"
+    },
+    "br": {
+        "src": "fonts/OpenSans-Semibold.ttf",
+        "name": "Open Sans  Semibold"
+    },
+    "bs": {
+        "src": "fonts/OpenSans-SemiboldItalic.ttf",
+        "name": "Open Sans  Semibold Italic"
+    },
+    "bt": {
+        "src": "fonts/Roboto-Black.ttf",
+        "name": "Roboto  Black"
+    },
+    "bu": {
+        "src": "fonts/Roboto-BlackItalic.ttf",
+        "name": "Roboto  Black Italic"
+    },
+    "bv": {
+        "src": "fonts/Roboto-Bold.ttf",
+        "name": "Roboto  Bold"
+    },
+    "bw": {
+        "src": "fonts/Roboto-BoldItalic.ttf",
+        "name": "Roboto  Bold Italic"
+    },
+    "bx": {
+        "src": "fonts/Roboto-Italic.ttf",
+        "name": "Roboto  Italic"
+    },
+    "by": {
+        "src": "fonts/Roboto-Light.ttf",
+        "name": "Roboto  Light"
+    },
+    "bz": {
+        "src": "fonts/Roboto-LightItalic.ttf",
+        "name": "Roboto  Light Italic"
+    },
+    "ca": {
+        "src": "fonts/Roboto-Medium.ttf",
+        "name": "Roboto  Medium"
+    },
+    "cb": {
+        "src": "fonts/Roboto-MediumItalic.ttf",
+        "name": "Roboto  Medium Italic"
+    },
+    "cc": {
+        "src": "fonts/Roboto-Regular.ttf",
+        "name": "Roboto  Regular"
+    },
+    "cd": {
+        "src": "fonts/Roboto-Thin.ttf",
+        "name": "Roboto  Thin"
+    },
+    "ce": {
+        "src": "fonts/Roboto-ThinItalic.ttf",
+        "name": "Roboto  Thin Italic"
+    },
+    "cf": {
+        "src": "fonts/RobotoCondensed-Bold.ttf",
+        "name": "Roboto Condensed  Bold"
+    },
+    "cg": {
+        "src": "fonts/RobotoCondensed-BoldItalic.ttf",
+        "name": "Roboto Condensed  Bold Italic"
+    },
+    "ch": {
+        "src": "fonts/RobotoCondensed-Italic.ttf",
+        "name": "Roboto Condensed  Italic"
+    },
+    "ci": {
+        "src": "fonts/RobotoCondensed-Light.ttf",
+        "name": "Roboto Condensed  Light"
+    },
+    "cj": {
+        "src": "fonts/RobotoCondensed-LightItalic.ttf",
+        "name": "Roboto Condensed  Light Italic"
+    },
+    "ck": {
+        "src": "fonts/RobotoCondensed-Regular.ttf",
+        "name": "Roboto Condensed  Regular"
+    },
+    "cl": {
+        "src": "fonts/SourceCodePro-Black.ttf",
+        "name": "Source Code Pro  Black"
+    },
+    "cm": {
+        "src": "fonts/SourceCodePro-Bold.ttf",
+        "name": "Source Code Pro  Bold"
+    },
+    "cn": {
+        "src": "fonts/SourceCodePro-ExtraLight.ttf",
+        "name": "Source Code Pro  Extra Light"
+    },
+    "co": {
+        "src": "fonts/SourceCodePro-Light.ttf",
+        "name": "Source Code Pro  Light"
+    },
+    "cp": {
+        "src": "fonts/SourceCodePro-Medium.ttf",
+        "name": "Source Code Pro  Medium"
+    },
+    "cq": {
+        "src": "fonts/SourceCodePro-Regular.ttf",
+        "name": "Source Code Pro  Regular"
+    },
+    "cr": {
+        "src": "fonts/SourceCodePro-Semibold.ttf",
+        "name": "Source Code Pro  Semibold"
+    },
+    "cs": {
+        "src": "fonts/SourceSerifPro-Bold.ttf",
+        "name": "Source Serif Pro  Bold"
+    },
+    "ct": {
+        "src": "fonts/SourceSerifPro-Regular.ttf",
+        "name": "Source Serif Pro  Regular"
+    },
+    "cu": {
+        "src": "fonts/SourceSerifPro-Semibold.ttf",
+        "name": "Source Serif Pro  Semibold"
+    },
+    "cv": {
+        "src": "fonts/Squarish Sans CT Regular SC.ttf",
+        "name": "Squarish  Sans  C T  Regular  S C"
+    },
+    "cw": {
+        "src": "fonts/Squarish Sans CT Regular.ttf",
+        "name": "Squarish  Sans  C T  Regular"
+    },
+    "cx": {
+        "src": "fonts/Transport Medium Greek.ttf",
+        "name": "Transport  Medium  Greek"
+    },
+    "cy": {
+        "src": "fonts/Ubuntu-B.ttf",
+        "name": "Ubuntu  B"
+    },
+    "cz": {
+        "src": "fonts/Ubuntu-BI.ttf",
+        "name": "Ubuntu  B I"
+    },
+    "da": {
+        "src": "fonts/Ubuntu-C.ttf",
+        "name": "Ubuntu  C"
+    },
+    "db": {
+        "src": "fonts/Ubuntu-L.ttf",
+        "name": "Ubuntu  L"
+    },
+    "dc": {
+        "src": "fonts/Ubuntu-LI.ttf",
+        "name": "Ubuntu  L I"
+    },
+    "dd": {
+        "src": "fonts/Ubuntu-M.ttf",
+        "name": "Ubuntu  M"
+    },
+    "de": {
+        "src": "fonts/Ubuntu-MI.ttf",
+        "name": "Ubuntu  M I"
+    },
+    "df": {
+        "src": "fonts/Ubuntu-R.ttf",
+        "name": "Ubuntu  R"
+    },
+    "dg": {
+        "src": "fonts/Ubuntu-RI.ttf",
+        "name": "Ubuntu  R I"
+    },
+    "dh": {
+        "src": "fonts/UbuntuMono-B.ttf",
+        "name": "Ubuntu Mono  B"
+    },
+    "di": {
+        "src": "fonts/UbuntuMono-BI.ttf",
+        "name": "Ubuntu Mono  B I"
+    },
+    "dj": {
+        "src": "fonts/UbuntuMono-R.ttf",
+        "name": "Ubuntu Mono  R"
+    },
+    "dk": {
+        "src": "fonts/UbuntuMono-RI.ttf",
+        "name": "Ubuntu Mono  R I"
+    }
+}

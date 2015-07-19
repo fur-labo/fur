@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html ng:app="FontThemeApp" ng:controller="FontThemCtrl">
+<head>
+    <meta charset="UTF-8"/>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="../assets/stylesheets/gallery.css"/>
+    <style>
+{{#each fontTheme}}        @font-face {
+            font-family: {{@key}}  ;
+            src: url('../assets/{{src}}')
+        }
+
+        .font-{{@key}}{
+            font-family: {{@key}}, serif;
+        }
+        #setting-section {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            padding: 8px 8px;
+            background-color: rgba(255, 255, 255, 0.95);
+            font-size: 0.75em;
+            border-top: 1px solid #EEE;
+        }
+        #setting-section label {
+            color: #AAA;
+            display: inline-block;
+            margin: 0 2px 0;
+            z-index: 22;
+        }
+        .wide-input{
+            width:400px;
+        }
+{{/each}}
+        .sample-label {
+            margin: 5px 0;
+            line-height: 1em;
+        }
+        .l {
+            font-size: 2em;
+        }
+
+        .m {
+            font-size: 1em;
+        }
+
+        .s {
+            font-size: 0.5em;
+        }
+
+        .sample-td {
+            padding: 10px 20px;
+        }
+        .v-center{
+            vertical-align: middle;
+        }
+        .w120{
+            width: 120px;
+        }
+    </style>
+    <script src="../assets/javascripts/angular.js"></script>
+    <script>
+        (function(ng){
+            ng.module('FontThemeApp',[
+
+            ]).controller('FontThemCtrl', function FontThemCtrl($scope){
+                $scope.sampleText = 'Grumpy wizards make toxic brew for the evil Queen and Jack.';
+            });
+        })(angular);
+    </script>
+</head>
+<body>
+<header>
+    <h1 onclick="location.reload()">{{title}}</h1>
+    <nav>
+        <a href="font-theme.html" class="nav-item">{{title}}</a>
+    </nav>
+</header>
+<main>
+<table>
+<tbody>
+{{#each fontTheme}}
+<tr>
+<th class="w120">{{@key}}</th>
+<td class="text-center v-center"><a class="font-{{@key}}" href="{{filename}}">{{name}}</a></td>
+<td class="sample-td font-{{@key}}">
+    <div class="sample-label l" ng:bind="sampleText"></div>
+    <div class="sample-label m" ng:bind="sampleText"></div>
+    <div class="sample-label s" ng:bind="sampleText"></div>
+</td>
+</tr>
+{{/each}}
+</tbody>
+</table>
+</main>
+<section id="setting-section">
+    <label for="sample-text-input">Sample text</label>
+    <input ng:model="sampleText" class="wide-input" placeholder="sample text" id="sample-text-input">
+</section>
+<a id="jump-to-top-btn" href="#">⇧Jump to Top</a>
+</body>
+</html>

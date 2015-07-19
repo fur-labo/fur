@@ -1,14 +1,15 @@
 {
-  "name": "quicklogo",
-  "version": "1.0.0",
+  "name": "fur",
+  "version": "2.0.0",
   "description": "Create a text based logo quickly",
   "main": "quicklogo.js",
   "scripts": {
-    "test": "nodeunit test/apiguide_test.js",
-    "cover": "istanbul cover nodeunit test/apiguide_test.js --dir coverage",
+    "test": "nodeunit test/*_test.js",
+    "cover": "istanbul cover nodeunit test/*_test.js --dir coverage",
     "report": "codeclimate-test-reporter  < coverage/lcov.info",
     "versionup": "versionup",
-    "taggit": "taggit"
+    "taggit": "taggit",
+    "render": "coz render"
   },
   "repository": {
     "type": "git",
@@ -36,5 +37,8 @@
     "nodeunit": "^0.9.1",
     "taggit": "^1.0.3",
     "versionup": "^1.0.7"
+  },
+  "dependencies": {
+    "stringcase": "^1.0.7"
   }
 }

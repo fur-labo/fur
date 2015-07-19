@@ -1,0 +1,17 @@
+/**
+ * Bud file for font themes.
+ */
+
+"use strict";
+
+
+var fontTheme = require('../themes/font-theme.json');
+
+module.exports = {
+    force: true,
+    mode: '444',
+    data: {
+        fontTheme: fontTheme,
+        title:'Font Themes'
+    }
+};

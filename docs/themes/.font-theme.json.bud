@@ -1,0 +1,36 @@
+/**
+ * Bud file for font theme.
+ */
+
+"use strict";
+
+var coz = require('coz'),
+    stringcase = require('stringcase'),
+    glob = coz.ext.glob,
+    path = require('path');
+
+var themeNameWithIndex = require('../../lib/theme_name_with_index');
+
+module.exports = {
+    force: true,
+    mode: '444',
+    get data() {
+        var fonts = {};
+        glob.sync('fonts/*.ttf', {
+            cwd: path.resolve(__dirname, '../assets')
+        }).forEach(function (filename, i) {
+            var name = themeNameWithIndex(i);
+            fonts[name] = {
+                src: filename,
+                name: stringcase.titlecase(path.basename(filename, path.extname(filename)))
+            };
+        });
+        return fonts;
+    }
+};
+
+
+if (!module.parent) {
+    coz.render(__filename);
+}
+
