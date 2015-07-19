@@ -9,7 +9,7 @@ var coz = require('coz'),
     glob = coz.ext.glob,
     path = require('path');
 
-var themeNameWithIndex = require('../../lib/theme_name_with_index');
+var themeNameWithIndex = require('../../lib/theming/theme_name_with_index');
 
 module.exports = {
     force: true,

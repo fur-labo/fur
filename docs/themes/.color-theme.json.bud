@@ -6,7 +6,7 @@
 var coz = require('coz'),
     ColorScheme = require('color-scheme');
 
-var themeNameWithIndex = require('../../lib/theme_name_with_index');
+var themeNameWithIndex = require('../../lib/theming/theme_name_with_index');
 
 var COLOR_COUNT = 26;
 

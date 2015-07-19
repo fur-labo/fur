@@ -3,10 +3,15 @@
  * Runs with nodeunit.
  */
 
-var fur = require('../lib/fur.js');
+var Fur = require('../lib/fur.js'),
+    path = require('path');
 
-exports['Fur'] = function(test){
+var tmpDir = path.resolve(__dirname, '../tmp');
 
-    test.done();
+exports['Create a logo.'] = function (test) {
+    new Fur().logo(tmpDir + '/fur-testing-logo.svg', {}, function (err) {
+        test.ifError(err);
+        test.done();
+    });
 };
 
