@@ -6,4 +6,4 @@ DEST_DIR="${BASE_DIR}/docs/assets/fonts"
 
 cd ${BASE_DIR}
 
-npm run render -- docs/**/.*.bud
+npm run render -- "+(docs|test)/**/.*.bud"

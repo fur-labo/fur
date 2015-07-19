@@ -1,0 +1,18 @@
+/**
+ * Bud file for color themes.
+ */
+
+"use strict";
+
+
+var colorTheme = require('../themes/color-theme.json');
+
+module.exports = {
+    force: true,
+    mode: '444',
+    data: {
+        variations: Object.keys(colorTheme.a),
+        colorTheme: colorTheme,
+        title: 'Color Themes'
+    }
+};

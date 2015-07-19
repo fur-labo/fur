@@ -3137,6 +3137,7 @@
         }
     </style>
     <script src="../assets/javascripts/angular.js"></script>
+    <script src="../assets/javascripts/gallery.js"></script>
     <script>
         (function(ng){
             ng.module('FontThemeApp',[
@@ -3151,15 +3152,21 @@
 <header>
     <h1 onclick="location.reload()">Font Themes</h1>
     <nav>
-        <a href="font-theme.html" class="nav-item">Font Themes</a>
     </nav>
 </header>
 <main>
 <table>
+    <thead>
+    <tr>
+    <th>Theme</th>
+    <td>Font</td>
+        <td>Sample Text</td>
+    </tr>
+    </thead>
 <tbody>
 <tr>
 <th class="w120">a</th>
-<td class="text-center v-center"><a class="font-a" href="">Alef  Bold</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-a" href="">Alef  Bold</a></td>
 <td class="sample-td font-a">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3168,7 +3175,7 @@
 </tr>
 <tr>
 <th class="w120">b</th>
-<td class="text-center v-center"><a class="font-b" href="">Alef  Regular</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-b" href="">Alef  Regular</a></td>
 <td class="sample-td font-b">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3177,7 +3184,7 @@
 </tr>
 <tr>
 <th class="w120">c</th>
-<td class="text-center v-center"><a class="font-c" href="">Anonymous  Pro  B</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-c" href="">Anonymous  Pro  B</a></td>
 <td class="sample-td font-c">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3186,7 +3193,7 @@
 </tr>
 <tr>
 <th class="w120">d</th>
-<td class="text-center v-center"><a class="font-d" href="">Anonymous  Pro  B I</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-d" href="">Anonymous  Pro  B I</a></td>
 <td class="sample-td font-d">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3195,7 +3202,7 @@
 </tr>
 <tr>
 <th class="w120">e</th>
-<td class="text-center v-center"><a class="font-e" href="">Anonymous  Pro  I</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-e" href="">Anonymous  Pro  I</a></td>
 <td class="sample-td font-e">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3204,7 +3211,7 @@
 </tr>
 <tr>
 <th class="w120">f</th>
-<td class="text-center v-center"><a class="font-f" href="">Anonymous  Pro  Minus  B</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-f" href="">Anonymous  Pro  Minus  B</a></td>
 <td class="sample-td font-f">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3213,7 +3220,7 @@
 </tr>
 <tr>
 <th class="w120">g</th>
-<td class="text-center v-center"><a class="font-g" href="">Anonymous  Pro  Minus  B I</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-g" href="">Anonymous  Pro  Minus  B I</a></td>
 <td class="sample-td font-g">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3222,7 +3229,7 @@
 </tr>
 <tr>
 <th class="w120">h</th>
-<td class="text-center v-center"><a class="font-h" href="">Anonymous  Pro  Minus  I</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-h" href="">Anonymous  Pro  Minus  I</a></td>
 <td class="sample-td font-h">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3231,7 +3238,7 @@
 </tr>
 <tr>
 <th class="w120">i</th>
-<td class="text-center v-center"><a class="font-i" href="">Anonymous  Pro  Minus</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-i" href="">Anonymous  Pro  Minus</a></td>
 <td class="sample-td font-i">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3240,7 +3247,7 @@
 </tr>
 <tr>
 <th class="w120">j</th>
-<td class="text-center v-center"><a class="font-j" href="">Anonymous  Pro</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-j" href="">Anonymous  Pro</a></td>
 <td class="sample-td font-j">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3249,7 +3256,7 @@
 </tr>
 <tr>
 <th class="w120">k</th>
-<td class="text-center v-center"><a class="font-k" href="">Cantarell  Bold</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-k" href="">Cantarell  Bold</a></td>
 <td class="sample-td font-k">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3258,7 +3265,7 @@
 </tr>
 <tr>
 <th class="w120">l</th>
-<td class="text-center v-center"><a class="font-l" href="">Cantarell  Bold Oblique</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-l" href="">Cantarell  Bold Oblique</a></td>
 <td class="sample-td font-l">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3267,7 +3274,7 @@
 </tr>
 <tr>
 <th class="w120">m</th>
-<td class="text-center v-center"><a class="font-m" href="">Cantarell  Oblique</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-m" href="">Cantarell  Oblique</a></td>
 <td class="sample-td font-m">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3276,7 +3283,7 @@
 </tr>
 <tr>
 <th class="w120">n</th>
-<td class="text-center v-center"><a class="font-n" href="">Cantarell  Regular</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-n" href="">Cantarell  Regular</a></td>
 <td class="sample-td font-n">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3285,7 +3292,7 @@
 </tr>
 <tr>
 <th class="w120">o</th>
-<td class="text-center v-center"><a class="font-o" href="">Comfortaa  Bold</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-o" href="">Comfortaa  Bold</a></td>
 <td class="sample-td font-o">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3294,7 +3301,7 @@
 </tr>
 <tr>
 <th class="w120">p</th>
-<td class="text-center v-center"><a class="font-p" href="">Comfortaa  Light</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-p" href="">Comfortaa  Light</a></td>
 <td class="sample-td font-p">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3303,7 +3310,7 @@
 </tr>
 <tr>
 <th class="w120">q</th>
-<td class="text-center v-center"><a class="font-q" href="">Comfortaa  Regular</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-q" href="">Comfortaa  Regular</a></td>
 <td class="sample-td font-q">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3312,7 +3319,7 @@
 </tr>
 <tr>
 <th class="w120">r</th>
-<td class="text-center v-center"><a class="font-r" href="">Comic Neue  Angular  Bold  Oblique</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-r" href="">Comic Neue  Angular  Bold  Oblique</a></td>
 <td class="sample-td font-r">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3321,7 +3328,7 @@
 </tr>
 <tr>
 <th class="w120">s</th>
-<td class="text-center v-center"><a class="font-s" href="">Comic Neue  Angular  Bold</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-s" href="">Comic Neue  Angular  Bold</a></td>
 <td class="sample-td font-s">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3330,7 +3337,7 @@
 </tr>
 <tr>
 <th class="w120">t</th>
-<td class="text-center v-center"><a class="font-t" href="">Comic Neue  Angular  Light  Oblique</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-t" href="">Comic Neue  Angular  Light  Oblique</a></td>
 <td class="sample-td font-t">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3339,7 +3346,7 @@
 </tr>
 <tr>
 <th class="w120">u</th>
-<td class="text-center v-center"><a class="font-u" href="">Comic Neue  Angular  Light</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-u" href="">Comic Neue  Angular  Light</a></td>
 <td class="sample-td font-u">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3348,7 +3355,7 @@
 </tr>
 <tr>
 <th class="w120">v</th>
-<td class="text-center v-center"><a class="font-v" href="">Comic Neue  Angular  Regular  Oblique</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-v" href="">Comic Neue  Angular  Regular  Oblique</a></td>
 <td class="sample-td font-v">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3357,7 +3364,7 @@
 </tr>
 <tr>
 <th class="w120">w</th>
-<td class="text-center v-center"><a class="font-w" href="">Comic Neue  Angular  Regular</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-w" href="">Comic Neue  Angular  Regular</a></td>
 <td class="sample-td font-w">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3366,7 +3373,7 @@
 </tr>
 <tr>
 <th class="w120">x</th>
-<td class="text-center v-center"><a class="font-x" href="">Comic Neue  Bold  Oblique</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-x" href="">Comic Neue  Bold  Oblique</a></td>
 <td class="sample-td font-x">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3375,7 +3382,7 @@
 </tr>
 <tr>
 <th class="w120">y</th>
-<td class="text-center v-center"><a class="font-y" href="">Comic Neue  Bold</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-y" href="">Comic Neue  Bold</a></td>
 <td class="sample-td font-y">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3384,7 +3391,7 @@
 </tr>
 <tr>
 <th class="w120">z</th>
-<td class="text-center v-center"><a class="font-z" href="">Comic Neue  Light  Oblique</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-z" href="">Comic Neue  Light  Oblique</a></td>
 <td class="sample-td font-z">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3393,7 +3400,7 @@
 </tr>
 <tr>
 <th class="w120">aa</th>
-<td class="text-center v-center"><a class="font-aa" href="">Comic Neue  Light</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-aa" href="">Comic Neue  Light</a></td>
 <td class="sample-td font-aa">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3402,7 +3409,7 @@
 </tr>
 <tr>
 <th class="w120">ab</th>
-<td class="text-center v-center"><a class="font-ab" href="">Comic Neue  Regular  Oblique</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-ab" href="">Comic Neue  Regular  Oblique</a></td>
 <td class="sample-td font-ab">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3411,7 +3418,7 @@
 </tr>
 <tr>
 <th class="w120">ac</th>
-<td class="text-center v-center"><a class="font-ac" href="">Comic Neue  Regular</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-ac" href="">Comic Neue  Regular</a></td>
 <td class="sample-td font-ac">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3420,7 +3427,7 @@
 </tr>
 <tr>
 <th class="w120">ad</th>
-<td class="text-center v-center"><a class="font-ad" href="">Dosis  Bold</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-ad" href="">Dosis  Bold</a></td>
 <td class="sample-td font-ad">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3429,7 +3436,7 @@
 </tr>
 <tr>
 <th class="w120">ae</th>
-<td class="text-center v-center"><a class="font-ae" href="">Dosis  Book</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-ae" href="">Dosis  Book</a></td>
 <td class="sample-td font-ae">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3438,7 +3445,7 @@
 </tr>
 <tr>
 <th class="w120">af</th>
-<td class="text-center v-center"><a class="font-af" href="">Dosis  Extra Bold</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-af" href="">Dosis  Extra Bold</a></td>
 <td class="sample-td font-af">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3447,7 +3454,7 @@
 </tr>
 <tr>
 <th class="w120">ag</th>
-<td class="text-center v-center"><a class="font-ag" href="">Dosis  Extra Light</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-ag" href="">Dosis  Extra Light</a></td>
 <td class="sample-td font-ag">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3456,7 +3463,7 @@
 </tr>
 <tr>
 <th class="w120">ah</th>
-<td class="text-center v-center"><a class="font-ah" href="">Dosis  Light</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-ah" href="">Dosis  Light</a></td>
 <td class="sample-td font-ah">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3465,7 +3472,7 @@
 </tr>
 <tr>
 <th class="w120">ai</th>
-<td class="text-center v-center"><a class="font-ai" href="">Dosis  Medium</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-ai" href="">Dosis  Medium</a></td>
 <td class="sample-td font-ai">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3474,7 +3481,7 @@
 </tr>
 <tr>
 <th class="w120">aj</th>
-<td class="text-center v-center"><a class="font-aj" href="">Dosis  Semi Bold</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-aj" href="">Dosis  Semi Bold</a></td>
 <td class="sample-td font-aj">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3483,7 +3490,7 @@
 </tr>
 <tr>
 <th class="w120">ak</th>
-<td class="text-center v-center"><a class="font-ak" href="">Ek Mukta  Bold</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-ak" href="">Ek Mukta  Bold</a></td>
 <td class="sample-td font-ak">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3492,7 +3499,7 @@
 </tr>
 <tr>
 <th class="w120">al</th>
-<td class="text-center v-center"><a class="font-al" href="">Ek Mukta  Extra Bold</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-al" href="">Ek Mukta  Extra Bold</a></td>
 <td class="sample-td font-al">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3501,7 +3508,7 @@
 </tr>
 <tr>
 <th class="w120">am</th>
-<td class="text-center v-center"><a class="font-am" href="">Ek Mukta  Extra Light</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-am" href="">Ek Mukta  Extra Light</a></td>
 <td class="sample-td font-am">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3510,7 +3517,7 @@
 </tr>
 <tr>
 <th class="w120">an</th>
-<td class="text-center v-center"><a class="font-an" href="">Ek Mukta  Light</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-an" href="">Ek Mukta  Light</a></td>
 <td class="sample-td font-an">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3519,7 +3526,7 @@
 </tr>
 <tr>
 <th class="w120">ao</th>
-<td class="text-center v-center"><a class="font-ao" href="">Ek Mukta  Medium</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-ao" href="">Ek Mukta  Medium</a></td>
 <td class="sample-td font-ao">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3528,7 +3535,7 @@
 </tr>
 <tr>
 <th class="w120">ap</th>
-<td class="text-center v-center"><a class="font-ap" href="">Ek Mukta  Regular</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-ap" href="">Ek Mukta  Regular</a></td>
 <td class="sample-td font-ap">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3537,7 +3544,7 @@
 </tr>
 <tr>
 <th class="w120">aq</th>
-<td class="text-center v-center"><a class="font-aq" href="">Ek Mukta  Semi Bold</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-aq" href="">Ek Mukta  Semi Bold</a></td>
 <td class="sample-td font-aq">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3546,7 +3553,7 @@
 </tr>
 <tr>
 <th class="w120">ar</th>
-<td class="text-center v-center"><a class="font-ar" href="">Free Mono</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-ar" href="">Free Mono</a></td>
 <td class="sample-td font-ar">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3555,7 +3562,7 @@
 </tr>
 <tr>
 <th class="w120">as</th>
-<td class="text-center v-center"><a class="font-as" href="">Free Mono Bold</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-as" href="">Free Mono Bold</a></td>
 <td class="sample-td font-as">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3564,7 +3571,7 @@
 </tr>
 <tr>
 <th class="w120">at</th>
-<td class="text-center v-center"><a class="font-at" href="">Free Mono Bold Oblique</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-at" href="">Free Mono Bold Oblique</a></td>
 <td class="sample-td font-at">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3573,7 +3580,7 @@
 </tr>
 <tr>
 <th class="w120">au</th>
-<td class="text-center v-center"><a class="font-au" href="">Free Mono Oblique</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-au" href="">Free Mono Oblique</a></td>
 <td class="sample-td font-au">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3582,7 +3589,7 @@
 </tr>
 <tr>
 <th class="w120">av</th>
-<td class="text-center v-center"><a class="font-av" href="">Free Sans</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-av" href="">Free Sans</a></td>
 <td class="sample-td font-av">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3591,7 +3598,7 @@
 </tr>
 <tr>
 <th class="w120">aw</th>
-<td class="text-center v-center"><a class="font-aw" href="">Free Sans Bold</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-aw" href="">Free Sans Bold</a></td>
 <td class="sample-td font-aw">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3600,7 +3607,7 @@
 </tr>
 <tr>
 <th class="w120">ax</th>
-<td class="text-center v-center"><a class="font-ax" href="">Free Sans Bold Oblique</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-ax" href="">Free Sans Bold Oblique</a></td>
 <td class="sample-td font-ax">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3609,7 +3616,7 @@
 </tr>
 <tr>
 <th class="w120">ay</th>
-<td class="text-center v-center"><a class="font-ay" href="">Free Sans Oblique</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-ay" href="">Free Sans Oblique</a></td>
 <td class="sample-td font-ay">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3618,7 +3625,7 @@
 </tr>
 <tr>
 <th class="w120">az</th>
-<td class="text-center v-center"><a class="font-az" href="">Metrophobic</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-az" href="">Metrophobic</a></td>
 <td class="sample-td font-az">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3627,7 +3634,7 @@
 </tr>
 <tr>
 <th class="w120">ba</th>
-<td class="text-center v-center"><a class="font-ba" href="">Mg Open Cosmetica Regular</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-ba" href="">Mg Open Cosmetica Regular</a></td>
 <td class="sample-td font-ba">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3636,7 +3643,7 @@
 </tr>
 <tr>
 <th class="w120">bb</th>
-<td class="text-center v-center"><a class="font-bb" href="">Mg Open Modata Bold</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-bb" href="">Mg Open Modata Bold</a></td>
 <td class="sample-td font-bb">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3645,7 +3652,7 @@
 </tr>
 <tr>
 <th class="w120">bc</th>
-<td class="text-center v-center"><a class="font-bc" href="">Mg Open Modata Bold Oblique</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-bc" href="">Mg Open Modata Bold Oblique</a></td>
 <td class="sample-td font-bc">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3654,7 +3661,7 @@
 </tr>
 <tr>
 <th class="w120">bd</th>
-<td class="text-center v-center"><a class="font-bd" href="">Mg Open Modata Oblique</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-bd" href="">Mg Open Modata Oblique</a></td>
 <td class="sample-td font-bd">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3663,7 +3670,7 @@
 </tr>
 <tr>
 <th class="w120">be</th>
-<td class="text-center v-center"><a class="font-be" href="">Mg Open Modata Regular</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-be" href="">Mg Open Modata Regular</a></td>
 <td class="sample-td font-be">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3672,7 +3679,7 @@
 </tr>
 <tr>
 <th class="w120">bf</th>
-<td class="text-center v-center"><a class="font-bf" href="">O C R A</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-bf" href="">O C R A</a></td>
 <td class="sample-td font-bf">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3681,7 +3688,7 @@
 </tr>
 <tr>
 <th class="w120">bg</th>
-<td class="text-center v-center"><a class="font-bg" href="">Open Sans  Bold</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-bg" href="">Open Sans  Bold</a></td>
 <td class="sample-td font-bg">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3690,7 +3697,7 @@
 </tr>
 <tr>
 <th class="w120">bh</th>
-<td class="text-center v-center"><a class="font-bh" href="">Open Sans  Bold Italic</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-bh" href="">Open Sans  Bold Italic</a></td>
 <td class="sample-td font-bh">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3699,7 +3706,7 @@
 </tr>
 <tr>
 <th class="w120">bi</th>
-<td class="text-center v-center"><a class="font-bi" href="">Open Sans  Cond Bold</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-bi" href="">Open Sans  Cond Bold</a></td>
 <td class="sample-td font-bi">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3708,7 +3715,7 @@
 </tr>
 <tr>
 <th class="w120">bj</th>
-<td class="text-center v-center"><a class="font-bj" href="">Open Sans  Cond Light</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-bj" href="">Open Sans  Cond Light</a></td>
 <td class="sample-td font-bj">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3717,7 +3724,7 @@
 </tr>
 <tr>
 <th class="w120">bk</th>
-<td class="text-center v-center"><a class="font-bk" href="">Open Sans  Cond Light Italic</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-bk" href="">Open Sans  Cond Light Italic</a></td>
 <td class="sample-td font-bk">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3726,7 +3733,7 @@
 </tr>
 <tr>
 <th class="w120">bl</th>
-<td class="text-center v-center"><a class="font-bl" href="">Open Sans  Extra Bold</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-bl" href="">Open Sans  Extra Bold</a></td>
 <td class="sample-td font-bl">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3735,7 +3742,7 @@
 </tr>
 <tr>
 <th class="w120">bm</th>
-<td class="text-center v-center"><a class="font-bm" href="">Open Sans  Extra Bold Italic</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-bm" href="">Open Sans  Extra Bold Italic</a></td>
 <td class="sample-td font-bm">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3744,7 +3751,7 @@
 </tr>
 <tr>
 <th class="w120">bn</th>
-<td class="text-center v-center"><a class="font-bn" href="">Open Sans  Italic</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-bn" href="">Open Sans  Italic</a></td>
 <td class="sample-td font-bn">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3753,7 +3760,7 @@
 </tr>
 <tr>
 <th class="w120">bo</th>
-<td class="text-center v-center"><a class="font-bo" href="">Open Sans  Light</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-bo" href="">Open Sans  Light</a></td>
 <td class="sample-td font-bo">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3762,7 +3769,7 @@
 </tr>
 <tr>
 <th class="w120">bp</th>
-<td class="text-center v-center"><a class="font-bp" href="">Open Sans  Light Italic</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-bp" href="">Open Sans  Light Italic</a></td>
 <td class="sample-td font-bp">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3771,7 +3778,7 @@
 </tr>
 <tr>
 <th class="w120">bq</th>
-<td class="text-center v-center"><a class="font-bq" href="">Open Sans  Regular</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-bq" href="">Open Sans  Regular</a></td>
 <td class="sample-td font-bq">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3780,7 +3787,7 @@
 </tr>
 <tr>
 <th class="w120">br</th>
-<td class="text-center v-center"><a class="font-br" href="">Open Sans  Semibold</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-br" href="">Open Sans  Semibold</a></td>
 <td class="sample-td font-br">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3789,7 +3796,7 @@
 </tr>
 <tr>
 <th class="w120">bs</th>
-<td class="text-center v-center"><a class="font-bs" href="">Open Sans  Semibold Italic</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-bs" href="">Open Sans  Semibold Italic</a></td>
 <td class="sample-td font-bs">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3798,7 +3805,7 @@
 </tr>
 <tr>
 <th class="w120">bt</th>
-<td class="text-center v-center"><a class="font-bt" href="">Roboto  Black</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-bt" href="">Roboto  Black</a></td>
 <td class="sample-td font-bt">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3807,7 +3814,7 @@
 </tr>
 <tr>
 <th class="w120">bu</th>
-<td class="text-center v-center"><a class="font-bu" href="">Roboto  Black Italic</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-bu" href="">Roboto  Black Italic</a></td>
 <td class="sample-td font-bu">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3816,7 +3823,7 @@
 </tr>
 <tr>
 <th class="w120">bv</th>
-<td class="text-center v-center"><a class="font-bv" href="">Roboto  Bold</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-bv" href="">Roboto  Bold</a></td>
 <td class="sample-td font-bv">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3825,7 +3832,7 @@
 </tr>
 <tr>
 <th class="w120">bw</th>
-<td class="text-center v-center"><a class="font-bw" href="">Roboto  Bold Italic</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-bw" href="">Roboto  Bold Italic</a></td>
 <td class="sample-td font-bw">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3834,7 +3841,7 @@
 </tr>
 <tr>
 <th class="w120">bx</th>
-<td class="text-center v-center"><a class="font-bx" href="">Roboto  Italic</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-bx" href="">Roboto  Italic</a></td>
 <td class="sample-td font-bx">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3843,7 +3850,7 @@
 </tr>
 <tr>
 <th class="w120">by</th>
-<td class="text-center v-center"><a class="font-by" href="">Roboto  Light</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-by" href="">Roboto  Light</a></td>
 <td class="sample-td font-by">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3852,7 +3859,7 @@
 </tr>
 <tr>
 <th class="w120">bz</th>
-<td class="text-center v-center"><a class="font-bz" href="">Roboto  Light Italic</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-bz" href="">Roboto  Light Italic</a></td>
 <td class="sample-td font-bz">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3861,7 +3868,7 @@
 </tr>
 <tr>
 <th class="w120">ca</th>
-<td class="text-center v-center"><a class="font-ca" href="">Roboto  Medium</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-ca" href="">Roboto  Medium</a></td>
 <td class="sample-td font-ca">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3870,7 +3877,7 @@
 </tr>
 <tr>
 <th class="w120">cb</th>
-<td class="text-center v-center"><a class="font-cb" href="">Roboto  Medium Italic</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-cb" href="">Roboto  Medium Italic</a></td>
 <td class="sample-td font-cb">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3879,7 +3886,7 @@
 </tr>
 <tr>
 <th class="w120">cc</th>
-<td class="text-center v-center"><a class="font-cc" href="">Roboto  Regular</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-cc" href="">Roboto  Regular</a></td>
 <td class="sample-td font-cc">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3888,7 +3895,7 @@
 </tr>
 <tr>
 <th class="w120">cd</th>
-<td class="text-center v-center"><a class="font-cd" href="">Roboto  Thin</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-cd" href="">Roboto  Thin</a></td>
 <td class="sample-td font-cd">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3897,7 +3904,7 @@
 </tr>
 <tr>
 <th class="w120">ce</th>
-<td class="text-center v-center"><a class="font-ce" href="">Roboto  Thin Italic</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-ce" href="">Roboto  Thin Italic</a></td>
 <td class="sample-td font-ce">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3906,7 +3913,7 @@
 </tr>
 <tr>
 <th class="w120">cf</th>
-<td class="text-center v-center"><a class="font-cf" href="">Roboto Condensed  Bold</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-cf" href="">Roboto Condensed  Bold</a></td>
 <td class="sample-td font-cf">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3915,7 +3922,7 @@
 </tr>
 <tr>
 <th class="w120">cg</th>
-<td class="text-center v-center"><a class="font-cg" href="">Roboto Condensed  Bold Italic</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-cg" href="">Roboto Condensed  Bold Italic</a></td>
 <td class="sample-td font-cg">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3924,7 +3931,7 @@
 </tr>
 <tr>
 <th class="w120">ch</th>
-<td class="text-center v-center"><a class="font-ch" href="">Roboto Condensed  Italic</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-ch" href="">Roboto Condensed  Italic</a></td>
 <td class="sample-td font-ch">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3933,7 +3940,7 @@
 </tr>
 <tr>
 <th class="w120">ci</th>
-<td class="text-center v-center"><a class="font-ci" href="">Roboto Condensed  Light</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-ci" href="">Roboto Condensed  Light</a></td>
 <td class="sample-td font-ci">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3942,7 +3949,7 @@
 </tr>
 <tr>
 <th class="w120">cj</th>
-<td class="text-center v-center"><a class="font-cj" href="">Roboto Condensed  Light Italic</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-cj" href="">Roboto Condensed  Light Italic</a></td>
 <td class="sample-td font-cj">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3951,7 +3958,7 @@
 </tr>
 <tr>
 <th class="w120">ck</th>
-<td class="text-center v-center"><a class="font-ck" href="">Roboto Condensed  Regular</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-ck" href="">Roboto Condensed  Regular</a></td>
 <td class="sample-td font-ck">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3960,7 +3967,7 @@
 </tr>
 <tr>
 <th class="w120">cl</th>
-<td class="text-center v-center"><a class="font-cl" href="">Source Code Pro  Black</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-cl" href="">Source Code Pro  Black</a></td>
 <td class="sample-td font-cl">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3969,7 +3976,7 @@
 </tr>
 <tr>
 <th class="w120">cm</th>
-<td class="text-center v-center"><a class="font-cm" href="">Source Code Pro  Bold</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-cm" href="">Source Code Pro  Bold</a></td>
 <td class="sample-td font-cm">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3978,7 +3985,7 @@
 </tr>
 <tr>
 <th class="w120">cn</th>
-<td class="text-center v-center"><a class="font-cn" href="">Source Code Pro  Extra Light</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-cn" href="">Source Code Pro  Extra Light</a></td>
 <td class="sample-td font-cn">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3987,7 +3994,7 @@
 </tr>
 <tr>
 <th class="w120">co</th>
-<td class="text-center v-center"><a class="font-co" href="">Source Code Pro  Light</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-co" href="">Source Code Pro  Light</a></td>
 <td class="sample-td font-co">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -3996,7 +4003,7 @@
 </tr>
 <tr>
 <th class="w120">cp</th>
-<td class="text-center v-center"><a class="font-cp" href="">Source Code Pro  Medium</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-cp" href="">Source Code Pro  Medium</a></td>
 <td class="sample-td font-cp">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -4005,7 +4012,7 @@
 </tr>
 <tr>
 <th class="w120">cq</th>
-<td class="text-center v-center"><a class="font-cq" href="">Source Code Pro  Regular</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-cq" href="">Source Code Pro  Regular</a></td>
 <td class="sample-td font-cq">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -4014,7 +4021,7 @@
 </tr>
 <tr>
 <th class="w120">cr</th>
-<td class="text-center v-center"><a class="font-cr" href="">Source Code Pro  Semibold</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-cr" href="">Source Code Pro  Semibold</a></td>
 <td class="sample-td font-cr">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -4023,7 +4030,7 @@
 </tr>
 <tr>
 <th class="w120">cs</th>
-<td class="text-center v-center"><a class="font-cs" href="">Source Serif Pro  Bold</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-cs" href="">Source Serif Pro  Bold</a></td>
 <td class="sample-td font-cs">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -4032,7 +4039,7 @@
 </tr>
 <tr>
 <th class="w120">ct</th>
-<td class="text-center v-center"><a class="font-ct" href="">Source Serif Pro  Regular</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-ct" href="">Source Serif Pro  Regular</a></td>
 <td class="sample-td font-ct">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -4041,7 +4048,7 @@
 </tr>
 <tr>
 <th class="w120">cu</th>
-<td class="text-center v-center"><a class="font-cu" href="">Source Serif Pro  Semibold</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-cu" href="">Source Serif Pro  Semibold</a></td>
 <td class="sample-td font-cu">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -4050,7 +4057,7 @@
 </tr>
 <tr>
 <th class="w120">cv</th>
-<td class="text-center v-center"><a class="font-cv" href="">Squarish  Sans  C T  Regular  S C</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-cv" href="">Squarish  Sans  C T  Regular  S C</a></td>
 <td class="sample-td font-cv">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -4059,7 +4066,7 @@
 </tr>
 <tr>
 <th class="w120">cw</th>
-<td class="text-center v-center"><a class="font-cw" href="">Squarish  Sans  C T  Regular</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-cw" href="">Squarish  Sans  C T  Regular</a></td>
 <td class="sample-td font-cw">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -4068,7 +4075,7 @@
 </tr>
 <tr>
 <th class="w120">cx</th>
-<td class="text-center v-center"><a class="font-cx" href="">Transport  Medium  Greek</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-cx" href="">Transport  Medium  Greek</a></td>
 <td class="sample-td font-cx">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -4077,7 +4084,7 @@
 </tr>
 <tr>
 <th class="w120">cy</th>
-<td class="text-center v-center"><a class="font-cy" href="">Ubuntu  B</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-cy" href="">Ubuntu  B</a></td>
 <td class="sample-td font-cy">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -4086,7 +4093,7 @@
 </tr>
 <tr>
 <th class="w120">cz</th>
-<td class="text-center v-center"><a class="font-cz" href="">Ubuntu  B I</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-cz" href="">Ubuntu  B I</a></td>
 <td class="sample-td font-cz">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -4095,7 +4102,7 @@
 </tr>
 <tr>
 <th class="w120">da</th>
-<td class="text-center v-center"><a class="font-da" href="">Ubuntu  C</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-da" href="">Ubuntu  C</a></td>
 <td class="sample-td font-da">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -4104,7 +4111,7 @@
 </tr>
 <tr>
 <th class="w120">db</th>
-<td class="text-center v-center"><a class="font-db" href="">Ubuntu  L</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-db" href="">Ubuntu  L</a></td>
 <td class="sample-td font-db">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -4113,7 +4120,7 @@
 </tr>
 <tr>
 <th class="w120">dc</th>
-<td class="text-center v-center"><a class="font-dc" href="">Ubuntu  L I</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-dc" href="">Ubuntu  L I</a></td>
 <td class="sample-td font-dc">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -4122,7 +4129,7 @@
 </tr>
 <tr>
 <th class="w120">dd</th>
-<td class="text-center v-center"><a class="font-dd" href="">Ubuntu  M</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-dd" href="">Ubuntu  M</a></td>
 <td class="sample-td font-dd">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -4131,7 +4138,7 @@
 </tr>
 <tr>
 <th class="w120">de</th>
-<td class="text-center v-center"><a class="font-de" href="">Ubuntu  M I</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-de" href="">Ubuntu  M I</a></td>
 <td class="sample-td font-de">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -4140,7 +4147,7 @@
 </tr>
 <tr>
 <th class="w120">df</th>
-<td class="text-center v-center"><a class="font-df" href="">Ubuntu  R</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-df" href="">Ubuntu  R</a></td>
 <td class="sample-td font-df">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -4149,7 +4156,7 @@
 </tr>
 <tr>
 <th class="w120">dg</th>
-<td class="text-center v-center"><a class="font-dg" href="">Ubuntu  R I</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-dg" href="">Ubuntu  R I</a></td>
 <td class="sample-td font-dg">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -4158,7 +4165,7 @@
 </tr>
 <tr>
 <th class="w120">dh</th>
-<td class="text-center v-center"><a class="font-dh" href="">Ubuntu Mono  B</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-dh" href="">Ubuntu Mono  B</a></td>
 <td class="sample-td font-dh">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -4167,7 +4174,7 @@
 </tr>
 <tr>
 <th class="w120">di</th>
-<td class="text-center v-center"><a class="font-di" href="">Ubuntu Mono  B I</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-di" href="">Ubuntu Mono  B I</a></td>
 <td class="sample-td font-di">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -4176,7 +4183,7 @@
 </tr>
 <tr>
 <th class="w120">dj</th>
-<td class="text-center v-center"><a class="font-dj" href="">Ubuntu Mono  R</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-dj" href="">Ubuntu Mono  R</a></td>
 <td class="sample-td font-dj">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>
@@ -4185,7 +4192,7 @@
 </tr>
 <tr>
 <th class="w120">dk</th>
-<td class="text-center v-center"><a class="font-dk" href="">Ubuntu Mono  R I</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-dk" href="">Ubuntu Mono  R I</a></td>
 <td class="sample-td font-dk">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>

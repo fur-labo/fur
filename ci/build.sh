@@ -13,3 +13,6 @@ while read -r src; do
     cp "${src}" "${dest}"
     echo "File generated: ${dest}"
 done <<< "$(find third_party -name "*.ttf" -or -name "*.svg" -or -name "*.eot")"
+
+
+bash ./ci/render.sh

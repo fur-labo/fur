@@ -1,0 +1,47 @@
+/**
+ * Bud file for color theme.
+ */
+"use strict";
+
+var coz = require('coz'),
+    ColorScheme = require('color-scheme');
+
+var themeNameWithIndex = require('../../lib/theme_name_with_index');
+
+var COLOR_COUNT = 26;
+
+function color(hue, variation) {
+    return new ColorScheme().from_hue(hue)
+        .scheme('mono')
+        .variation(variation)
+        .colors()
+        .map(function (color) {
+            return '#' + color;
+        });
+}
+
+module.exports = {
+    force: true,
+    mode: '444',
+    get data() {
+        var colors = {};
+        for (var i = 0; i < COLOR_COUNT; i++) {
+            var name = themeNameWithIndex(i),
+                hue = (360 / COLOR_COUNT) * i;
+            colors[name] = {
+                default: color(hue, 'default'),
+                pastel: color(hue, 'pastel'),
+                soft: color(hue, 'soft'),
+                light: color(hue, 'light'),
+                hard: color(hue, 'hard'),
+                pale: color(hue, 'pale')
+            }
+        }
+        return colors;
+    }
+};
+
+
+if (!module.parent) {
+    coz.render(__filename);
+}

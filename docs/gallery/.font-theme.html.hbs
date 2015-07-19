@@ -60,6 +60,7 @@
         }
     </style>
     <script src="../assets/javascripts/angular.js"></script>
+    <script src="../assets/javascripts/gallery.js"></script>
     <script>
         (function(ng){
             ng.module('FontThemeApp',[
@@ -74,16 +75,22 @@
 <header>
     <h1 onclick="location.reload()">{{title}}</h1>
     <nav>
-        <a href="font-theme.html" class="nav-item">{{title}}</a>
     </nav>
 </header>
 <main>
 <table>
+    <thead>
+    <tr>
+    <th>Theme</th>
+    <td>Font</td>
+        <td>Sample Text</td>
+    </tr>
+    </thead>
 <tbody>
 {{#each fontTheme}}
 <tr>
 <th class="w120">{{@key}}</th>
-<td class="text-center v-center"><a class="font-{{@key}}" href="{{filename}}">{{name}}</a></td>
+<td class="text-center v-center" style="max-width:210px;"><a class="font-{{@key}}" href="{{filename}}">{{name}}</a></td>
 <td class="sample-td font-{{@key}}">
     <div class="sample-label l" ng:bind="sampleText"></div>
     <div class="sample-label m" ng:bind="sampleText"></div>

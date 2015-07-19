@@ -33,12 +33,16 @@
   "devDependencies": {
     "codeclimate-test-reporter": "0.1.0",
     "coz": "^1.1.1",
+    "color-scheme": "0.0.5",
     "istanbul": "^0.3.17",
     "nodeunit": "^0.9.1",
     "taggit": "^1.0.3",
     "versionup": "^1.0.7"
   },
   "dependencies": {
-    "stringcase": "^1.0.7"
+    "extend": "^3.0.0",
+    "js2xmlparser": "^1.0.0",
+    "stringcase": "^1.0.7",
+    "writeout": "^1.0.3"
   }
 }

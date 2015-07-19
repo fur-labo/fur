@@ -167,3 +167,6 @@ footer .nav-item {
     display: inline-block;
     margin: 0 4px;
 }
+thead td{
+    text-align: center;
+}

@@ -1,0 +1,18 @@
+/**
+ * Bud file for test.
+ */
+
+"use strict";
+
+var coz = require('coz'),
+    nodeunitTestcaseJsBud = coz.factory.nodeunitTestcaseJsBud;
+
+module.exports = nodeunitTestcaseJsBud({
+    src: [
+        __dirname + '/../lib/*.js'
+    ],
+    dest: __dirname
+});
+if (!module.parent) {
+    require('coz').render(__filename);
+}

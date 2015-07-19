@@ -1,4 +1,4 @@
-quicklogo
+fur
 =========
 
 Create a text based logo quickly.

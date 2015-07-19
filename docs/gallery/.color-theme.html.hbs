@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html ng:app="FontThemeApp" ng:controller="FontThemCtrl">
+<head>
+    <meta charset="UTF-8"/>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="../assets/stylesheets/gallery.css"/>
+    <style>
+        .color-sample-box{
+            display: inline-block;
+            margin: 0 -1px 0 0;
+            width: 30px;
+            height: 30px;
+            border: 1px solid #505050;
+            float: left;
+            position: relative;
+        }
+        .color-sample-box:hover{
+            z-index: 100;
+        }
+        .color-sample-box:hover:after{
+            content:"";
+            position:absolute;
+            width:100%;
+            height:100%;
+            left:-2px;
+            top:-2px;
+            border:2px solid #505050;
+            z-index:101;
+        }
+        .color-sample-label{
+            font-size: 0.75em;
+            position: absolute;
+            width:200%;
+            left: -50%;
+            top: -18px;
+            opacity: 0;
+            display: inline-block;
+            padding: 2px;
+            text-align:center;
+        }
+        .color-sample-label:hover,
+        .color-sample-box:hover .color-sample-label{
+            opacity: 1;
+        }
+        .sample-td{
+        }
+        .narrow{
+            width: 1px;
+        }
+        .sample-box-container{
+            display: inline-block;
+            margin: 3px auto 0;
+        }
+        .col4{
+            width: 160px;
+        }
+    </style>
+    <script src="../assets/javascripts/angular.js"></script>
+    <script src="../assets/javascripts/gallery.js"></script>
+    <script>
+        (function(ng){
+            ng.module('FontThemeApp',[
+
+            ]).controller('FontThemCtrl', function FontThemCtrl($scope){
+                $scope.sampleText = 'Grumpy wizards make toxic brew for the evil Queen and Jack.';
+            });
+        })(angular);
+    </script>
+</head>
+<body>
+<header>
+    <h1 onclick="location.reload()">{{title}}</h1>
+    <nav>
+    </nav>
+</header>
+<main>
+<table>
+<thead>
+<tr>
+    <th>Theme</th>
+{{#each variations}}
+    <td>{{pascalcase this}}</td>
+{{/each}}
+</tr>
+</thead>
+<tbody>
+{{#each colorTheme}}
+<tr>
+<th class="w120">{{@key}}</th>
+{{#each this}}
+<td class="sample-td text-center">
+    <div class="sample-box-container">
+        {{#each this}}
+        <div class="color-sample-box" style="background-color:{{this}}">
+                <label class="color-sample-label">{{this}}</label>
+        </div>
+        {{/each}}
+</div>
+</td>
+{{/each}}
+</tr>
+{{/each}}
+</tbody>
+</table>
+</main>
+<a id="jump-to-top-btn" href="#">⇧Jump to Top</a>
+</body>
+</html>
