@@ -1,0 +1,18 @@
+/**
+ * {{pkg.description}}
+ * @version {{pkg.version}}
+ * @license {{pkg.license}}
+ * @author {{pkg.author.name}}
+ * @module {{pkg.name}}
+ */
+
+"use strict";
+
+var Fur = require('./fur');
+
+/** @lends module:{{pkg.name}} */
+var fur = new Fur({});
+
+fur.Fur = Fur;
+
+module.exports = fur;
