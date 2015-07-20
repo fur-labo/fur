@@ -31,6 +31,7 @@
   },
   "homepage": "https://github.com/okunishinishi/node-quicklogo#readme",
   "devDependencies": {
+    "apiguide": "^1.0.3",
     "codeclimate-test-reporter": "0.1.0",
     "color-scheme": "0.0.5",
     "coz": "^1.2.5",
@@ -49,7 +50,6 @@
     "handlebars": "^3.0.3",
     "js2xmlparser": "^1.0.0",
     "mkdirp": "^0.5.1",
-    "phantomjs2": "^2.0.0",
     "stringcase": "^1.0.7",
     "writeout": "^1.0.3"
   },

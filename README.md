@@ -43,9 +43,12 @@ Table of Contents
     - [Installation](#02-howto-installation)
     - [Available Commands](#02-howto-available--commands)
     - [Programmatic API](#02-howto-programmatic--a-p-i)
-- [Generating Banners](#03-banners)
+- [Generating Logo Banner](#03-banners)
     - [Banner Examples](#03-banners-banner--examples)
     - [Banner Usage](#03-banners-banner--usage)
+- [Generating Favicon](#04-favicons)
+    - [Favicon Examples](#04-favicons-favicon--examples)
+    - [Favicon Usage](#04-favicons-favicon--usage)
 - [License](#10-license)
 - [About this project](#11-project)
     - [Author](#11-project-author)
@@ -120,7 +123,7 @@ fur.banner('my-banner.svg', {
 });
 ```
 <a name="03-banners"></a>
-Generating Banners
+Generating Logo Banner
 ------------------
 
 <a name="03-banners-banner--examples"></a>
@@ -156,6 +159,46 @@ $ fur banner -h
     -t, --text      Banner text.
     -F, --fontsize  Size of font.
     -s, --style     Banner style.
+
+
+```
+
+
+
+<a name="04-favicons"></a>
+Generating Favicon
+------------------
+
+<a name="04-favicons-favicon--examples"></a>
+### Favicon Examples
+
+| Image | Command |
+| ----- | ------- |
+| <img src="./docs/examples/images/example-f-favicon.svg" height="40" style="height:40px;" /> | ` $ fur favicon --text="F" --color="e" --font="bt" --style="default" --format="png"  ` |
+| <img src="./docs/examples/images/example-c-favicon.svg" height="40" style="height:40px;" /> | ` $ fur favicon --text="c" --color="o" --font="aa" --style="plain"  ` |
+| <img src="./docs/examples/images/example-ap-favicon.svg" height="40" style="height:40px;" /> | ` $ fur favicon --text="ap" --color="ad" --font="dj" --style="circle"  ` |
+| <img src="./docs/examples/images/example-aps-favicon.svg" height="40" style="height:40px;" /> | ` $ fur favicon --text="aps" --color="ad" --font="dj" --style="bordered"  ` |
+
+
+<a name="04-favicons-favicon--usage"></a>
+### Favicon Usage
+
+```bash
+$ fur favicon -h
+
+
+  Usage: favicon [options] [options] <filename>
+
+  Generate a favicon.
+
+  Options:
+
+    -h, --help    output usage information
+    -c, --color   Color expression string or color theme name.
+    -f, --font    Font file name or font theme name.
+    -o, --format  File format.
+    -W, --width   Favicon width.
+    -H, --height  Favicon height.
 
 
 ```

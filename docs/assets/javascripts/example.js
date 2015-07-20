@@ -6,6 +6,10 @@
         {
             "title": "Banner Examples",
             "href": "banner-example.html"
+        },
+        {
+            "title": "Favicon Examples",
+            "href": "favicon-example.html"
         }
     ];
 

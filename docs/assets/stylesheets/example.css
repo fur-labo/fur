@@ -137,3 +137,29 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+
+footer {
+    padding: 10px 4px;
+    border-top: 1px solid #F5F5F5;
+    margin: 40px 10px 0;
+    color: #999;
+}
+
+footer nav {
+    display: inline-block;
+    font-size: 0.75em;
+    margin: 0 20px;
+}
+
+footer .nav-item {
+    display: inline-block;
+    margin: 0 10px;
+}
+.footer-logo {
+    height: 24px;
+    vertical-align: middle;
+    position: relative;
+    display: inline-block;
+    margin: 0 4px;
+}

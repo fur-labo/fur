@@ -8,10 +8,10 @@ text{
     font-family: "UbuntuMono-R";
 }]]></style>
 	<g>
-		<rect x="0" y="0" width="128" height="128" fill="#b35600" stroke="none" rx="0" ry="0"/>
+		<rect x="0" y="0" width="128" height="128" fill="#b35600" stroke="none" rx="64" ry="64"/>
 	</g>
 	<g>
-		<rect x="0" y="0" width="128" height="128" fill="none" stroke-width="0" stroke="white" rx="0" ry="0"/>
+		<rect x="0" y="0" width="128" height="128" fill="none" stroke-width="0" stroke="white" rx="64" ry="64"/>
 	</g>
 	<g>
 		<text x="64" y="64" dominant-baseline="central" text-anchor="middle" fill="white" font-size="102.4"><![CDATA[ap]]></text>

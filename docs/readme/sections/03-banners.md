@@ -1,4 +1,4 @@
-Generating Banners
+Generating Logo Banner
 ------------------
 
 ### Banner Examples
