@@ -3,7 +3,7 @@
  * Runs with nodeunit.
  */
 
-var copyFile = require('../lib/generating/copy_file.js'),
+var copyFile = require('../lib/util/file/copy_file.js'),
     path = require('path'),
     mkdirp = require('mkdirp');
 
