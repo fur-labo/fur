@@ -41,6 +41,9 @@ Table of Contents
     - [Requirements](#02-howto-requirements)
     - [Installation](#02-howto-installation)
     - [Commands](#02-howto-commands)
+- [Generating Banners](#03-banners)
+    - [Banner Usage](#03-banners-banner--usage)
+    - [Banner Examples](#03-banners-banner--examples)
 - [License](#10-license)
 - [About this project](#11-project)
     - [Author](#11-project-author)
@@ -63,7 +66,7 @@ Getting started
 <a name="02-howto-installation"></a>
 ### Installation
 
-fur is available as an [NPM][npm_url] package.
+fur is available as an [npm][npm_url] package.
 
 ```bash
 # Install fur as a global module.
@@ -71,7 +74,7 @@ $ npm install fur -g
 ```
 
 Or you can install it without `-g` option and use [Programmatic API](#programmatic-api).
-For more details, see tutorial section "[01 - Installing coz][01_installing_coz_url]".
+For more details, see tutorial section "[01 - Installing fur][01_installing_fur_url]".
 
 
 <a name="02-howto-commands"></a>
@@ -94,6 +97,48 @@ $ fur -h
 
 
 ```
+<a name="03-banners"></a>
+Generating Banners
+------------------
+
+<a name="03-banners-banner--usage"></a>
+### Banner Usage
+
+```bash
+$ fur banner -h
+
+
+  Usage: banner [options] [options] <filename>
+
+  Generate a banner.
+
+  Options:
+
+    -h, --help             output usage information
+    -c, --color-theme      Color theme name.
+    -C, --color-variation  Color variation.
+    -f, --font-theme       Font theme name.
+    -t, --type             Output type.
+    -W, --width            Banner width.
+    -H, --height           Banner height.
+    -t, --text             Banner text.
+    -T, --sub-text         Banner sub text.
+    -F, --font-size        Size of font.
+    -s, --style            Banner style.
+
+
+```
+
+<a name="03-banners-banner--examples"></a>
+### Banner Examples
+
+| Image | Command |
+| ----- | ------- |
+| <img src="./images/example-fur-banner.svg" height="40" style="height:40px;" /> | ` $ fur banner --text="FUR" --color="e" --font="bt" --style="default" --format="png"  ` |
+| <img src="./images/example-coz-banner.svg" height="40" style="height:40px;" /> | ` $ fur banner --text="coz" --color="o" --font="aa" --style="plain"  ` |
+| <img src="./images/example-apeman-banner.svg" height="40" style="height:40px;" /> | ` $ fur banner --text="apeman" --color="ad" --font="dj" --style="default"  ` |
+| <img src="./images/example-apeman-scaffold-banner.svg" height="40" style="height:40px;" /> | ` $ fur banner --text="apeman-scaffold" --color="ad" --font="dj" --style="bordered"  ` |
+
 <a name="10-license"></a>
 License
 -------

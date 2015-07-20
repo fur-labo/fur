@@ -39,6 +39,7 @@ function _section(filename, data, callback) {
                     usages: data.usages,
                     BANNER_SIZE: BANNER_SIZE,
                     pkg: pkg,
+                    bannerExample:require('../examples/.banner-example.json'),
                     get tutorials() {
                         return glob.sync(__dirname + '/../tutorial/*.md').map(function (filename) {
                             var name = path.basename(filename, path.extname(filename));
@@ -88,13 +89,18 @@ function _sections(dirname, callback) {
                         function (callback) {
                             var command = [furBin, '-h'].join(' ');
                             childProcess.exec(command, callback);
+                        },
+                        function (callback) {
+                            var command = [furBin, 'banner', '-h'].join(' ');
+                            childProcess.exec(command, callback);
                         }
                     ], function (err, resuts) {
                         if (err) {
                             callback(err);
                         } else {
                             callback(null, {
-                                all: resuts[0].shift()
+                                all: resuts[0].shift(),
+                                banner: resuts[1].shift(),
                             });
                         }
                     });

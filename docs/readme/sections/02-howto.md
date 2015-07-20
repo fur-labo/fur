@@ -7,7 +7,7 @@ Getting started
 
 ### Installation
 
-{{pkg.name}} is available as an [NPM][npm_url] package.
+{{pkg.name}} is available as an [npm][npm_url] package.
 
 ```bash
 # Install {{pkg.name}} as a global module.
@@ -15,7 +15,7 @@ $ npm install {{pkg.name}} -g
 ```
 
 Or you can install it without `-g` option and use [Programmatic API](#programmatic-api).
-For more details, see tutorial section "[01 - Installing coz][01_installing_coz_url]".
+For more details, see tutorial section "[01 - Installing fur][01_installing_fur_url]".
 
 
 ### Commands
