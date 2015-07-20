@@ -20,13 +20,13 @@ program
     .command("banner [options] <filename>")
     .description("Generate a banner.")
     .option('-c, --color', "Color expression string or color theme name.")
-    .option('-f, --font', "Font file name or font theme name.")
-    .option('-o, --format', "File format. 'svg' or 'png'.")
-    .option('-W, --width', "Banner width.")
     .option('-H, --height', "Banner height.")
-    .option('-t, --text', "Banner text.")
+    .option('-f, --font', "Font file name or font theme name.")
     .option('-F, --fontsize', "Size of font.")
+    .option('-o, --format', "File format. 'svg' or 'png'.")
     .option('-s, --style', "Banner style.")
+    .option('-t, --text', "Banner text.")
+    .option('-W, --width', "Banner width.")
     .action(function (filename, options) {
         new Fur().banner(filename, options);
     });
@@ -40,11 +40,25 @@ program
     .description("Generate a favicon.")
     .option('-c, --color', "Color expression string or color theme name.")
     .option('-f, --font', "Font file name or font theme name.")
-    .option('-o, --format', "File format.")
-    .option('-W, --width', "Favicon width.")
-    .option('-H, --height', "Favicon height.")
+    .option('-F, --fontsize', "Size of font.")
+    .option('-o, --format', "File format. 'svg' or 'png'.")
+    .option('-S, --size', "Favicon size.")
+    .option('-s, --style', "Favicon style.")
+    .option('-t, --text', "Favicon text.")
     .action(function (filename, options) {
         new Fur().favicon(filename, options);
+    });
+
+//=========================
+// Handle `favicon` command
+//=========================
+
+program
+    .command("identicion [options] <filename>")
+    .description("Generate a identicon.")
+    .option('-o, --format', "File format. 'svg' or 'png'.")
+    .action(function (filename, options) {
+        new Fur().identicon(filename, options);
     });
 
 
