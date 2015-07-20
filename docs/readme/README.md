@@ -17,7 +17,7 @@ Quick generator for log, banner, favicon, etc...
 
 <!-- Banner start -->
 
-<a href="https://github.com/okunishinishi/node-quicklogo#readme"><img style="height:128px;" src="assets/images/coz-banner.png" height="128"/></a>
+<a href="https://github.com/okunishinishi/node-fur#readme"><img style="height:128px;" src="docs/assets/images/fur-banner.png" height="128"/></a>
 
 <!-- Banner end -->
 

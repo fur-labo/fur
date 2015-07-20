@@ -2,7 +2,7 @@
   "name": "fur",
   "version": "2.0.0",
   "description": "Quick generator for log, banner, favicon, etc...",
-  "main": "quicklogo.js",
+  "main": "lib",
   "scripts": {
     "test": "nodeunit test/*_test.js",
     "cover": "istanbul cover nodeunit test/*_test.js --dir coverage",
@@ -11,9 +11,12 @@
     "taggit": "taggit",
     "render": "coz render"
   },
+  "bin": {
+    "fur": "bin/fur"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/okunishinishi/node-quicklogo.git"
+    "url": "git+https://github.com/okunishinishi/node-fur.git"
   },
   "author": {
     "name": "Taka Okunishi",
@@ -27,11 +30,11 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/okunishinishi/node-quicklogo/issues"
+    "url": "https://github.com/okunishinishi/node-fur/issues"
   },
-  "homepage": "https://github.com/okunishinishi/node-quicklogo#readme",
+  "homepage": "https://github.com/okunishinishi/node-fur#readme",
   "devDependencies": {
-    "apiguide": "^1.0.3",
+    "apiguide": "^1.0.6",
     "codeclimate-test-reporter": "0.1.0",
     "color-scheme": "0.0.5",
     "coz": "^1.2.5",
@@ -42,7 +45,7 @@
   },
   "dependencies": {
     "argx": "^1.0.5",
-    "async": "^1.3.0",
+    "async": "^1.4.0",
     "colorprint": "^1.0.7",
     "commander": "^2.8.1",
     "execcli": "^1.0.1",
@@ -50,7 +53,7 @@
     "handlebars": "^3.0.3",
     "js2xmlparser": "^1.0.0",
     "mkdirp": "^0.5.1",
-    "stringcase": "^1.0.7",
+    "stringcase": "^1.0.8",
     "writeout": "^1.0.3"
   },
   "engines": {
