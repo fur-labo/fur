@@ -5,7 +5,7 @@ Generating Banners
 
 | Image | Command |
 | ----- | ------- |
-{{#each bannerExample}}| <img src="./docs/assets/images/example-{{lowercase text}}-banner.svg" height="40" style="height:40px;" /> | ` $ fur banner {{#each this}}--{{spinalcase @key}}="{{this}}" {{/each}} ` |
+{{#each bannerExample}}| <img src="./docs/examples/images/example-{{lowercase text}}-banner.svg" height="40" style="height:40px;" /> | ` $ fur banner {{#each this}}--{{spinalcase @key}}="{{this}}" {{/each}} ` |
 {{/each}}
 
 

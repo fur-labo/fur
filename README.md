@@ -127,10 +127,10 @@ Generating Banners
 
 | Image | Command |
 | ----- | ------- |
-| <img src="./docs/assets/images/example-fur-banner.svg" height="40" style="height:40px;" /> | ` $ fur banner --text="FUR" --color="e" --font="bt" --style="default" --format="png"  ` |
-| <img src="./docs/assets/images/example-coz-banner.svg" height="40" style="height:40px;" /> | ` $ fur banner --text="coz" --color="o" --font="aa" --style="plain"  ` |
-| <img src="./docs/assets/images/example-apeman-banner.svg" height="40" style="height:40px;" /> | ` $ fur banner --text="apeman" --color="ad" --font="dj" --style="default"  ` |
-| <img src="./docs/assets/images/example-apeman-scaffold-banner.svg" height="40" style="height:40px;" /> | ` $ fur banner --text="apeman-scaffold" --color="ad" --font="dj" --style="bordered"  ` |
+| <img src="./docs/examples/images/example-fur-banner.svg" height="40" style="height:40px;" /> | ` $ fur banner --text="FUR" --color="e" --font="bt" --style="default" --format="png"  ` |
+| <img src="./docs/examples/images/example-coz-banner.svg" height="40" style="height:40px;" /> | ` $ fur banner --text="coz" --color="o" --font="aa" --style="plain"  ` |
+| <img src="./docs/examples/images/example-apeman-banner.svg" height="40" style="height:40px;" /> | ` $ fur banner --text="apeman" --color="ad" --font="dj" --style="default"  ` |
+| <img src="./docs/examples/images/example-apeman-scaffold-banner.svg" height="40" style="height:40px;" /> | ` $ fur banner --text="apeman-scaffold" --color="ad" --font="dj" --style="bordered"  ` |
 
 
 <a name="03-banners-banner--usage"></a>
