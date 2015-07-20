@@ -10,8 +10,8 @@ var tmpDir = path.resolve(__dirname, '../tmp');
 
 exports['Generate a banner.'] = function (test) {
     new Fur().banner(tmpDir + '/fur-testing-logo.svg', {
-        colorTheme: 'e',
-        fontTheme: 'd',
+        color: 'e',
+        font: 'd',
         text: 'Bar'
     }, function (err) {
         test.ifError(err);

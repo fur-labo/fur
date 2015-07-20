@@ -1,0 +1,35 @@
+/**
+ * Mixin for {{camelcase key}} attr.
+ * @memberof module:fur/lib/mixins
+ * @inner
+ * @mixin {{camelcase key}}AttrMix
+ */
+
+"use strict";
+
+module.exports = Object.freeze(
+    /** @lends {{camelcase key}}AttrMix */
+    {
+        /** Value of {{camelcase key}} */
+        _{{camelcase key}}: undefined,
+        /**
+         * Get {{camelcase key}} value.
+         * @function module:~NameStruct.prototype.{{camelcase key}}
+         * @returns Value of {{camelcase key}}.
+         */
+        /**
+         * Set name value.
+         * @function module:~NameStruct.prototype.{{camelcase key}}
+         * @param {{camelcase key}} - Value to set.
+         * @returns Self.
+         */
+        {{camelcase key}}: function ({{camelcase key}}) {
+            var s = this;
+            if (arguments.length === 0) {
+                return s._{{camelcase key}};
+            }
+            s._{{camelcase key}} = {{camelcase key}};
+            return s;
+        }
+    }
+);

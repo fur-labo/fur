@@ -8,11 +8,10 @@ var styleWithFont = require('../lib/styling/style_with_font.js'),
 
 exports['Style with font'] = function (test) {
     var src = path.resolve(__dirname, '../docs/assets/fonts/Alef-Regular.ttf');
-    styleWithFont(src, {
+    var style = styleWithFont(src, {
         format: "truetype"
-    }, function (err) {
-        test.ifError(err);
-        test.done();
     });
+    test.ok(style);
+    test.done();
 };
 
