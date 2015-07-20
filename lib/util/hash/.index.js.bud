@@ -1,0 +1,17 @@
+/**
+ * Bud file for index.js
+ */
+
+"use strict";
+
+var coz = require('coz');
+
+module.exports = coz.bud.factory.indexJsBud({
+    dirname: __dirname,
+    desc: 'Hash utility module',
+    module: 'fur/lib/util/hash'
+});
+
+if (!module.parent) {
+    coz.render(__filename);
+}
