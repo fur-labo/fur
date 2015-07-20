@@ -23,7 +23,7 @@ header {
     overflow: hidden;
 }
 
-h1 {
+header h1 {
     margin: 0;
     line-height: 44px;
     height: 44px;
@@ -31,6 +31,23 @@ h1 {
     box-sizing: border-box;
     color: #888;
     font-weight: 100;
+    display: inline-block;
+}
+
+header nav {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+header .nav-item {
+    display: inline-block;
+    margin: 0 10px;
+    color: #C9C9C9;
+}
+
+header .nav-item:hover {
+    color: #888;
+    text-decoration: none;
 }
 
 p {
@@ -84,6 +101,7 @@ tbody td:last-child {
 .example-banner {
     display: inline-block;
     min-width: 80px;
+    max-width: 280px;
     height: 64px;
 }
 
@@ -97,4 +115,18 @@ code {
 
 .text-align-center {
     text-align: center;
+}
+
+.fadein {
+    opacity: 0;
+    transition: opacity 500ms;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(88, 167, 170);
+}
+
+a:hover {
+    text-decoration: underline;
 }

@@ -37,6 +37,10 @@ $ fur my-favicon --color a --font g --text 'f' --style 'rounded'
 
 Table of Contents
 -----
+- [Getting started](#02-howto)
+    - [Requirements](#02-howto-requirements)
+    - [Installation](#02-howto-installation)
+    - [Commands](#02-howto-commands)
 - [License](#10-license)
 - [About this project](#11-project)
     - [Author](#11-project-author)
@@ -47,6 +51,49 @@ Table of Contents
 
 <!-- Sections start -->
 
+<a name="02-howto"></a>
+Getting started
+------
+
+<a name="02-howto-requirements"></a>
+### Requirements
+
++ [node.js&gt;=0.10.3][nodejs_url]
+
+<a name="02-howto-installation"></a>
+### Installation
+
+fur is available as an [NPM][npm_url] package.
+
+```bash
+# Install fur as a global module.
+$ npm install fur -g
+```
+
+Or you can install it without `-g` option and use [Programmatic API](#programmatic-api).
+For more details, see tutorial section "[01 - Installing coz][01_installing_coz_url]".
+
+
+<a name="02-howto-commands"></a>
+### Commands
+
+```bash
+$ fur -h
+
+  Usage: fur [options] [command]
+
+
+  Commands:
+
+    banner [options] [options] <filename>  Generate a banner.
+
+  Options:
+
+    -h, --help     output usage information
+    -V, --version  output the version number
+
+
+```
 <a name="10-license"></a>
 License
 -------

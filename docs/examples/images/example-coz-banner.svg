@@ -11,7 +11,7 @@ text{
 		<rect x="0" y="0" width="256" height="128" fill="white" stroke="none" rx="0" ry="0"/>
 	</g>
 	<g>
-		<rect x="0" y="0" width="256" height="128" stroke="white" fill="none" stroke-width="12.8" rx="0" ry="0"/>
+		<rect x="0" y="0" width="256" height="128" fill="none" stroke-width="0" stroke="white" rx="0" ry="0"/>
 	</g>
 	<g>
 		<text x="128" y="64" dominant-baseline="central" text-anchor="middle" fill="#00b560" font-size="102.4"><![CDATA[coz]]></text>

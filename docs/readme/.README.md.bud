@@ -4,6 +4,8 @@ var path = require('path'),
     coz = require('coz'),
     glob = coz.ext.glob,
     format = require('util').format,
+    extend = require('extend'),
+    childProcess = require('child_process'),
     async = require('async'),
     string = require('stringcase'),
     fs = require('fs');
@@ -17,7 +19,7 @@ var BANNER_SIZE = 128;
 
 var TUTORIAL_BASE = 'https://github.com/okunishinishi/node-coz/blob/master/';
 
-function _section(filename, callback) {
+function _section(filename, data, callback) {
     async.waterfall([
         function (callback) {
             fs.readFile(filename, callback);
@@ -30,9 +32,11 @@ function _section(filename, callback) {
                 callback(null, null);
                 return;
             }
+
             callback(null, {
                 name: path.basename(filename, path.extname(filename)),
                 content: tmpl({
+                    usages: data.usages,
                     BANNER_SIZE: BANNER_SIZE,
                     pkg: pkg,
                     get tutorials() {
@@ -77,9 +81,32 @@ function _sections(dirname, callback) {
             fs.readdir(dirname, callback);
         },
         function (filenames, callback) {
-            async.map(filenames.sort(), function (filename, callback) {
-                _section(path.resolve(dirname, filename), callback);
-            }, callback);
+            async.waterfall([
+                function (callback) {
+                    var furBin = require.resolve('../../bin/fur');
+                    async.series([
+                        function (callback) {
+                            var command = [furBin, '-h'].join(' ');
+                            childProcess.exec(command, callback);
+                        }
+                    ], function (err, resuts) {
+                        if (err) {
+                            callback(err);
+                        } else {
+                            callback(null, {
+                                all: resuts[0].shift()
+                            });
+                        }
+                    });
+                },
+                function (usages, callback) {
+                    async.map(filenames.sort(), function (filename, callback) {
+                        _section(path.resolve(dirname, filename), {
+                            usages: usages
+                        }, callback);
+                    }, callback);
+                }
+            ], callback);
         }
     ], callback);
 }

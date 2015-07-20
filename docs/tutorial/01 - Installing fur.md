@@ -6,7 +6,7 @@ fur runs on [Node.js][nodejs_url] and is available as an [NPM][npm_url] package.
 
 If you don't have Node.js, download one from [Node.js official page][nodejs_download_url], or use [nvm][nvm_url] to manage multiple version.
 
-fur works on node version  or later.
+fur works on node version 0.10.3 or later.
 
 ___
 

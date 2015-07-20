@@ -50,5 +50,8 @@
     "mkdirp": "^0.5.1",
     "stringcase": "^1.0.7",
     "writeout": "^1.0.3"
+  },
+  "engines": {
+    "node": ">=0.10.3"
   }
 }
