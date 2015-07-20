@@ -7,7 +7,7 @@
     <style>
 {{#each fontTheme}}        @font-face {
                 font-family: {{@key}}  ;
-                src: url('../assets/{{src}}')
+                src: url('{{src}}')
             }
 
             .font-{{@key}}{
@@ -98,7 +98,7 @@
             <tr>
                 <th class="w120">{{@key}}</th>
                 <td class="text-center v-center" style="max-width:210px;"><a class="font-{{@key}}"
-                                                                             href="{{filename}}">{{name}}</a></td>
+                                                                             href="{{src}}">{{name}}</a></td>
                 <td class="sample-td font-{{@key}}">
                     <div class="sample-label l" ng:bind="sampleText"></div>
                     <div class="sample-label m" ng:bind="sampleText"></div>

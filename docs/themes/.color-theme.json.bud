@@ -10,34 +10,38 @@ var themeNameWithIndex = require('../../lib/theming/theme_name_with_index');
 
 var COLOR_COUNT = 26;
 
-function color(hue, variation) {
-    return new ColorScheme().from_hue(hue)
+function _colors(hue) {
+    return new ColorScheme()
+        .from_hue(hue)
         .scheme('mono')
-        .variation(variation)
+        .variation('default')
         .colors()
         .map(function (color) {
             return '#' + color;
-        });
+        })
+}
+
+function _hues(count) {
+    var hues = [];
+    for (var i = 0; i < count; i++) {
+        hues.push((360 / count) * i);
+    }
+    return hues;
 }
 
 module.exports = {
     force: true,
     mode: '444',
     get data() {
-        var colors = {};
-        for (var i = 0; i < COLOR_COUNT; i++) {
-            var name = themeNameWithIndex(i),
-                hue = (360 / COLOR_COUNT) * i;
-            colors[name] = {
-                default: color(hue, 'default'),
-                pastel: color(hue, 'pastel'),
-                soft: color(hue, 'soft'),
-                light: color(hue, 'light'),
-                hard: color(hue, 'hard'),
-                pale: color(hue, 'pale')
-            }
-        }
-        return colors;
+        var data = {};
+        var hues = _hues(COLOR_COUNT);
+        hues.forEach(function (hue, i) {
+            data[themeNameWithIndex(i)] = _colors(hue)[0];
+        });
+        hues.forEach(function (hue, i) {
+            data[themeNameWithIndex(i + COLOR_COUNT)] = _colors(hue)[1];
+        });
+        return data;
     }
 };
 

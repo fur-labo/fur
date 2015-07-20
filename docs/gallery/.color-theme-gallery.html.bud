@@ -11,7 +11,6 @@ module.exports = {
     force: true,
     mode: '444',
     data: {
-        variations: Object.keys(colorTheme.a),
         colorTheme: colorTheme,
         title: 'Color Themes'
     }
