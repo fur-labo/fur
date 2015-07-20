@@ -1,0 +1,13 @@
+/**
+ * Bud for example html.
+ */
+
+"use strict";
+
+module.exports = {
+    force: true,
+    mode: '444',
+    data: {
+        examples: require('./.favicon-example.json')
+    }
+};

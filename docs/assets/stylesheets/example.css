@@ -105,6 +105,13 @@ tbody td:last-child {
     height: 64px;
 }
 
+.example-favicon {
+    display: inline-block;
+    min-width: 80px;
+    max-width: 280px;
+    height: 64px;
+}
+
 code {
     display: block;
     background-color: #FAFAFA;

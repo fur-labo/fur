@@ -12,25 +12,41 @@ var program = require('commander'),
 program
     .version(pkg['version']);
 
+
 //=========================
 // Handle `banner` command
 //=========================
 program
     .command("banner [options] <filename>")
     .description("Generate a banner.")
-    .option('-c, --color-theme', "Color theme name.")
-    .option('-C, --color-variation', "Color variation.")
-    .option('-f, --font-theme', "Font theme name.")
-    .option('-t, --type', "Output type.")
+    .option('-c, --color', "Color expression string or color theme name.")
+    .option('-f, --font', "Font file name or font theme name.")
+    .option('-o, --format', "File format. 'svg' or 'png'.")
     .option('-W, --width', "Banner width.")
     .option('-H, --height', "Banner height.")
     .option('-t, --text', "Banner text.")
-    .option('-T, --sub-text', "Banner sub text.")
-    .option('-F, --font-size', "Size of font.")
+    .option('-F, --fontsize', "Size of font.")
     .option('-s, --style', "Banner style.")
     .action(function (filename, options) {
         new Fur().banner(filename, options);
     });
+
+
+//=========================
+// Handle `favicon` command
+//=========================
+program
+    .command("favicon [options] <filename>")
+    .description("Generate a favicon.")
+    .option('-c, --color', "Color expression string or color theme name.")
+    .option('-f, --font', "Font file name or font theme name.")
+    .option('-o, --format', "File format.")
+    .option('-W, --width', "Favicon width.")
+    .option('-H, --height', "Favicon height.")
+    .action(function (filename, options) {
+        new Fur().favicon(filename, options);
+    });
+
 
 program
     .parse(process.argv);

@@ -28,6 +28,20 @@ async.series([
                 fur.banner(filename, config, callback);
             }, callback);
         }, callback);
+    },
+    function renderFaviconImages(callback) {
+        var faviconExamples = require(basedir + '/docs/examples/.favicon-example.json');
+        async.eachSeries(['svg', 'png'], function (format, callback) {
+            var extname = '.' + format;
+            async.each(faviconExamples, function (config, callback) {
+                config.format = format;
+                var filename = path.resolve(
+                    basedir,
+                    'docs/examples/images/example-' + stringcase.lowercase(config.text) + '-favicon' + extname
+                );
+                fur.favicon(filename, config, callback);
+            }, callback);
+        }, callback);
     }
 ], function (err) {
     if (err) {

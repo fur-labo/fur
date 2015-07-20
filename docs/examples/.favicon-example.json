@@ -1,0 +1,27 @@
+[
+  {
+    "text": "F",
+    "color": "e",
+    "font": "bt",
+    "style": "default",
+    "format": "png"
+  },
+  {
+    "text": "c",
+    "color": "o",
+    "font": "aa",
+    "style": "plain"
+  },
+  {
+    "text": "ap",
+    "color": "ad",
+    "font": "dj",
+    "style": "default"
+  },
+  {
+    "text": "aps",
+    "color": "ad",
+    "font": "dj",
+    "style": "bordered"
+  }
+]

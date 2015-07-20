@@ -91,7 +91,8 @@ $ fur -h
 
   Commands:
 
-    banner [options] [options] <filename>  Generate a banner.
+    banner [options] [options] <filename>   Generate a banner.
+    favicon [options] [options] <filename>  Generate a favicon.
 
   Options:
 
@@ -146,17 +147,15 @@ $ fur banner -h
 
   Options:
 
-    -h, --help             output usage information
-    -c, --color-theme      Color theme name.
-    -C, --color-variation  Color variation.
-    -f, --font-theme       Font theme name.
-    -t, --type             Output type.
-    -W, --width            Banner width.
-    -H, --height           Banner height.
-    -t, --text             Banner text.
-    -T, --sub-text         Banner sub text.
-    -F, --font-size        Size of font.
-    -s, --style            Banner style.
+    -h, --help      output usage information
+    -c, --color     Color expression string or color theme name.
+    -f, --font      Font file name or font theme name.
+    -o, --format    File format. 'svg' or 'png'.
+    -W, --width     Banner width.
+    -H, --height    Banner height.
+    -t, --text      Banner text.
+    -F, --fontsize  Size of font.
+    -s, --style     Banner style.
 
 
 ```
