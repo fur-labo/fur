@@ -17,9 +17,16 @@ var basedir = path.resolve(__dirname, '../../..');
 async.series([
     function renderBannerImages(callback) {
         var bannerExamples = require(basedir + '/docs/examples/.banner-example.json');
-        async.each(bannerExamples, function (config, callback) {
-            var filename = path.resolve(basedir, 'docs/examples/images/example-' + stringcase.spinalcase(config.text) + '-banner.svg');
-            fur.banner(filename, config, callback);
+        async.eachSeries(['svg', 'png'], function (format, callback) {
+            var extname = '.' + format;
+            async.each(bannerExamples, function (config, callback) {
+                config.format = format;
+                var filename = path.resolve(
+                    basedir,
+                    'docs/examples/images/example-' + stringcase.lowercase(config.text) + '-banner' + extname
+                );
+                fur.banner(filename, config, callback);
+            }, callback);
         }, callback);
     }
 ], function (err) {

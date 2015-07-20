@@ -11,7 +11,7 @@ text{
 		<rect x="0" y="0" width="1024" height="128" fill="white" stroke="none" rx="0" ry="0"/>
 	</g>
 	<g>
-		<rect x="12.8" y="12.8" width="998.4" height="102.4" fill="none" stroke-width="12.8" stroke="#b35600" rx="0" ry="0"/>
+		<rect x="6.4" y="6.4" width="1011.2" height="115.2" fill="none" stroke-width="12.8" stroke="#b35600" rx="0" ry="0"/>
 	</g>
 	<g>
 		<text x="512" y="64" dominant-baseline="central" text-anchor="middle" fill="#b35600" font-size="102.4"><![CDATA[apeman-scaffold]]></text>
