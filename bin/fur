@@ -31,3 +31,6 @@ program
     .action(function (filename, options) {
         new Fur().banner(filename, options);
     });
+
+program
+    .parse(process.argv);

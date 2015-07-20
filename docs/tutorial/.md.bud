@@ -1,0 +1,172 @@
+/**
+ * Bud file for tutorial markdowns.
+ */
+
+"use strict";
+
+var coz = require('coz'),
+    path = coz.core.path,
+    string = coz.ext.stringcase,
+    fs = coz.core.fs,
+    EOL = coz.core.os.EOL,
+    format = coz.core.util.format,
+    async = coz.ext.async,
+    glob = coz.ext.glob
+    ;
+
+var pkg = require('../../package.json');
+
+function _urlItem(key, url) {
+    return format('[%s]: %s', key, encodeURI(url));
+}
+function _linkItem(text, name) {
+    return format('+ [%s][%s]', text, name);
+}
+
+function _wrapped(data, comment) {
+    return [
+        format('<!-- %s start -->', comment),
+        EOL + data + EOL,
+        format('<!-- %s end -->', comment)
+    ].join(EOL);
+}
+
+function _tutorialBud(data) {
+    data.force = true;
+    data.mode = '444';
+    data.mkdirp = true;
+    return data;
+}
+
+function _budData(data) {
+    data.pkg = pkg;
+    return data;
+}
+function _concat(a, b) {
+    return a.concat(b);
+}
+
+function _tutorialKey(filename) {
+    return [
+        'tutorial',
+        string.snakecase(path.basename(filename, path.extname(filename)))
+    ].join('_').replace(/__+/g, '_');
+}
+
+function _urls(items) {
+    var urls = items.reduce(_concat, []).map(function (obj) {
+        return _urlItem(obj.name, obj.url);
+    }).join(EOL);
+    return _wrapped(urls, 'URLs');
+}
+
+function _tutorials(filenames) {
+    var tutorials = filenames.map(function (filename) {
+        var url = _tutorialKey(filename) + '_url',
+            name = path.basename(filename, path.extname(filename));
+        return _linkItem(name, url);
+    }).join(EOL);
+    return _wrapped(tutorials, 'Tutorials');
+}
+
+function _seeAlso(filenames) {
+    var seeAlso = filenames
+        .filter(function (filename) {
+            return !!filename;
+        })
+        .map(function (filename) {
+            var url = _tutorialKey(filename.replace(/\.md\.hbs$/, '')) + '_url',
+                name = path.basename(filename, '.md.hbs');
+            return _linkItem(name.replace(/^[\._]/g, ''), url);
+        }).join(EOL);
+    return _wrapped(seeAlso, 'See also');
+}
+
+function _injectCodeMarkup(lines) {
+    return lines.map(function (line, i, lines) {
+        var prev = lines[i - 1];
+        if (/^```/.test(prev)) {
+            // Add ink-docstrap lang markup.
+            var lang = prev.replace(/```/, '').trim();
+            if (lang) {
+                return format('{@lang %s}', lang) + line;
+            }
+        }
+        return line;
+    });
+}
+
+module.exports = function (callback) {
+    var links = require('./.links');
+    var pattern = path.join(__dirname, '/.*.md.hbs');
+    async.waterfall([
+        function (callback) {
+            glob(pattern, callback);
+        },
+        function (filenames, callback) {
+            var tutorials = glob.sync('*.md', {cwd: __dirname});
+            var bud = filenames
+                .map(function (filename, i) {
+                    var name = path.basename(filename, '.md.hbs').replace(/^\./, ''),
+                        lines = fs.readFileSync(filename).toString().split(EOL);
+
+                    return [
+                        _tutorialBud({
+                            path: name + '.md',
+                            tmpl: filename,
+                            data: _budData({
+                                get urls() {
+                                    var linkUrls = Object.keys(links).map(function (name) {
+                                            return {name: name, url: links[name]};
+                                        }),
+                                        tutorialUrls = tutorials.map(function (filename) {
+                                            var name = _tutorialKey(filename) + '_url';
+                                            return {name: name, url: path.basename(filename)};
+                                        });
+                                    return _urls([linkUrls, tutorialUrls]);
+                                },
+                                get tutorials() {
+                                    return _tutorials(tutorials);
+                                },
+                                get seeAlso() {
+                                    var filename = filenames[i + 1];
+                                    return _seeAlso([filename]);
+                                }
+                            })
+                        }),
+                        _tutorialBud({
+                            path: '.jsdoc_precompiled/' + name + '.md',
+                            tmpl: _injectCodeMarkup(lines).join(EOL),
+                            data: _budData({
+                                get urls() {
+                                    var linkUrls = Object.keys(links).map(function (name) {
+                                            return {name: name, url: links[name]};
+                                        }),
+                                        tutorialUrls = tutorials.map(function (filename) {
+                                            var name = _tutorialKey(filename) + '_url';
+                                            var basename = path.basename(filename, '.md');
+                                            return {name: name, url: 'tutorial-' + basename + '.html'};
+                                        });
+                                    return _urls([linkUrls, tutorialUrls]);
+                                },
+                                get tutorials() {
+                                    return _tutorials(tutorials);
+                                },
+                                get seeAlso() {
+                                    var filename = filenames[i + 1];
+                                    return _seeAlso([filename]);
+                                }
+                            })
+                        })
+                    ];
+                })
+                .reduce(_concat, []);
+            callback(null, bud);
+        }
+    ], callback);
+
+};
+
+if (!module.parent) {
+    require('coz').render(__filename);
+}

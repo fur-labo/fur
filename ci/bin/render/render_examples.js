@@ -6,13 +6,13 @@
 
 "use strict";
 
-var fur = require('../../lib'),
+var fur = require('../../../lib'),
     stringcase = require('stringcase'),
     path = require('path'),
     async = require('async');
 
 
-var basedir = path.resolve(__dirname, '../..');
+var basedir = path.resolve(__dirname, '../../..');
 
 async.series([
     function renderBannerImages(callback) {
