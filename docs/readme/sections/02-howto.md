@@ -18,9 +18,27 @@ Or you can install it without `-g` option and use [Programmatic API](#programmat
 For more details, see tutorial section "[01 - Installing fur][01_installing_fur_url]".
 
 
-### Commands
+<a name="available commands" />
+### Available Commands
 
 ```bash
 $ fur -h
 {{{usages.all}}}
+```
+
+<a name="programmatic-api" />
+### Programmatic API
+
+{{pkg.name}} provides programmatic API which enables you to execute {{pkg.name}} commands from Node.js program.
+
+```javascript
+var fur = require('fur');
+fur.banner('my-banner.svg', {
+    "text": "coz",
+    "color": "o",
+    "font": "aa",
+    "style": "plain",
+    "format": "svg"
+}, function (err) {
+});
 ```

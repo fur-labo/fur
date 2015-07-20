@@ -24,7 +24,8 @@ Quick generator for log, banner, favicon, etc...
 <!-- Concept start -->
 
 ```javascript
-$ fur my-favicon --color a --font g --text 'f' --style 'rounded'
+// Generate favicon with command options.
+$ fur favicon "my-favicon.png" --color a --font g --text 'f' --style 'rounded'
 ```
 
 
@@ -40,10 +41,11 @@ Table of Contents
 - [Getting started](#02-howto)
     - [Requirements](#02-howto-requirements)
     - [Installation](#02-howto-installation)
-    - [Commands](#02-howto-commands)
+    - [Available Commands](#02-howto-available--commands)
+    - [Programmatic API](#02-howto-programmatic--a-p-i)
 - [Generating Banners](#03-banners)
-    - [Banner Usage](#03-banners-banner--usage)
     - [Banner Examples](#03-banners-banner--examples)
+    - [Banner Usage](#03-banners-banner--usage)
 - [License](#10-license)
 - [About this project](#11-project)
     - [Author](#11-project-author)
@@ -77,8 +79,9 @@ Or you can install it without `-g` option and use [Programmatic API](#programmat
 For more details, see tutorial section "[01 - Installing fur][01_installing_fur_url]".
 
 
-<a name="02-howto-commands"></a>
-### Commands
+<a name="available commands" />
+<a name="02-howto-available--commands"></a>
+### Available Commands
 
 ```bash
 $ fur -h
@@ -97,9 +100,38 @@ $ fur -h
 
 
 ```
+
+<a name="programmatic-api" />
+<a name="02-howto-programmatic--a-p-i"></a>
+### Programmatic API
+
+fur provides programmatic API which enables you to execute fur commands from Node.js program.
+
+```javascript
+var fur = require('fur');
+fur.banner('my-banner.svg', {
+    "text": "coz",
+    "color": "o",
+    "font": "aa",
+    "style": "plain",
+    "format": "svg"
+}, function (err) {
+});
+```
 <a name="03-banners"></a>
 Generating Banners
 ------------------
+
+<a name="03-banners-banner--examples"></a>
+### Banner Examples
+
+| Image | Command |
+| ----- | ------- |
+| <img src="./docs/assets/images/example-fur-banner.svg" height="40" style="height:40px;" /> | ` $ fur banner --text="FUR" --color="e" --font="bt" --style="default" --format="png"  ` |
+| <img src="./docs/assets/images/example-coz-banner.svg" height="40" style="height:40px;" /> | ` $ fur banner --text="coz" --color="o" --font="aa" --style="plain"  ` |
+| <img src="./docs/assets/images/example-apeman-banner.svg" height="40" style="height:40px;" /> | ` $ fur banner --text="apeman" --color="ad" --font="dj" --style="default"  ` |
+| <img src="./docs/assets/images/example-apeman-scaffold-banner.svg" height="40" style="height:40px;" /> | ` $ fur banner --text="apeman-scaffold" --color="ad" --font="dj" --style="bordered"  ` |
+
 
 <a name="03-banners-banner--usage"></a>
 ### Banner Usage
@@ -129,15 +161,7 @@ $ fur banner -h
 
 ```
 
-<a name="03-banners-banner--examples"></a>
-### Banner Examples
 
-| Image | Command |
-| ----- | ------- |
-| <img src="./images/example-fur-banner.svg" height="40" style="height:40px;" /> | ` $ fur banner --text="FUR" --color="e" --font="bt" --style="default" --format="png"  ` |
-| <img src="./images/example-coz-banner.svg" height="40" style="height:40px;" /> | ` $ fur banner --text="coz" --color="o" --font="aa" --style="plain"  ` |
-| <img src="./images/example-apeman-banner.svg" height="40" style="height:40px;" /> | ` $ fur banner --text="apeman" --color="ad" --font="dj" --style="default"  ` |
-| <img src="./images/example-apeman-scaffold-banner.svg" height="40" style="height:40px;" /> | ` $ fur banner --text="apeman-scaffold" --color="ad" --font="dj" --style="bordered"  ` |
 
 <a name="10-license"></a>
 License
