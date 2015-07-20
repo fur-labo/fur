@@ -5,41 +5,46 @@
 "use strict";
 
 var coz = require('coz'),
+    extend = require('extend'),
+    stringcase = require('stringcase'),
     structJsBud = coz.bud.factory.structJsBud;
 
 
 module.exports = [
     {
         name: 'Size',
-        desc: 'Struct for size',
-        keys: ['width', 'height'],
-        module: 'fur/lib/struct'
+        keys: ['width', 'height']
     },
     {
         name: 'Font',
-        desc: 'Struct for font',
-        keys: ['src', 'size'],
-        module: 'fur/lib/struct'
+        keys: ['src', 'size']
     },
     {
         name: 'TextElm',
-        desc: 'Struct for text elm',
         keys: [
             'domainBaseline',
             'fill', 'fontSize',
             'text',
             'textAnchor',
             'x', 'y'
-        ],
-        module: 'fur/lib/struct'
+        ]
     },
     {
         name: 'RectElm',
-        desc: 'Struct for rect elm',
-        keys: ['x', 'y', 'width', 'height', 'fill'],
-        module: 'fur/lib/struct'
+        keys: ['x', 'y', 'width', 'height', 'fill']
+    },
+    {
+        name: 'SvgElm',
+        keys: ['id', 'xmlns', 'data']
     }
-].map(structJsBud);
+]
+    .map(function (data) {
+        return extend({
+            module: 'fur/lib/struct',
+            desc: 'String for' + stringcase.snakecase(data.name).replace(/_/g, ' ')
+        }, data);
+    })
+    .map(structJsBud);
 
 if (!module.parent) {
     coz.render(__filename);
