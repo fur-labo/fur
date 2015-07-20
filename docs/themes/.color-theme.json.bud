@@ -41,6 +41,12 @@ module.exports = {
         hues.forEach(function (hue, i) {
             data[themeNameWithIndex(i + COLOR_COUNT)] = _colors(hue)[1];
         });
+        hues.forEach(function (hue, i) {
+            data[themeNameWithIndex(i + COLOR_COUNT + COLOR_COUNT)] = _colors(hue)[2];
+        });
+        hues.forEach(function (hue, i) {
+            data[themeNameWithIndex(i + COLOR_COUNT + COLOR_COUNT + COLOR_COUNT)] = _colors(hue)[3];
+        });
         return data;
     }
 };

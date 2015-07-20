@@ -1,0 +1,99 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Helvetica Neue", "Helvetica,Arial";
+    font-size: 10pt;
+    color: #555;
+    padding-top: 44px;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    line-height: 44px;
+    height: 44px;
+    background-color: rgba(250, 250, 250, 0.86);
+    border-bottom: 1px solid #CCC;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+h1 {
+    margin: 0;
+    line-height: 44px;
+    height: 44px;
+    padding: 0 8px;
+    box-sizing: border-box;
+    color: #888;
+    font-weight: 100;
+}
+
+p {
+    padding: 0 8px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 8px;
+}
+
+th, td {
+    padding: 4px 8px;
+    border: 1px solid #CCC;
+}
+
+thead th,
+thead td {
+    border-top: none;
+    text-align: center;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.wide-table {
+    width: 100%;
+    margin: 0 auto;
+}
+
+tbody tr:first-child td {
+    border-top: none;
+}
+
+thead th:first-child,
+tbody td:first-child {
+    border-left: none;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+thead th:last-child,
+tbody td:last-child {
+    border-right: none;
+}
+
+.example-banner {
+    display: inline-block;
+    height: 64px;
+}
+
+code {
+    display: block;
+    background-color: #FAFAFA;
+    border: 1px solid #F0F0F0;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.text-align-center {
+    text-align: center;
+}
