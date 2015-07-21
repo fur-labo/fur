@@ -34,7 +34,7 @@ exports['Generate a favicon.'] = function (test) {
 
 exports['Generate a identicon.'] = function (test) {
     new Fur().identicon(tmpDir + '/fur-testing-identicon.svg', {
-        identifier: "abceea"
+        identifier: "ab22ceea"
     }, function (err) {
         test.ifError(err);
         test.done();

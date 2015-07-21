@@ -1,0 +1,23 @@
+"use strict";
+
+var path = require('path'),
+    coz = require('coz'),
+    glob = coz.ext.glob;
+
+module.exports = {
+    force: true,
+    mode: '444',
+    data: {
+        examples: glob.sync('images/example-identicon-*.png', {
+            cwd: __dirname
+        }).map(function (src) {
+            return {
+                src: src
+            };
+        })
+    }
+};
+
+if (!module.parent) {
+    coz.render(__filename);
+}

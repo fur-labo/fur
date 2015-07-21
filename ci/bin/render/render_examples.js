@@ -42,6 +42,30 @@ async.series([
                 fur.favicon(filename, config, callback);
             }, callback);
         }, callback);
+    },
+    function renderIdenticonImages(callback) {
+        var identifiers = [];
+        for (var i = 0; i < 50; i++) {
+            var identifier = Math.random().toString(36).substring(7);
+            if (!identifier) {
+                continue;
+            }
+            identifiers.push(identifier);
+        }
+        var index = 0;
+        async.eachSeries(identifiers, function (identifier, callback) {
+            async.eachSeries(['svg', 'png'], function (format, callback) {
+                var extname = '.' + format;
+                var filename = path.resolve(
+                    basedir,
+                    'docs/examples/images/example-identicon-' + (index++) + extname
+                );
+                fur.identicon(filename, {
+                    identifier: identifier,
+                    format: format
+                }, callback);
+            }, callback);
+        }, callback);
     }
 ], function (err) {
     if (err) {
