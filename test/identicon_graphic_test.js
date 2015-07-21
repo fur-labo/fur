@@ -3,10 +3,13 @@
  * Runs with nodeunit.
  */
 
-var identiconGraphic = require('../lib/drawing/graphics/identicon_graphic.js');
+var IdenticonGraphic = require('../lib/drawing/graphics/identicon_graphic.js');
 
-exports['Identicon graphic'] = function(test){
-
+exports['Identicon graphic'] = function (test) {
+    var data = new IdenticonGraphic().size({
+        width: 128, height: 128
+    }).toSvgData();
+    test.ok(data);
     test.done();
 };
 

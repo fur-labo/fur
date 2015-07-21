@@ -15,6 +15,7 @@ module.exports = [
     'font',
     'fontSize',
     'reversed',
+    'hash',
     'style'
 ].map(function (key) {
         return {
