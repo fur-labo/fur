@@ -1,5 +1,5 @@
 languages:
   JavaScript: true
  exclude_paths:
- - "docs/assets"
- - "docs/apiguide"
+ - "docs/assets/**/*.js"
+ - "docs/apiguide/**/*.js"
