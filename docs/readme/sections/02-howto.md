@@ -4,6 +4,7 @@ Getting started
 ### Requirements
 
 + [node.js{{pkg.engines.node}}][nodejs_url]
++ [phantomjs](http://phantomjs.org/)
 
 ### Installation
 

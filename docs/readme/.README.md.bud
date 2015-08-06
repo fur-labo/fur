@@ -139,6 +139,7 @@ module.exports = function (callback) {
             callback(null, {
                 force: true,
                 mode: '444',
+                path:path.resolve(__dirname, '../../README.md'),
                 data: {
                     pkg: pkg,
                     BANNER_SIZE: BANNER_SIZE,

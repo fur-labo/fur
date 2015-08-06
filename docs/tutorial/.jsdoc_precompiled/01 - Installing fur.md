@@ -24,7 +24,7 @@ With `-g` option, npm installs the module globally and you can run fur simply by
 (It may need to be run via `sudo`)
 
 Show the fur version to check install is successfully.
-The latest version `2.0.0` will be shown unless you specified older.
+The latest version `2.0.1` will be shown unless you specified older.
 
 ```bash
 {@lang bash}# Show fur version.
