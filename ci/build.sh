@@ -15,5 +15,4 @@ while read -r src; do
 done <<< "$(find third_party -name "*.ttf" -or -name "*.svg" -or -name "*.eot")"
 
 
-bash ./ci/render.sh
-bash ./ci/doc/doc_readme.sh
+node ./ci/render.js

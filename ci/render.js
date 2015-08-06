@@ -1,18 +1,19 @@
 #!/usr/bin/env node
 
 /**
- * @file Render examples.
+ * @file Render files.
  */
 
 "use strict";
 
-var fur = require('../../lib'),
+var fur = require('../lib'),
+    coz = require('coz'),
     stringcase = require('stringcase'),
     path = require('path'),
     async = require('async');
 
 
-var basedir = path.resolve(__dirname, '../..');
+var basedir = path.resolve(__dirname, '..');
 
 async.series([
     function renderBannerImages(callback) {
@@ -66,6 +67,11 @@ async.series([
                 }, callback);
             }, callback);
         }, callback);
+    },
+    function renderBuds(callback) {
+        coz.render([
+            "+(docs|lib|test)/**/.*.bud"
+        ], callback);
     }
 ], function (err) {
     if (err) {

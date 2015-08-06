@@ -8,8 +8,7 @@
     "cover": "istanbul cover nodeunit test/*_test.js --dir coverage",
     "report": "codeclimate-test-reporter  < coverage/lcov.info",
     "versionup": "versionup",
-    "taggit": "taggit",
-    "render": "coz render"
+    "taggit": "taggit"
   },
   "bin": {
     "fur": "bin/fur"
