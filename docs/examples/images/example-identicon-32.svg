@@ -11,11 +11,11 @@
 		<rect x="50" y="25" width="25" height="25" fill="none"/>
 		<rect x="75" y="25" width="25" height="25" fill="none"/>
 		<rect x="100" y="25" width="25" height="25" fill="none"/>
-		<rect x="0" y="50" width="25" height="25" fill="#fbffbf"/>
-		<rect x="25" y="50" width="25" height="25" fill="none"/>
-		<rect x="50" y="50" width="25" height="25" fill="none"/>
-		<rect x="75" y="50" width="25" height="25" fill="none"/>
-		<rect x="100" y="50" width="25" height="25" fill="#fbffbf"/>
+		<rect x="0" y="50" width="25" height="25" fill="none"/>
+		<rect x="25" y="50" width="25" height="25" fill="#ff5f00"/>
+		<rect x="50" y="50" width="25" height="25" fill="#ff5f00"/>
+		<rect x="75" y="50" width="25" height="25" fill="#ff5f00"/>
+		<rect x="100" y="50" width="25" height="25" fill="none"/>
 		<rect x="0" y="75" width="25" height="25" fill="none"/>
 		<rect x="25" y="75" width="25" height="25" fill="none"/>
 		<rect x="50" y="75" width="25" height="25" fill="none"/>

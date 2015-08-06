@@ -4,7 +4,7 @@
 
 var path = require('path');
 
-var basedir = path.resolve(__dirname, '../../..');
+var basedir = path.resolve(__dirname, '../..');
 
 process.chdir(basedir);
 

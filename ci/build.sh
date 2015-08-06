@@ -1,7 +1,7 @@
 #!/bin/bash
 
 HERE=$(cd "$(dirname $0)" && pwd)
-BASE_DIR=$(cd "${HERE}/../.." && pwd)
+BASE_DIR=$(cd "${HERE}/.." && pwd)
 DEST_DIR="${BASE_DIR}/docs/assets/fonts"
 
 cd ${BASE_DIR}
@@ -15,5 +15,5 @@ while read -r src; do
 done <<< "$(find third_party -name "*.ttf" -or -name "*.svg" -or -name "*.eot")"
 
 
-bash ./ci/bin/render.sh
-bash ./ci/bin/doc/doc_readme.sh
+bash ./ci/render.sh
+bash ./ci/doc/doc_readme.sh
