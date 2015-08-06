@@ -7,24 +7,24 @@
 		<rect x="75" y="0" width="25" height="25" fill="none"/>
 		<rect x="100" y="0" width="25" height="25" fill="none"/>
 		<rect x="0" y="25" width="25" height="25" fill="none"/>
-		<rect x="25" y="25" width="25" height="25" fill="none"/>
-		<rect x="50" y="25" width="25" height="25" fill="#ff80b4"/>
-		<rect x="75" y="25" width="25" height="25" fill="none"/>
+		<rect x="25" y="25" width="25" height="25" fill="#fff5bf"/>
+		<rect x="50" y="25" width="25" height="25" fill="#fff5bf"/>
+		<rect x="75" y="25" width="25" height="25" fill="#fff5bf"/>
 		<rect x="100" y="25" width="25" height="25" fill="none"/>
-		<rect x="0" y="50" width="25" height="25" fill="#ff80b4"/>
-		<rect x="25" y="50" width="25" height="25" fill="#ff80b4"/>
-		<rect x="50" y="50" width="25" height="25" fill="#ff80b4"/>
-		<rect x="75" y="50" width="25" height="25" fill="#ff80b4"/>
-		<rect x="100" y="50" width="25" height="25" fill="#ff80b4"/>
+		<rect x="0" y="50" width="25" height="25" fill="#fff5bf"/>
+		<rect x="25" y="50" width="25" height="25" fill="#fff5bf"/>
+		<rect x="50" y="50" width="25" height="25" fill="#fff5bf"/>
+		<rect x="75" y="50" width="25" height="25" fill="#fff5bf"/>
+		<rect x="100" y="50" width="25" height="25" fill="#fff5bf"/>
 		<rect x="0" y="75" width="25" height="25" fill="none"/>
-		<rect x="25" y="75" width="25" height="25" fill="none"/>
-		<rect x="50" y="75" width="25" height="25" fill="none"/>
-		<rect x="75" y="75" width="25" height="25" fill="none"/>
+		<rect x="25" y="75" width="25" height="25" fill="#fff5bf"/>
+		<rect x="50" y="75" width="25" height="25" fill="#fff5bf"/>
+		<rect x="75" y="75" width="25" height="25" fill="#fff5bf"/>
 		<rect x="100" y="75" width="25" height="25" fill="none"/>
-		<rect x="0" y="100" width="25" height="25" fill="none"/>
-		<rect x="25" y="100" width="25" height="25" fill="#ff80b4"/>
+		<rect x="0" y="100" width="25" height="25" fill="#fff5bf"/>
+		<rect x="25" y="100" width="25" height="25" fill="none"/>
 		<rect x="50" y="100" width="25" height="25" fill="none"/>
-		<rect x="75" y="100" width="25" height="25" fill="#ff80b4"/>
-		<rect x="100" y="100" width="25" height="25" fill="none"/>
+		<rect x="75" y="100" width="25" height="25" fill="none"/>
+		<rect x="100" y="100" width="25" height="25" fill="#fff5bf"/>
 	</g>
 </svg>

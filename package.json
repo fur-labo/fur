@@ -53,6 +53,7 @@
     "handlebars": "^3.0.3",
     "js2xmlparser": "^1.0.0",
     "mkdirp": "^0.5.1",
+    "phantomjs": "^1.9.17",
     "stringcase": "^1.0.8",
     "writeout": "^1.0.3"
   },

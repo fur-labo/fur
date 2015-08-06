@@ -6,25 +6,25 @@
 		<rect x="50" y="0" width="25" height="25" fill="none"/>
 		<rect x="75" y="0" width="25" height="25" fill="none"/>
 		<rect x="100" y="0" width="25" height="25" fill="none"/>
-		<rect x="0" y="25" width="25" height="25" fill="#0f23bd"/>
+		<rect x="0" y="25" width="25" height="25" fill="none"/>
 		<rect x="25" y="25" width="25" height="25" fill="none"/>
-		<rect x="50" y="25" width="25" height="25" fill="#0f23bd"/>
+		<rect x="50" y="25" width="25" height="25" fill="#fffbbf"/>
 		<rect x="75" y="25" width="25" height="25" fill="none"/>
-		<rect x="100" y="25" width="25" height="25" fill="#0f23bd"/>
-		<rect x="0" y="50" width="25" height="25" fill="none"/>
-		<rect x="25" y="50" width="25" height="25" fill="#0f23bd"/>
+		<rect x="100" y="25" width="25" height="25" fill="none"/>
+		<rect x="0" y="50" width="25" height="25" fill="#fffbbf"/>
+		<rect x="25" y="50" width="25" height="25" fill="none"/>
 		<rect x="50" y="50" width="25" height="25" fill="none"/>
-		<rect x="75" y="50" width="25" height="25" fill="#0f23bd"/>
-		<rect x="100" y="50" width="25" height="25" fill="none"/>
+		<rect x="75" y="50" width="25" height="25" fill="none"/>
+		<rect x="100" y="50" width="25" height="25" fill="#fffbbf"/>
 		<rect x="0" y="75" width="25" height="25" fill="none"/>
 		<rect x="25" y="75" width="25" height="25" fill="none"/>
-		<rect x="50" y="75" width="25" height="25" fill="#0f23bd"/>
+		<rect x="50" y="75" width="25" height="25" fill="#fffbbf"/>
 		<rect x="75" y="75" width="25" height="25" fill="none"/>
 		<rect x="100" y="75" width="25" height="25" fill="none"/>
 		<rect x="0" y="100" width="25" height="25" fill="none"/>
-		<rect x="25" y="100" width="25" height="25" fill="#0f23bd"/>
+		<rect x="25" y="100" width="25" height="25" fill="#fffbbf"/>
 		<rect x="50" y="100" width="25" height="25" fill="none"/>
-		<rect x="75" y="100" width="25" height="25" fill="#0f23bd"/>
+		<rect x="75" y="100" width="25" height="25" fill="#fffbbf"/>
 		<rect x="100" y="100" width="25" height="25" fill="none"/>
 	</g>
 </svg>

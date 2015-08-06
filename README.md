@@ -67,6 +67,7 @@ Getting started
 ### Requirements
 
 + [node.js&gt;=0.10.3][nodejs_url]
++ [phantomjs](http://phantomjs.org/)
 
 <a name="02-howto-installation"></a>
 ### Installation
