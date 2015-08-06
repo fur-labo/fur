@@ -175,10 +175,10 @@ Generating Favicon
 
 | Image | Command |
 | ----- | ------- |
-| <img src="./docs/examples/images/example-f-favicon.svg" height="40" style="height:40px;" /> | ` $ fur favicon --text="F" --color="e" --font="bt" --style="default" --format="png"  ` |
-| <img src="./docs/examples/images/example-c-favicon.svg" height="40" style="height:40px;" /> | ` $ fur favicon --text="c" --color="o" --font="aa" --style="plain"  ` |
-| <img src="./docs/examples/images/example-ap-favicon.svg" height="40" style="height:40px;" /> | ` $ fur favicon --text="ap" --color="ad" --font="dj" --style="circle"  ` |
-| <img src="./docs/examples/images/example-aps-favicon.svg" height="40" style="height:40px;" /> | ` $ fur favicon --text="aps" --color="ad" --font="dj" --style="bordered"  ` |
+| <img src="./docs/examples/images/example-f-favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon --text="F" --color="e" --font="bt" --style="default" --format="png"  ` |
+| <img src="./docs/examples/images/example-c-favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon --text="c" --color="o" --font="aa" --style="plain"  ` |
+| <img src="./docs/examples/images/example-ap-favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon --text="ap" --color="ad" --font="dj" --style="circle"  ` |
+| <img src="./docs/examples/images/example-aps-favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon --text="aps" --color="ad" --font="dj" --style="bordered"  ` |
 
 
 <a name="04-favicons-favicon--usage"></a>
