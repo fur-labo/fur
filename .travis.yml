@@ -7,6 +7,7 @@ install:
 before_script:
 - npm link .
 script:
+- npm run build
 - npm run test
 - npm run cover
 - npm run report

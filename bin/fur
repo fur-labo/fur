@@ -17,16 +17,16 @@ program
 // Handle `banner` command
 //=========================
 program
-    .command("banner [options] <filename>")
+    .command("banner <filename>")
     .description("Generate a banner.")
-    .option('-c, --color', "Color expression string or color theme name.")
-    .option('-H, --height', "Banner height.")
-    .option('-f, --font', "Font file name or font theme name.")
-    .option('-F, --fontsize', "Size of font.")
-    .option('-o, --format', "File format. 'svg' or 'png'.")
-    .option('-s, --style', "Banner style.")
-    .option('-t, --text', "Banner text.")
-    .option('-W, --width', "Banner width.")
+    .option('-c, --color <color>', "Color expression string or color theme name.")
+    .option('-H, --height <height>', "Banner height.")
+    .option('-f, --font <font>', "Font file name or font theme name.")
+    .option('-F, --fontsize <fontsize>', "Size of font.")
+    .option('-o, --format <format>', "File format. 'svg' or 'png'.")
+    .option('-s, --style <style>', "Banner style.")
+    .option('-t, --text <text>', "Banner text.")
+    .option('-W, --width <width>', "Banner width.")
     .action(function (filename, options) {
         new Fur().banner(filename, options);
     });
@@ -36,15 +36,15 @@ program
 // Handle `favicon` command
 //=========================
 program
-    .command("favicon [options] <filename>")
+    .command("favicon <filename>")
     .description("Generate a favicon.")
-    .option('-c, --color', "Color expression string or color theme name.")
-    .option('-f, --font', "Font file name or font theme name.")
-    .option('-F, --fontsize', "Size of font.")
-    .option('-o, --format', "File format. 'svg' or 'png'.")
-    .option('-S, --size', "Favicon size.")
-    .option('-s, --style', "Favicon style.")
-    .option('-t, --text', "Favicon text.")
+    .option('-c, --color <color>', "Color expression string or color theme name.")
+    .option('-f, --font <font>', "Font file name or font theme name.")
+    .option('-F, --fontsize <fontSize>', "Size of font.")
+    .option('-o, --format <format>', "File format. 'svg' or 'png'.")
+    .option('-S, --size <size>', "Favicon size.")
+    .option('-s, --style <style>', "Favicon style.")
+    .option('-t, --text <text>', "Favicon text.")
     .action(function (filename, options) {
         new Fur().favicon(filename, options);
     });
@@ -54,9 +54,9 @@ program
 //=========================
 
 program
-    .command("identicion [options] <filename>")
+    .command("identicion <filename>")
     .description("Generate a identicon.")
-    .option('-o, --format', "File format. 'svg' or 'png'.")
+    .option('-o, --format <format>', "File format. 'svg' or 'png'.")
     .action(function (filename, options) {
         new Fur().identicon(filename, options);
     });

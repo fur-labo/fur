@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="favicon-by-bin-svg" xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewbox="0 0 128 128">
+	<style><![CDATA[]]></style>
+	<g>
+		<rect x="0" y="0" width="128" height="128" fill="#ff0000" stroke="none" rx="0" ry="0"/>
+	</g>
+	<g>
+		<rect x="0" y="0" width="128" height="128" fill="none" stroke-width="0" stroke="white" rx="0" ry="0"/>
+	</g>
+	<g>
+		<text x="64" y="64" dominant-baseline="central" text-anchor="middle" fill="white" font-size="102.4"><![CDATA[favicon-by-bin]]></text>
+	</g>
+</svg>
