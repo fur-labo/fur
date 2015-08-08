@@ -95,9 +95,9 @@ $ fur -h
 
   Commands:
 
-    banner [options] [options] <filename>      Generate a banner.
-    favicon [options] [options] <filename>     Generate a favicon.
-    identicion [options] [options] <filename>  Generate a identicon.
+    banner [options] <filename>      Generate a banner.
+    favicon [options] <filename>     Generate a favicon.
+    identicion [options] <filename>  Generate a identicon.
 
   Options:
 
@@ -134,9 +134,9 @@ Generating Logo Banner
 | Image | Command |
 | ----- | ------- |
 | <img src="./docs/examples/images/example-fur-banner.png" height="40" style="height:40px;" /> | ` $ fur banner --text="FUR" --color="e" --font="bt" --style="default" --format="png"  ` |
-| <img src="./docs/examples/images/example-coz-banner.png" height="40" style="height:40px;" /> | ` $ fur banner --text="coz" --color="o" --font="aa" --style="plain" --format="png"  ` |
-| <img src="./docs/examples/images/example-apeman-banner.png" height="40" style="height:40px;" /> | ` $ fur banner --text="apeman" --color="ad" --font="dj" --style="default" --format="png"  ` |
-| <img src="./docs/examples/images/example-apeman-scaffold-banner.png" height="40" style="height:40px;" /> | ` $ fur banner --text="apeman-scaffold" --color="ad" --font="dj" --style="bordered" --format="png"  ` |
+| <img src="./docs/examples/images/example-coz-banner.png" height="40" style="height:40px;" /> | ` $ fur banner --text="coz" --color="o" --font="aa" --style="plain"  ` |
+| <img src="./docs/examples/images/example-apeman-banner.png" height="40" style="height:40px;" /> | ` $ fur banner --text="apeman" --color="ad" --font="dj" --style="default"  ` |
+| <img src="./docs/examples/images/example-apeman-scaffold-banner.png" height="40" style="height:40px;" /> | ` $ fur banner --text="apeman-scaffold" --color="ad" --font="dj" --style="bordered"  ` |
 
 
 <a name="03-banners-banner--usage"></a>
@@ -146,21 +146,21 @@ Generating Logo Banner
 $ fur banner -h
 
 
-  Usage: banner [options] [options] <filename>
+  Usage: banner [options] <filename>
 
   Generate a banner.
 
   Options:
 
-    -h, --help      output usage information
-    -c, --color     Color expression string or color theme name.
-    -H, --height    Banner height.
-    -f, --font      Font file name or font theme name.
-    -F, --fontsize  Size of font.
-    -o, --format    File format. 'svg' or 'png'.
-    -s, --style     Banner style.
-    -t, --text      Banner text.
-    -W, --width     Banner width.
+    -h, --help                 output usage information
+    -c, --color <color>        Color expression string or color theme name.
+    -H, --height <height>      Banner height.
+    -f, --font <font>          Font file name or font theme name.
+    -F, --fontsize <fontsize>  Size of font.
+    -o, --format <format>      File format. 'svg' or 'png'.
+    -s, --style <style>        Banner style.
+    -t, --text <text>          Banner text.
+    -W, --width <width>        Banner width.
 
 
 ```
@@ -177,9 +177,9 @@ Generating Favicon
 | Image | Command |
 | ----- | ------- |
 | <img src="./docs/examples/images/example-f-favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon --text="F" --color="e" --font="bt" --style="default" --format="png"  ` |
-| <img src="./docs/examples/images/example-c-favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon --text="c" --color="o" --font="aa" --style="plain" --format="png"  ` |
-| <img src="./docs/examples/images/example-ap-favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon --text="ap" --color="ad" --font="dj" --style="circle" --format="png"  ` |
-| <img src="./docs/examples/images/example-aps-favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon --text="aps" --color="ad" --font="dj" --style="bordered" --format="png"  ` |
+| <img src="./docs/examples/images/example-c-favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon --text="c" --color="o" --font="aa" --style="plain"  ` |
+| <img src="./docs/examples/images/example-ap-favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon --text="ap" --color="ad" --font="dj" --style="circle"  ` |
+| <img src="./docs/examples/images/example-aps-favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon --text="aps" --color="ad" --font="dj" --style="bordered"  ` |
 
 
 <a name="04-favicons-favicon--usage"></a>
@@ -189,20 +189,20 @@ Generating Favicon
 $ fur favicon -h
 
 
-  Usage: favicon [options] [options] <filename>
+  Usage: favicon [options] <filename>
 
   Generate a favicon.
 
   Options:
 
-    -h, --help      output usage information
-    -c, --color     Color expression string or color theme name.
-    -f, --font      Font file name or font theme name.
-    -F, --fontsize  Size of font.
-    -o, --format    File format. 'svg' or 'png'.
-    -S, --size      Favicon size.
-    -s, --style     Favicon style.
-    -t, --text      Favicon text.
+    -h, --help                 output usage information
+    -c, --color <color>        Color expression string or color theme name.
+    -f, --font <font>          Font file name or font theme name.
+    -F, --fontsize <fontSize>  Size of font.
+    -o, --format <format>      File format. 'svg' or 'png'.
+    -S, --size <size>          Favicon size.
+    -s, --style <style>        Favicon style.
+    -t, --text <text>          Favicon text.
 
 
 ```
