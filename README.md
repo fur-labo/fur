@@ -134,9 +134,9 @@ Generating Logo Banner
 | Image | Command |
 | ----- | ------- |
 | <img src="./docs/examples/images/example-fur-banner.png" height="40" style="height:40px;" /> | ` $ fur banner --text="FUR" --color="e" --font="bt" --style="default" --format="png"  ` |
-| <img src="./docs/examples/images/example-coz-banner.png" height="40" style="height:40px;" /> | ` $ fur banner --text="coz" --color="o" --font="aa" --style="plain"  ` |
-| <img src="./docs/examples/images/example-apeman-banner.png" height="40" style="height:40px;" /> | ` $ fur banner --text="apeman" --color="ad" --font="dj" --style="default"  ` |
-| <img src="./docs/examples/images/example-apeman-scaffold-banner.png" height="40" style="height:40px;" /> | ` $ fur banner --text="apeman-scaffold" --color="ad" --font="dj" --style="bordered"  ` |
+| <img src="./docs/examples/images/example-coz-banner.png" height="40" style="height:40px;" /> | ` $ fur banner --text="coz" --color="o" --font="aa" --style="plain" --format="png"  ` |
+| <img src="./docs/examples/images/example-apeman-banner.png" height="40" style="height:40px;" /> | ` $ fur banner --text="apeman" --color="ad" --font="dj" --style="default" --format="png"  ` |
+| <img src="./docs/examples/images/example-apeman-scaffold-banner.png" height="40" style="height:40px;" /> | ` $ fur banner --text="apeman-scaffold" --color="ad" --font="dj" --style="bordered" --format="png"  ` |
 
 
 <a name="03-banners-banner--usage"></a>
@@ -177,9 +177,9 @@ Generating Favicon
 | Image | Command |
 | ----- | ------- |
 | <img src="./docs/examples/images/example-f-favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon --text="F" --color="e" --font="bt" --style="default" --format="png"  ` |
-| <img src="./docs/examples/images/example-c-favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon --text="c" --color="o" --font="aa" --style="plain"  ` |
-| <img src="./docs/examples/images/example-ap-favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon --text="ap" --color="ad" --font="dj" --style="circle"  ` |
-| <img src="./docs/examples/images/example-aps-favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon --text="aps" --color="ad" --font="dj" --style="bordered"  ` |
+| <img src="./docs/examples/images/example-c-favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon --text="c" --color="o" --font="aa" --style="plain" --format="png"  ` |
+| <img src="./docs/examples/images/example-ap-favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon --text="ap" --color="ad" --font="dj" --style="circle" --format="png"  ` |
+| <img src="./docs/examples/images/example-aps-favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon --text="aps" --color="ad" --font="dj" --style="bordered" --format="png"  ` |
 
 
 <a name="04-favicons-favicon--usage"></a>
