@@ -8,6 +8,10 @@ module.exports = {
     force: true,
     mode: '444',
     data: {
-        examples: require('./.banner-example.json')
+        examples: require('../../ci/configs/banner-example-config.json')
     }
 };
+
+if (!module.parent) {
+    require('coz').render(__filename);
+}

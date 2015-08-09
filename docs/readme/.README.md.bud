@@ -39,8 +39,8 @@ function _section(filename, data, callback) {
                     usages: data.usages,
                     BANNER_SIZE: BANNER_SIZE,
                     pkg: pkg,
-                    bannerExample: require('../examples/.banner-example.json'),
-                    faviconExample: require('../examples/.favicon-example.json'),
+                    bannerExample: require('../../ci/configs/banner-example-config.json'),
+                    faviconExample: require('../../ci/configs/favicon-example-config.json'),
                     get tutorials() {
                         return glob.sync(__dirname + '/../tutorial/*.md').map(function (filename) {
                             var name = path.basename(filename, path.extname(filename));

@@ -8,6 +8,6 @@ module.exports = {
     force: true,
     mode: '444',
     data: {
-        examples: require('./.favicon-example.json')
+        examples: require('../../ci/configs/favicon-example-config.json')
     }
 };

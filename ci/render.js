@@ -1,81 +1,40 @@
 #!/usr/bin/env node
 
 /**
- * @file Render files.
+ * Build this project.
  */
 
 "use strict";
 
-var fur = require('../lib'),
-    coz = require('coz'),
-    stringcase = require('stringcase'),
-    path = require('path'),
-    async = require('async');
-
+var path = require('path'),
+    mkdirp = require('mkdirp'),
+    async = require('async'),
+    filecopy = require('filecopy'),
+    apeTasking = require('ape-tasking'),
+    coz = require('coz');
 
 var basedir = path.resolve(__dirname, '..');
 
-async.series([
-    function renderBannerImages(callback) {
-        var bannerExamples = require(basedir + '/docs/examples/.banner-example.json');
-        async.eachSeries(['svg', 'png'], function (format, callback) {
-            var extname = '.' + format;
-            async.each(bannerExamples, function (config, callback) {
-                config.format = format;
-                var filename = path.resolve(
-                    basedir,
-                    'docs/examples/images/example-' + stringcase.lowercase(config.text) + '-banner' + extname
-                );
-                fur.banner(filename, config, callback);
-            }, callback);
-        }, callback);
-    },
-    function renderFaviconImages(callback) {
-        var faviconExamples = require(basedir + '/docs/examples/.favicon-example.json');
-        async.eachSeries(['svg', 'png'], function (format, callback) {
-            var extname = '.' + format;
-            async.each(faviconExamples, function (config, callback) {
-                config.format = format;
-                var filename = path.resolve(
-                    basedir,
-                    'docs/examples/images/example-' + stringcase.lowercase(config.text) + '-favicon' + extname
-                );
-                fur.favicon(filename, config, callback);
-            }, callback);
-        }, callback);
-    },
-    function renderIdenticonImages(callback) {
-        var identifiers = [];
-        for (var i = 0; i < 50; i++) {
-            var identifier = Math.random().toString(36).substring(7);
-            if (!identifier) {
-                continue;
-            }
-            identifiers.push(identifier);
-        }
-        var index = 0;
-        async.eachSeries(identifiers, function (identifier, callback) {
-            async.eachSeries(['svg', 'png'], function (format, callback) {
-                var extname = '.' + format;
-                var filename = path.resolve(
-                    basedir,
-                    'docs/examples/images/example-identicon-' + (index++) + extname
-                );
-                fur.identicon(filename, {
-                    identifier: identifier,
-                    format: format
-                }, callback);
-            }, callback);
-        }, callback);
-    },
-    function renderBuds(callback) {
+process.chdir(basedir);
+
+apeTasking.runTasks('build', [
+    function renderBud(callback) {
         coz.render([
-            "+(docs|lib|test)/**/.*.bud"
+            '.*.bud',
+            'lib/.*.bud',
+            'test/.*.bud'
+        ], callback);
+    },
+    function collectFonts(callback) {
+        var dest = 'docs/assets/fonts';
+        async.series([
+            function (callback) {
+                mkdirp(dest, callback);
+            },
+            function (callback) {
+                filecopy('third_party/**/+(*.ttf|*.svg|*.eot)', dest, callback);
+            }
         ], callback);
     }
-], function (err) {
-    if (err) {
-        console.error(err);
-    }
-});
+], true);
 

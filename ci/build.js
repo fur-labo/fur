@@ -6,16 +6,14 @@
 
 "use strict";
 
-var path = require('path'),
-    mkdirp = require('mkdirp'),
+process.chdir(__dirname + '/..');
+
+var mkdirp = require('mkdirp'),
     async = require('async'),
     filecopy = require('filecopy'),
     apeTasking = require('ape-tasking'),
     coz = require('coz');
 
-var basedir = path.resolve(__dirname, '..');
-
-process.chdir(basedir);
 
 apeTasking.runTasks('build', [
     function renderBud(callback) {
