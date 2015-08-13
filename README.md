@@ -116,11 +116,11 @@ Generating Logo Banner
 
 | Image | Command |
 | ----- | ------- |
-| <img src="./docs/examples/images/example-fur-banner.png" height="40" style="height:40px;" /> | ` $ fur banner --text="FUR" --color="e" --font="bt" --style="default" --format="png"  ` |
-| <img src="./docs/examples/images/example-coz-banner.png" height="40" style="height:40px;" /> | ` $ fur banner --text="coz" --color="o" --font="aa" --style="plain"  ` |
-| <img src="./docs/examples/images/example-apeman-banner.png" height="40" style="height:40px;" /> | ` $ fur banner --text="apeman" --color="ad" --font="dj" --style="default"  ` |
-| <img src="./docs/examples/images/example-apeman-scaffold-banner.png" height="40" style="height:40px;" /> | ` $ fur banner --text="apeman-scaffold" --color="ad" --font="dj" --style="bordered"  ` |
-| <img src="./docs/examples/images/example-pon-banner.png" height="40" style="height:40px;" /> | ` $ fur banner --text="pon" --color="g" --font="ar" --style="plain"  ` |
+| <img src="./docs/examples/images/banner/example-fur-banner.png" height="40" style="height:40px;" /> | ` $ fur banner --text="FUR" --color="e" --font="bt" --style="default" --format="png"  ` |
+| <img src="./docs/examples/images/banner/example-coz-banner.png" height="40" style="height:40px;" /> | ` $ fur banner --text="coz" --color="o" --font="aa" --style="plain"  ` |
+| <img src="./docs/examples/images/banner/example-apeman-banner.png" height="40" style="height:40px;" /> | ` $ fur banner --text="apeman" --color="ad" --font="dj" --style="default"  ` |
+| <img src="./docs/examples/images/banner/example-apeman-scaffold-banner.png" height="40" style="height:40px;" /> | ` $ fur banner --text="apeman-scaffold" --color="ad" --font="dj" --style="bordered"  ` |
+| <img src="./docs/examples/images/banner/example-pon-banner.png" height="40" style="height:40px;" /> | ` $ fur banner --text="pon" --color="g" --font="ar" --style="plain"  ` |
 
 
 ### Banner Usage
@@ -157,10 +157,10 @@ Generating Favicon
 
 | Image | Command |
 | ----- | ------- |
-| <img src="./docs/examples/images/example-f-favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon --text="F" --color="e" --font="bt" --style="default" --format="png"  ` |
-| <img src="./docs/examples/images/example-c-favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon --text="c" --color="o" --font="aa" --style="plain"  ` |
-| <img src="./docs/examples/images/example-ap-favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon --text="ap" --color="ad" --font="dj" --style="circle"  ` |
-| <img src="./docs/examples/images/example-pon-favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon --text="pon" --color="g" --font="ar" --style="circle"  ` |
+| <img src="./docs/examples/images/favicon/example-f-favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon --text="F" --color="e" --font="bt" --style="default" --format="png"  ` |
+| <img src="./docs/examples/images/favicon/example-c-favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon --text="c" --color="o" --font="aa" --style="plain"  ` |
+| <img src="./docs/examples/images/favicon/example-ap-favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon --text="ap" --color="ad" --font="dj" --style="circle"  ` |
+| <img src="./docs/examples/images/favicon/example-pon-favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon --text="pon" --color="g" --font="ar" --style="circle"  ` |
 
 
 ### Favicon Usage

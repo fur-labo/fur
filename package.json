@@ -33,6 +33,7 @@
   "homepage": "https://github.com/okunishinishi/node-fur#readme",
   "devDependencies": {
     "ape-covering": "^1.0.8",
+    "ape-deploying": "^1.0.8",
     "ape-releasing": "^1.0.14",
     "ape-reporting": "^1.0.8",
     "ape-tasking": "^1.0.6",
