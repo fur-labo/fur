@@ -1,27 +1,41 @@
 fur
-=====
+==========
+
+<!-- Badge Start -->
+<a name="badges"></a>
+
+[![Build Status][bd_travis_shield_url]][bd_travis_url]
+[![Code Climate][bd_codeclimate_shield_url]][bd_codeclimate_url]
+[![Code Coverage][bd_codeclimate_coverage_shield_url]][bd_codeclimate_url]
+[![Dependency Status][bd_gemnasium_shield_url]][bd_gemnasium_url]
+[![npm Version][bd_npm_shield_url]][bd_npm_url]
+
+[bd_repo_url]: https://github.com/fur-repo/fur
+[bd_travis_url]: http://travis-ci.org/fur-repo/fur
+[bd_travis_shield_url]: http://img.shields.io/travis/fur-repo/fur.svg?style=flat
+[bd_license_url]: https://github.com/fur-repo/fur/blob/master/LICENSE
+[bd_codeclimate_url]: http://codeclimate.com/github/fur-repo/fur
+[bd_codeclimate_shield_url]: http://img.shields.io/codeclimate/github/fur-repo/fur.svg?style=flat
+[bd_codeclimate_coverage_shield_url]: http://img.shields.io/codeclimate/coverage/github/fur-repo/fur.svg?style=flat
+[bd_gemnasium_url]: https://gemnasium.com/fur-repo/fur
+[bd_gemnasium_shield_url]: https://gemnasium.com/fur-repo/fur.svg
+[bd_npm_url]: http://www.npmjs.org/package/fur
+[bd_npm_shield_url]: http://img.shields.io/npm/v/fur.svg?style=flat
+
+<!-- Badge End -->
+
+
+<!-- Description Start -->
+<a name="description"></a>
 
 Quick generator for log, banner, favicon, etc...
 
-<!-- Badge start -->
-
-[![Build Status][my_travis_badge_url]][my_travis_url]
-[![Code Climate][my_codeclimate_badge_url]][my_codeclimate_url]
-[![Code Coverage][my_codeclimate_coverage_badge_url]][my_codeclimate_url]
-[![dependencies][my_gemnasium_badge_url]][my_gemnasium_url]
-[![npm version][my_npm_budge_url]][my_npm_url]
-[![Gratipay][my_gratipay_budge_url]][my_gratipay_url]
-
-<!-- Badge end -->
+<!-- Description End -->
 
 
-<!-- Banner start -->
-
+<!-- Overview Start -->
+<a name="overview"></a>
 <a href="https://github.com/okunishinishi/node-fur#readme"><img style="height:128px;" src="docs/assets/images/fur-banner.png" height="128"/></a>
-
-<!-- Banner end -->
-
-<!-- Concept start -->
 
 ```javascript
 // Generate favicon with command options.
@@ -30,46 +44,19 @@ $ fur favicon "my-favicon.png" --color a --font g --text 'f' --style 'rounded'
 
 
 
-<!-- Concept end -->
+<!-- Overview End -->
 
+<!-- Sections Start -->
+<a name="sections"></a>
 
-
-<!-- Table start -->
-
-Table of Contents
------
-- [Getting started](#02-howto)
-    - [Requirements](#02-howto-requirements)
-    - [Installation](#02-howto-installation)
-    - [Available Commands](#02-howto-available--commands)
-    - [Programmatic API](#02-howto-programmatic--a-p-i)
-- [Generating Logo Banner](#03-banners)
-    - [Banner Examples](#03-banners-banner--examples)
-    - [Banner Usage](#03-banners-banner--usage)
-- [Generating Favicon](#04-favicons)
-    - [Favicon Examples](#04-favicons-favicon--examples)
-    - [Favicon Usage](#04-favicons-favicon--usage)
-- [License](#10-license)
-- [About this project](#11-project)
-    - [Author](#11-project-author)
-    - [Donation](#11-project-donation)
-
-<!-- Table end -->
-
-
-<!-- Sections start -->
-
-<a name="02-howto"></a>
 Getting started
 ------
 
-<a name="02-howto-requirements"></a>
 ### Requirements
 
 + [node.js&gt;=0.10.3][nodejs_url]
 + [phantomjs](http://phantomjs.org/)
 
-<a name="02-howto-installation"></a>
 ### Installation
 
 fur is available as an [npm][npm_url] package.
@@ -84,7 +71,6 @@ For more details, see tutorial section "[01 - Installing fur][01_installing_fur_
 
 
 <a name="available commands" />
-<a name="02-howto-available--commands"></a>
 ### Available Commands
 
 ```bash
@@ -108,7 +94,6 @@ $ fur -h
 ```
 
 <a name="programmatic-api" />
-<a name="02-howto-programmatic--a-p-i"></a>
 ### Programmatic API
 
 fur provides programmatic API which enables you to execute fur commands from Node.js program.
@@ -124,11 +109,9 @@ fur.banner('my-banner.svg', {
 }, function (err) {
 });
 ```
-<a name="03-banners"></a>
 Generating Logo Banner
 ------------------
 
-<a name="03-banners-banner--examples"></a>
 ### Banner Examples
 
 | Image | Command |
@@ -137,9 +120,9 @@ Generating Logo Banner
 | <img src="./docs/examples/images/example-coz-banner.png" height="40" style="height:40px;" /> | ` $ fur banner --text="coz" --color="o" --font="aa" --style="plain"  ` |
 | <img src="./docs/examples/images/example-apeman-banner.png" height="40" style="height:40px;" /> | ` $ fur banner --text="apeman" --color="ad" --font="dj" --style="default"  ` |
 | <img src="./docs/examples/images/example-apeman-scaffold-banner.png" height="40" style="height:40px;" /> | ` $ fur banner --text="apeman-scaffold" --color="ad" --font="dj" --style="bordered"  ` |
+| <img src="./docs/examples/images/example-pon-banner.png" height="40" style="height:40px;" /> | ` $ fur banner --text="pon" --color="g" --font="ar" --style="plain"  ` |
 
 
-<a name="03-banners-banner--usage"></a>
 ### Banner Usage
 
 ```bash
@@ -167,11 +150,9 @@ $ fur banner -h
 
 
 
-<a name="04-favicons"></a>
 Generating Favicon
 ------------------
 
-<a name="04-favicons-favicon--examples"></a>
 ### Favicon Examples
 
 | Image | Command |
@@ -179,10 +160,9 @@ Generating Favicon
 | <img src="./docs/examples/images/example-f-favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon --text="F" --color="e" --font="bt" --style="default" --format="png"  ` |
 | <img src="./docs/examples/images/example-c-favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon --text="c" --color="o" --font="aa" --style="plain"  ` |
 | <img src="./docs/examples/images/example-ap-favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon --text="ap" --color="ad" --font="dj" --style="circle"  ` |
-| <img src="./docs/examples/images/example-aps-favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon --text="aps" --color="ad" --font="dj" --style="bordered"  ` |
+| <img src="./docs/examples/images/example-pon-favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon --text="pon" --color="g" --font="ar" --style="circle"  ` |
 
 
-<a name="04-favicons-favicon--usage"></a>
 ### Favicon Usage
 
 ```bash
@@ -209,12 +189,10 @@ $ fur favicon -h
 
 
 
-<a name="10-license"></a>
 License
 -------
 This software is released under the [MIT License][my_license_url].
 
-<a name="11-project"></a>
 About this project
 --------
 
@@ -233,41 +211,31 @@ Support this project and [others by okunishinishi][my_gratipay_url] via [gratipa
 [<img src="https://cdn.rawgit.com/gratipay/gratipay-badge/2.3.0/dist/gratipay.svg" alt="Support via Gratipay"/>][my_gratipay_url]
 
 
-<!-- Sections end -->
-
-
-<!-- Links start -->
-
-[nodejs_url]: http://nodejs.org/
-[npm_url]: https://www.npmjs.com/
-[nvm_url]: https://github.com/creationix/nvm
 [bitdeli_url]: https://bitdeli.com/free
 [my_bitdeli_badge_url]: https://d2weczhvl823v0.cloudfront.net/okunishinishi/node-fur/trend.png
-[my_repo_url]: https://github.com/okunishinishi/node-fur
-[my_travis_url]: http://travis-ci.org/okunishinishi/node-fur
-[my_travis_badge_url]: http://img.shields.io/travis/okunishinishi/node-fur.svg?style=flat
-[my_license_url]: https://github.com/okunishinishi/node-fur/blob/master/LICENSE
-[my_codeclimate_url]: http://codeclimate.com/github/okunishinishi/node-fur
-[my_codeclimate_badge_url]: http://img.shields.io/codeclimate/github/okunishinishi/node-fur.svg?style=flat
-[my_codeclimate_coverage_badge_url]: http://img.shields.io/codeclimate/coverage/github/okunishinishi/node-fur.svg?style=flat
-[my_apiguide_url]: http://okunishinishi.github.io/node-fur/apiguide/module-fur.html
-[my_coverage_url]: http://okunishinishi.github.io/node-fur/coverage/lcov-report
-[my_coverage_report_url]: http://okunishinishi.github.io/node-fur/coverage/lcov-report/
+
 [my_gratipay_url]: https://gratipay.com/okunishinishi/
 [my_gratipay_budge_url]: http://img.shields.io/gratipay/okunishinishi.svg?style=flat
-[my_npm_url]: http://www.npmjs.org/package/fur
-[my_npm_budge_url]: http://img.shields.io/npm/v/fur.svg?style=flat
-[my_tag_url]: http://github.com/okunishinishi/node-fur/releases/tag/
-[my_tag_badge_url]: http://img.shields.io/github/tag/okunishinishi/node-fur.svg?style=flat
-[my_gemnasium_url]: http://gemnasium.com/okunishinishi/node-fur
-[my_gemnasium_badge_url]: http://img.shields.io/gemnasium/okunishinishi/node-fur.svg?style=flat
-[my_inch_badge_url]: http://inch-ci.org/github/okunishinishi/node-fur.svg?branch=master
-[my_inch_url]: http://inch-ci.org/github/okunishinishi/node-fur
 
-<!-- Links end-->
 
-<!-- Tutorial urls start -->
+<!-- Sections Start -->
 
-[01_installing_fur_url]: https://github.com/okunishinishi/node-coz/blob/master/docs/tutorial/01%20-%20Installing%20fur.md
 
-<!-- Tutorial urls end -->
+<!-- LICENSE Start -->
+<a name="license"></a>
+
+License
+-------
+This software is released under the [MIT License](https://github.com/fur-repo/fur/blob/master/LICENSE).
+
+<!-- LICENSE End -->
+
+
+<!-- Links Start -->
+<a name="links"></a>
+
+Links
+------
+
+
+<!-- Links End -->

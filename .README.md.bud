@@ -1,0 +1,68 @@
+/**
+ * Bud file for README.md
+ */
+
+"use strict";
+
+var apeTmpl = require('ape-tmpl'),
+    glob = require('glob'),
+    path = require('path'),
+    childProcess = require('child_process'),
+    stringcase = require('stringcase'),
+    pkg = require('./package.json');
+
+var TUTORIAL_BASE = 'https://github.com/okunishinishi/node-coz/blob/master/';
+
+
+module.exports = apeTmpl.readmeMdBud({
+    pkg: pkg,
+    repo: 'fur-repo/' + pkg.name,
+    sections: 'docs/readme/*.md.hbs',
+    badges: {
+        travis: true,
+        codeclimate: true,
+        codeclimateCoverage: true,
+        gemnasium: true,
+        npm: true
+    },
+    links: require('./docs/links.json'),
+    overview: 'docs/overview.md',
+    vars: {
+        bannerExample: require('./ci/configs/banner-example-config.json'),
+        faviconExample: require('./ci/configs/favicon-example-config.json'),
+        get tutorials() {
+            return glob.sync(__dirname + '/../tutorial/*.md').map(function (filename) {
+                var name = path.basename(filename, path.extname(filename));
+                return {
+                    name: stringcase.snakecase(name + '_url').replace(/__+/g, '_'),
+                    url: TUTORIAL_BASE + encodeURI("docs/tutorial/" + name + '.md')
+                }
+            });
+        },
+        get usages() {
+            var furBin = require.resolve('./bin/fur');
+            return {
+                get all() {
+                    var command = [furBin, '-h'].join(' ');
+                    return childProcess.execSync(command);
+                },
+                get banner() {
+                    var command = [furBin, 'banner', '-h'].join(' ');
+                    return childProcess.execSync(command);
+                },
+                get favicon() {
+                    var command = [furBin, 'favicon', '-h'].join(' ');
+                    return childProcess.execSync(command);
+                },
+                get identicon() {
+                    var command = [furBin, 'identicon', '-h'].join(' ');
+                    return childProcess.execSync(command);
+                }
+            };
+        }
+    }
+});
+
+if (!module.parent) {
+    require('coz').render(__filename);
+}
