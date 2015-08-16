@@ -1,7 +1,7 @@
 {
   "name": "fur",
   "version": "2.1.4",
-  "description": "Quick generator for log, banner, favicon, etc...",
+  "description": "Quick generator for banner, favicon, etc...",
   "main": "lib",
   "scripts": {
     "build": "./ci/build.js",
@@ -43,6 +43,8 @@
     "apiguide": "^1.0.6",
     "color-scheme": "0.0.5",
     "coz": "^1.5.0",
+    "coz-examples": "^1.0.3",
+    "fur-examples": "^1.0.0",
     "glob": "^5.0.14"
   },
   "dependencies": {

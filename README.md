@@ -28,7 +28,7 @@ fur
 <!-- Description Start -->
 <a name="description"></a>
 
-Quick generator for log, banner, favicon, etc...
+Quick generator for banner, favicon, etc...
 
 <!-- Description End -->
 
@@ -55,7 +55,7 @@ Getting started
 ### Requirements
 
 + [node.js&gt;=0.10.3][nodejs_url]
-+ [phantomjs](http://phantomjs.org/)
++ [phantomjs>=2.0.0](http://phantomjs.org/)
 
 ### Installation
 
@@ -109,6 +109,9 @@ fur.banner('my-banner.svg', {
 }, function (err) {
 });
 ```
+
+
+[nodejs_url]: https://nodejs.org/
 Generating Logo Banner
 ------------------
 
@@ -116,11 +119,11 @@ Generating Logo Banner
 
 | Image | Command |
 | ----- | ------- |
-| <img src="./docs/examples/images/banner/example-fur-banner.png" height="40" style="height:40px;" /> | ` $ fur banner --text="FUR" --color="e" --font="bt" --style="default" --format="png"  ` |
-| <img src="./docs/examples/images/banner/example-coz-banner.png" height="40" style="height:40px;" /> | ` $ fur banner --text="coz" --color="o" --font="aa" --style="plain"  ` |
-| <img src="./docs/examples/images/banner/example-apeman-banner.png" height="40" style="height:40px;" /> | ` $ fur banner --text="apeman" --color="ad" --font="dj" --style="default"  ` |
-| <img src="./docs/examples/images/banner/example-apeman-scaffold-banner.png" height="40" style="height:40px;" /> | ` $ fur banner --text="apeman-scaffold" --color="ad" --font="dj" --style="bordered"  ` |
-| <img src="./docs/examples/images/banner/example-pon-banner.png" height="40" style="height:40px;" /> | ` $ fur banner --text="pon" --color="g" --font="ar" --style="plain"  ` |
+| <img src="https://raw.githubusercontent.com/fur-repo/fur-examples/master/examples/01-fur/banner.png" height="40" style="height:40px;" /> | ` $ fur banner "undefined-banner.png" --text="FUR" --color="e" --font="bt" --style="default"  ` |
+| <img src="https://raw.githubusercontent.com/fur-repo/fur-examples/master/examples/02-coz/banner.png" height="40" style="height:40px;" /> | ` $ fur banner "undefined-banner.png" --text="coz" --color="o" --font="aa" --style="plain"  ` |
+| <img src="https://raw.githubusercontent.com/fur-repo/fur-examples/master/examples/03-apeman/banner.png" height="40" style="height:40px;" /> | ` $ fur banner "undefined-banner.png" --text="apeman" --color="ad" --font="dj" --style="default"  ` |
+| <img src="https://raw.githubusercontent.com/fur-repo/fur-examples/master/examples/04-pudding/banner.png" height="40" style="height:40px;" /> | ` $ fur banner "undefined-banner.png" --text="PUDDING" --color="z" --font="j" --style="bordered"  ` |
+| <img src="https://raw.githubusercontent.com/fur-repo/fur-examples/master/examples/05-pon/banner.png" height="40" style="height:40px;" /> | ` $ fur banner "undefined-banner.png" --text="pon" --color="g" --font="ar" --style="plain"  ` |
 
 
 ### Banner Usage
@@ -157,10 +160,11 @@ Generating Favicon
 
 | Image | Command |
 | ----- | ------- |
-| <img src="./docs/examples/images/favicon/example-f-favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon --text="F" --color="e" --font="bt" --style="default" --format="png"  ` |
-| <img src="./docs/examples/images/favicon/example-c-favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon --text="c" --color="o" --font="aa" --style="plain"  ` |
-| <img src="./docs/examples/images/favicon/example-ap-favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon --text="ap" --color="ad" --font="dj" --style="circle"  ` |
-| <img src="./docs/examples/images/favicon/example-pon-favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon --text="pon" --color="g" --font="ar" --style="circle"  ` |
+| <img src="https://raw.githubusercontent.com/fur-repo/fur-examples/master/examples/01-fur/favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon "undefined-favicon.png" --text="F" --color="e" --font="bt" --style="default"  ` |
+| <img src="https://raw.githubusercontent.com/fur-repo/fur-examples/master/examples/02-coz/favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon "undefined-favicon.png" --text="c" --color="o" --font="aa" --style="plain"  ` |
+| <img src="https://raw.githubusercontent.com/fur-repo/fur-examples/master/examples/03-apeman/favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon "undefined-favicon.png" --text="ap" --color="ad" --font="dj" --style="circle"  ` |
+| <img src="https://raw.githubusercontent.com/fur-repo/fur-examples/master/examples/04-pudding/favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon "undefined-favicon.png" --text="P" --color="z" --font="j" --style="bordered"  ` |
+| <img src="https://raw.githubusercontent.com/fur-repo/fur-examples/master/examples/05-pon/favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon "undefined-favicon.png" --text="pon" --color="g" --font="ar" --style="circle"  ` |
 
 
 ### Favicon Usage

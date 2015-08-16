@@ -5,7 +5,7 @@ Generating Logo Banner
 
 | Image | Command |
 | ----- | ------- |
-{{#each vars.bannerExample}}| <img src="./docs/examples/images/banner/example-{{lowercase text}}-banner.png" height="40" style="height:40px;" /> | ` $ fur banner {{#each this}}--{{spinalcase @key}}="{{this}}" {{/each}} ` |
+{{#each vars.examples.banners}}| <img src="{{{img}}}" height="40" style="height:40px;" /> | ` $ fur banner "{{spinalcase text}}-banner.png" {{#each options}}--{{spinalcase @key}}="{{this}}" {{/each}} ` |
 {{/each}}
 
 

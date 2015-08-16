@@ -10,10 +10,6 @@
         {
             "title": "Favicon Examples",
             "href": "favicon-example.html"
-        },
-        {
-            "title": "Identicon Examples",
-            "href": "identicon-example.html"
         }
     ];
 

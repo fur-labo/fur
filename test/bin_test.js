@@ -10,7 +10,7 @@ var bin = require.resolve('../bin/fur'),
 exports['Do generate favicon.'] = function (test) {
     var fur = childProcess.spawn(bin, [
         'favicon',
-        __dirname + '/..tmp/favicon-by-bin.svg'
+        __dirname + '/../tmp/favicon-by-bin.svg'
     ], {
         stdio: [
             null,

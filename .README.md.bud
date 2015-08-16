@@ -28,8 +28,33 @@ module.exports = apeTmpl.readmeMdBud({
     links: require('./docs/links.json'),
     overview: 'docs/overview.md',
     vars: {
-        bannerExample: require('./ci/configs/banner-example-config.json'),
-        faviconExample: require('./ci/configs/favicon-example-config.json'),
+        get examples() {
+            var BASE_URL = 'https://raw.githubusercontent.com/fur-repo/fur-examples/master/examples/';
+            var banners = [],
+                favicons = [];
+            var examples = require('fur-examples');
+            Object.keys(examples).forEach(function (key) {
+                var example = examples[key],
+                    banner = example['$banner'],
+                    favicon = example['$favicon'];
+                if (banner) {
+                    banners.push({
+                        img: BASE_URL + key + '/banner.png',
+                        options: banner
+                    });
+                }
+                if (favicon) {
+                    favicons.push({
+                        img: BASE_URL + key + '/favicon.png',
+                        options: favicon
+                    });
+                }
+            });
+            return {
+                banners: banners,
+                favicons: favicons
+            }
+        },
         get tutorials() {
             return glob.sync(__dirname + '/../tutorial/*.md').map(function (filename) {
                 var name = path.basename(filename, path.extname(filename));

@@ -5,7 +5,7 @@ Generating Favicon
 
 | Image | Command |
 | ----- | ------- |
-{{#each vars.faviconExample}}| <img src="./docs/examples/images/favicon/example-{{lowercase text}}-favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon {{#each this}}--{{spinalcase @key}}="{{this}}" {{/each}} ` |
+{{#each vars.examples.favicons}}| <img src="{{{img}}}" height="40" style="height:40px;" /> | ` $ fur favicon "{{spinalcase text}}-favicon.png" {{#each options}}--{{spinalcase @key}}="{{this}}" {{/each}} ` |
 {{/each}}
 
 
