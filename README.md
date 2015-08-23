@@ -35,7 +35,7 @@ Quick generator for banner, favicon, etc...
 
 <!-- Overview Start -->
 <a name="overview"></a>
-<a href="https://github.com/okunishinishi/node-fur#readme"><img style="height:128px;" src="docs/assets/images/fur-banner.png" height="128"/></a>
+<a href="https://github.com/fur-repo/fur#readme"><img style="height:128px;" src="docs/fur-banner.png" height="128"/></a>
 
 ```javascript
 // Generate favicon with command options.
@@ -196,6 +196,11 @@ $ fur favicon -h
 
 
 
+Theme Gallery
+------------
+
++ [Color Theme](http://fur-repo.github.io/fur-resources/color-gallery.html
++ [Font Theme](http://fur-repo.github.io/fur-resources/font-gallery.html
 About this project
 --------
 
@@ -241,5 +246,6 @@ Links
 ------
 
 + [fur-examples](https://github.com/fur-repo/fur-examples)
++ [fur-resources](https://github.com/fur-repo/fur-resources)
 
 <!-- Links End -->
