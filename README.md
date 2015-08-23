@@ -112,6 +112,7 @@ fur.banner('my-banner.svg', {
 
 
 [nodejs_url]: https://nodejs.org/
+
 Generating Logo Banner
 ------------------
 
@@ -151,7 +152,6 @@ $ fur banner -h
 
 
 ```
-
 
 
 Generating Favicon
@@ -194,13 +194,13 @@ $ fur favicon -h
 
 ```
 
-
-
 Theme Gallery
 ------------
 
 + [Color Theme](http://fur-repo.github.io/fur-resources/color-gallery.html)
 + [Font Theme](http://fur-repo.github.io/fur-resources/font-gallery.html)
+
+
 About this project
 --------
 
