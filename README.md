@@ -46,9 +46,13 @@ $ fur favicon "my-favicon.png" --color a --font g --text 'f' --style 'rounded'
 
 <!-- Overview End -->
 
+
 <!-- Sections Start -->
 <a name="sections"></a>
 
+<!-- Section from "docs/readme/02-howto.md.hbs" Start -->
+
+<a name="section-docs-readme-02-howto-md"></a>
 Getting started
 ------
 
@@ -113,6 +117,11 @@ fur.banner('my-banner.svg', {
 
 [nodejs_url]: https://nodejs.org/
 
+<!-- Section from "docs/readme/02-howto.md.hbs" End -->
+
+<!-- Section from "docs/readme/03-banners.md.hbs" Start -->
+
+<a name="section-docs-readme-03-banners-md"></a>
 Generating Logo Banner
 ------------------
 
@@ -154,6 +163,11 @@ $ fur banner -h
 ```
 
 
+<!-- Section from "docs/readme/03-banners.md.hbs" End -->
+
+<!-- Section from "docs/readme/04-favicons.md.hbs" Start -->
+
+<a name="section-docs-readme-04-favicons-md"></a>
 Generating Favicon
 ------------------
 
@@ -194,6 +208,11 @@ $ fur favicon -h
 
 ```
 
+<!-- Section from "docs/readme/04-favicons.md.hbs" End -->
+
+<!-- Section from "docs/readme/05-Themes.md.hbs" Start -->
+
+<a name="section-docs-readme-05-themes-md"></a>
 Theme Gallery
 ------------
 
@@ -201,6 +220,11 @@ Theme Gallery
 + [Font Theme](http://fur-repo.github.io/fur-resources/font-gallery.html)
 
 
+<!-- Section from "docs/readme/05-Themes.md.hbs" End -->
+
+<!-- Section from "docs/readme/11-project.md.hbs" Start -->
+
+<a name="section-docs-readme-11-project-md"></a>
 About this project
 --------
 
@@ -224,6 +248,8 @@ Support this project and [others by okunishinishi][my_gratipay_url] via [gratipa
 
 [my_gratipay_url]: https://gratipay.com/okunishinishi/
 [my_gratipay_budge_url]: http://img.shields.io/gratipay/okunishinishi.svg?style=flat
+
+<!-- Section from "docs/readme/11-project.md.hbs" End -->
 
 
 <!-- Sections Start -->

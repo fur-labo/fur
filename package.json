@@ -1,6 +1,6 @@
 {
   "name": "fur",
-  "version": "2.1.9",
+  "version": "2.1.10",
   "description": "Quick generator for banner, favicon, etc...",
   "main": "lib",
   "scripts": {
@@ -38,14 +38,14 @@
     "ape-reporting": "^1.0.8",
     "ape-tasking": "^1.0.6",
     "ape-testing": "^1.3.1",
-    "ape-tmpl": "^1.0.7",
+    "ape-tmpl": "^1.0.8",
     "ape-updating": "^1.0.1",
     "apiguide": "^1.0.8",
     "color-scheme": "0.0.5",
     "coz": "^3.0.12",
     "coz-examples": "^1.0.3",
     "coz-tmpl": "^1.0.3",
-    "fur-examples": "^1.0.2",
+    "fur-examples": "^1.0.3",
     "glob": "^5.0.14"
   },
   "dependencies": {
@@ -56,13 +56,14 @@
     "execcli": "^2.1.1",
     "extend": "^3.0.0",
     "filecopy": "^1.0.5",
+    "fur-logger": "^1.0.0",
     "fur-resources": "^1.0.0",
     "handlebars": "^3.0.3",
     "hasbin": "^1.1.0",
     "js2xmlparser": "^1.0.0",
     "mkdirp": "^0.5.1",
-    "stringcase": "^1.2.4",
-    "svgpng": "^1.0.0",
+    "stringcase": "^1.2.5",
+    "svgpng": "^1.0.1",
     "writeout": "^1.2.1"
   },
   "engines": {
