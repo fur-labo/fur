@@ -21,10 +21,11 @@ exports['Generate a banner.'] = function (test) {
 
 
 exports['Generate a favicon.'] = function (test) {
-    new Fur().favicon(tmpDir + '/fur-testing-favicon.svg', {
+    new Fur().favicon(tmpDir + '/fur-testing-favicon.png', {
         color: 'k',
         font: 'g',
-        text: 'E'
+        text: 'E',
+        format: 'png'
     }, function (err) {
         test.ifError(err);
         test.done();

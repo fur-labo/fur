@@ -1,6 +1,6 @@
 {
   "name": "fur",
-  "version": "2.1.8",
+  "version": "2.1.9",
   "description": "Quick generator for banner, favicon, etc...",
   "main": "lib",
   "scripts": {
@@ -62,6 +62,7 @@
     "js2xmlparser": "^1.0.0",
     "mkdirp": "^0.5.1",
     "stringcase": "^1.2.4",
+    "svgpng": "^1.0.0",
     "writeout": "^1.2.1"
   },
   "engines": {
