@@ -4,10 +4,9 @@
 
 "use strict";
 
-var coz = require('coz'),
-    nodeunitTestcaseJsBud = coz.factory.nodeunitTestcaseJsBud;
+var cozTmpl = require('coz-tmpl');
 
-module.exports = nodeunitTestcaseJsBud({
+module.exports = cozTmpl.nodeunitTestJsBud({
     src: [
         __dirname + '/../lib/**/*.js'
     ],
