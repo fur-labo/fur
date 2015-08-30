@@ -20,6 +20,8 @@ exports.tearDown = function (done) {
 
 exports['Banner generator'] = function (test) {
     var generator = new BannerGenerator({
+        color: 'a',
+        shape:'a'
     });
     test.ok(generator);
     var filename = tmpDir + '/testing-banner.svg';

@@ -1,6 +1,6 @@
 {
   "name": "fur",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Quick generator for banner, favicon, etc...",
   "main": "lib",
   "scripts": {
@@ -41,7 +41,7 @@
     "ape-tmpl": "^1.0.9",
     "ape-updating": "^1.0.1",
     "apiguide": "^1.0.8",
-    "coz": "^3.0.12",
+    "coz": "^3.0.13",
     "coz-examples": "^1.0.3",
     "coz-tmpl": "^1.0.3",
     "execcli": "^2.1.1",
