@@ -71,10 +71,8 @@ $ npm install fur -g
 ```
 
 Or you can install it without `-g` option and use [Programmatic API](#programmatic-api).
-For more details, see tutorial section "[01 - Installing fur][01_installing_fur_url]".
 
-
-<a name="available commands" />
+<a name="available commands"/>
 ### Available Commands
 
 ```bash
@@ -96,7 +94,7 @@ $ fur -h
 
 ```
 
-<a name="programmatic-api" />
+<a name="programmatic-api"/>
 ### Programmatic API
 
 fur provides programmatic API which enables you to execute fur commands from Node.js program.
@@ -104,17 +102,18 @@ fur provides programmatic API which enables you to execute fur commands from Nod
 ```javascript
 var fur = require('fur');
 fur.banner('my-banner.svg', {
-    text: "coz",
-    color: "o",
-    font: "aa",
-    style: "plain",
-    shape: "k"
+text: "coz",
+color: "o",
+font: "aa",
+style: "plain",
+shape: "k"
 }, function (err) {
 });
 ```
 
 
 [nodejs_url]: https://nodejs.org/
+[npm_url]: https://www.npmjs.com
 
 <!-- Section from "docs/readme/02-howto.md.hbs" End -->
 
@@ -230,8 +229,6 @@ Theme Gallery
 About this project
 --------
 
-[![Bitdeli Badge][my_bitdeli_badge_url]][bitdeli_url]
-
 <a name="11-project-author"></a>
 ### Author
 
@@ -245,8 +242,6 @@ Support this project and [others by okunishinishi][my_gratipay_url] via [gratipa
 [<img src="https://cdn.rawgit.com/gratipay/gratipay-badge/2.3.0/dist/gratipay.svg" alt="Support via Gratipay"/>][my_gratipay_url]
 
 
-[bitdeli_url]: https://bitdeli.com/free
-[my_bitdeli_badge_url]: https://d2weczhvl823v0.cloudfront.net/okunishinishi/node-fur/trend.png
 
 [my_gratipay_url]: https://gratipay.com/okunishinishi/
 [my_gratipay_budge_url]: http://img.shields.io/gratipay/okunishinishi.svg?style=flat

@@ -16,10 +16,8 @@ $ npm install {{pkg.name}} -g
 ```
 
 Or you can install it without `-g` option and use [Programmatic API](#programmatic-api).
-For more details, see tutorial section "[01 - Installing fur][01_installing_fur_url]".
 
-
-<a name="available commands" />
+<a name="available commands"/>
 ### Available Commands
 
 ```bash
@@ -27,7 +25,7 @@ $ fur -h
 {{{vars.usages.all}}}
 ```
 
-<a name="programmatic-api" />
+<a name="programmatic-api"/>
 ### Programmatic API
 
 {{pkg.name}} provides programmatic API which enables you to execute {{pkg.name}} commands from Node.js program.
@@ -35,14 +33,15 @@ $ fur -h
 ```javascript
 var fur = require('fur');
 fur.banner('my-banner.svg', {
-    text: "coz",
-    color: "o",
-    font: "aa",
-    style: "plain",
-    shape: "k"
+text: "coz",
+color: "o",
+font: "aa",
+style: "plain",
+shape: "k"
 }, function (err) {
 });
 ```
 
 
 [nodejs_url]: https://nodejs.org/
+[npm_url]: https://www.npmjs.com
