@@ -2,6 +2,6 @@
 
 ```javascript
 // Generate favicon with command options.
-$ fur favicon "my-favicon.png" --color a --font g --text 'f' --style 'rounded'
+$ fur favicon "my-favicon.png" --color b --font n --text oh --shape c
 ```
 

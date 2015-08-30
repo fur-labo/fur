@@ -39,7 +39,7 @@ Quick generator for banner, favicon, etc...
 
 ```javascript
 // Generate favicon with command options.
-$ fur favicon "my-favicon.png" --color a --font g --text 'f' --style 'rounded'
+$ fur favicon "my-favicon.png" --color b --font n --text oh --shape c
 ```
 
 
@@ -104,11 +104,11 @@ fur provides programmatic API which enables you to execute fur commands from Nod
 ```javascript
 var fur = require('fur');
 fur.banner('my-banner.svg', {
-    "text": "coz",
-    "color": "o",
-    "font": "aa",
-    "style": "plain",
-    "format": "svg"
+    text: "coz",
+    color: "o",
+    font: "aa",
+    style: "plain",
+    shape: "k"
 }, function (err) {
 });
 ```
