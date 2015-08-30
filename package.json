@@ -1,6 +1,6 @@
 {
   "name": "fur",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "Quick generator for banner, favicon, etc...",
   "main": "lib",
   "scripts": {
@@ -45,7 +45,7 @@
     "coz-examples": "^1.0.3",
     "coz-tmpl": "^1.0.3",
     "execcli": "^2.1.1",
-    "fur-examples": "^1.0.3",
+    "fur-examples": "^1.0.4",
     "glob": "^5.0.14",
     "mkdirp": "^0.5.1"
   },
