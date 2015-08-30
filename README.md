@@ -217,8 +217,9 @@ $ fur favicon -h
 Theme Gallery
 ------------
 
-+ [Color Theme](http://fur-repo.github.io/fur-resources/color-gallery.html)
-+ [Font Theme](http://fur-repo.github.io/fur-resources/font-gallery.html)
++ [Color Themes](http://fur-repo.github.io/fur-colors)
++ [Font Themes](http://fur-repo.github.io/fur-fonts)
++ [Shape Themes](http://fur-repo.github.io/fur-themes)
 
 
 <!-- Section from "docs/readme/05-Themes.md.hbs" End -->
@@ -273,6 +274,8 @@ Links
 ------
 
 + [fur-examples](https://github.com/fur-repo/fur-examples)
-+ [fur-resources](https://github.com/fur-repo/fur-resources)
++ [fur-colors](https://github.com/fur-repo/fur-colors)
++ [fur-fonts](https://github.com/fur-repo/fur-fonts)
++ [fur-shapes](https://github.com/fur-repo/fur-shapes)
 
 <!-- Links End -->

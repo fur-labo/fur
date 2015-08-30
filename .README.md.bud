@@ -5,14 +5,9 @@
 "use strict";
 
 var apeTmpl = require('ape-tmpl'),
-    glob = require('glob'),
     path = require('path'),
     childProcess = require('child_process'),
-    stringcase = require('stringcase'),
     pkg = require('./package.json');
-
-var TUTORIAL_BASE = 'https://github.com/okunishinishi/node-coz/blob/master/';
-
 
 module.exports = apeTmpl.readmeMdBud({
     pkg: pkg,
@@ -56,15 +51,6 @@ module.exports = apeTmpl.readmeMdBud({
                 favicons: favicons
             }
         },
-        get tutorials() {
-            return glob.sync(__dirname + '/../tutorial/*.md').map(function (filename) {
-                var name = path.basename(filename, path.extname(filename));
-                return {
-                    name: stringcase.snakecase(name + '_url').replace(/__+/g, '_'),
-                    url: TUTORIAL_BASE + encodeURI("docs/tutorial/" + name + '.md')
-                }
-            });
-        },
         get usages() {
             var furBin = require.resolve('./bin/fur');
             return {
@@ -78,10 +64,6 @@ module.exports = apeTmpl.readmeMdBud({
                 },
                 get favicon() {
                     var command = [furBin, 'favicon', '-h'].join(' ');
-                    return childProcess.execSync(command);
-                },
-                get identicon() {
-                    var command = [furBin, 'identicon', '-h'].join(' ');
                     return childProcess.execSync(command);
                 }
             };

@@ -1,8 +1,0 @@
-{
-  "nodejs_url": "http://nodejs.org/",
-  "nodejs_download_url": "https://nodejs.org/download/",
-  "npm_url": "https://www.npmjs.com/",
-  "nvm_url": "https://github.com/creationix/nvm",
-  "my_npm_url": "http://www.npmjs.org/package/fur",
-  "my_apiguide_url": "http://okunishinishi.github.io/fur/apiguide/"
-}
