@@ -60,8 +60,9 @@
     "fur-fonts": "^1.0.3",
     "fur-logger": "^1.0.0",
     "fur-shapes": "^1.0.2",
+    "randomval": "^1.0.2",
     "stringcase": "^1.2.5",
-    "svgpng": "^1.1.0",
+    "svgpng": "^1.1.2",
     "writeout": "^1.2.1",
     "writexml": "^1.1.0"
   },
