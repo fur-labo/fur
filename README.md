@@ -157,6 +157,7 @@ $ fur banner -h
     -o, --format <format>      File format. 'svg' or 'png'.
     -t, --text <text>          Banner text.
     -W, --width <width>        Banner width.
+    -v, --verbose              Emit verbose log.
 
 
 ```
@@ -203,6 +204,7 @@ $ fur favicon -h
     -s, --shape <shape>        Banner style.
     -t, --text <text>          Favicon text.
     -o, --format <format>      File format. 'svg' or 'png'.
+    -v, --verbose              Emit verbose log.
 
 
 ```

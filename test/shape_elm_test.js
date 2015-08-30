@@ -1,9 +1,9 @@
 /**
- * Test case for textElm.
+ * Test case for shapeElm.
  * Runs with nodeunit.
  */
 
-var textElm = require('../lib/element/text_elm.js');
+var shapeElm = require('../lib/element/shape_elm.js');
 
 exports.setUp = function(done) {
     done();
@@ -13,7 +13,7 @@ exports.tearDown = function(done) {
     done();
 };
 
-exports['Text elm'] = function(test){
+exports['Shape elm'] = function(test){
 
     test.done();
 };

@@ -3,7 +3,7 @@
  * Runs with nodeunit.
  */
 
-var svgAttr = require('../lib/elements/svg_attr.js');
+var svgAttr = require('../lib/element/svg_attr.js');
 
 exports.setUp = function(done) {
     done();

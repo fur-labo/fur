@@ -27,7 +27,10 @@ program
     .option('-o, --format <format>', "File format. 'svg' or 'png'.")
     .option('-t, --text <text>', "Banner text.")
     .option('-W, --width <width>', "Banner width.")
+    .option('-v, --verbose', "Emit verbose log.")
     .action(function (filename, options) {
+        var fur = new Fur({});
+        fur.banner(filename, options, _done);
     });
 
 
@@ -44,10 +47,21 @@ program
     .option('-s, --shape <shape>', "Banner style.")
     .option('-t, --text <text>', "Favicon text.")
     .option('-o, --format <format>', "File format. 'svg' or 'png'.")
+    .option('-v, --verbose', "Emit verbose log.")
     .action(function (filename, options) {
+        var fur = new Fur({});
+        fur.favicon(filename, options, _done);
     });
 
 
 program
     .parse(process.argv);
 
+function _done(err) {
+    if (err) {
+        console.error(err);
+        process.exit(1);
+    } else {
+        process.exit(0);
+    }
+}

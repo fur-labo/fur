@@ -3,7 +3,7 @@
  * Runs with nodeunit.
  */
 
-var fontStyleElm = require('../lib/elements/font_style_elm.js');
+var fontStyleElm = require('../lib/element/font_style_elm.js');
 
 exports.setUp = function(done) {
     done();

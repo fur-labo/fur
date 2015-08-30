@@ -1,9 +1,9 @@
 /**
- * Test case for faviconGenerator.
+ * Test case for bannerGenerator.
  * Runs with nodeunit.
  */
 
-var FaviconGenerator = require('../lib/generators/favicon_generator.js'),
+var BannerGenerator = require('../lib/generators/banner_generator.js'),
     fs = require('fs'),
     mkdirp = require('mkdirp');
 
@@ -18,10 +18,11 @@ exports.tearDown = function (done) {
     done();
 };
 
-exports['Favicon generator'] = function (test) {
-    var generator = new FaviconGenerator({});
+exports['Banner generator'] = function (test) {
+    var generator = new BannerGenerator({
+    });
     test.ok(generator);
-    var filename = tmpDir + '/testing-favicon.svg';
+    var filename = tmpDir + '/testing-banner.svg';
     generator.generate(filename, function (err) {
         test.ifError(err);
         test.ok(fs.existsSync(filename));

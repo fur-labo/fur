@@ -1,9 +1,9 @@
 /**
- * Test case for textElm.
+ * Test case for colorAttr.
  * Runs with nodeunit.
  */
 
-var textElm = require('../lib/element/text_elm.js');
+var colorAttr = require('../lib/element/color_attr.js');
 
 exports.setUp = function(done) {
     done();
@@ -13,7 +13,7 @@ exports.tearDown = function(done) {
     done();
 };
 
-exports['Text elm'] = function(test){
+exports['Color attr'] = function(test){
 
     test.done();
 };
