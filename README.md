@@ -147,16 +147,16 @@ $ fur banner -h
 
   Options:
 
-    -h, --help                 output usage information
-    -c, --color <color>        Color expression string or color theme name.
-    -s, --shape <shape>        Banner style.
-    -f, --font <font>          Font file name or font theme name.
-    -F, --fontsize <fontSize>  Size of font.
-    -H, --height <height>      Banner height.
-    -o, --format <format>      File format. 'svg' or 'png'.
-    -t, --text <text>          Banner text.
-    -W, --width <width>        Banner width.
-    -v, --verbose              Emit verbose log.
+    -h, --help                  output usage information
+    -c, --color <color>         Color expression string or color theme name.
+    -s, --shape <shape>         Banner style.
+    -f, --font <font>           Font file name or font theme name.
+    -F, --font-size <fontSize>  Size of font.
+    -H, --height <height>       Banner height.
+    -o, --format <format>       File format. 'svg' or 'png'.
+    -t, --text <text>           Banner text.
+    -W, --width <width>         Banner width.
+    -v, --verbose               Emit verbose log.
 
 
 ```
@@ -195,15 +195,15 @@ $ fur favicon -h
 
   Options:
 
-    -h, --help                 output usage information
-    -c, --color <color>        Color expression string or color theme name.
-    -f, --font <font>          Font file name or font theme name.
-    -F, --fontsize <fontSize>  Size of font.
-    -S, --size <size>          Favicon size.
-    -s, --shape <shape>        Banner style.
-    -t, --text <text>          Favicon text.
-    -o, --format <format>      File format. 'svg' or 'png'.
-    -v, --verbose              Emit verbose log.
+    -h, --help                  output usage information
+    -c, --color <color>         Color expression string or color theme name.
+    -f, --font <font>           Font file name or font theme name.
+    -F, --font-size <fontSize>  Size of font.
+    -S, --size <size>           Favicon size.
+    -s, --shape <shape>         Banner style.
+    -t, --text <text>           Favicon text.
+    -o, --format <format>       File format. 'svg' or 'png'.
+    -v, --verbose               Emit verbose log.
 
 
 ```
