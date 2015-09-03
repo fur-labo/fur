@@ -65,3 +65,7 @@ function _done(err) {
         process.exit(0);
     }
 }
+
+if (program.args.length === 0) {
+    program.help()
+}
