@@ -25,7 +25,7 @@ module.exports = apeTmpl.readmeMdBud({
     vars: {
         examplesUrl:'https://github.com/fur-repo/fur-examples',
         get examples() {
-            var BASE_URL = 'https://github.com/fur-repo/fur-examples/raw/master/example';
+            var BASE_URL = 'https://github.com/fur-repo/fur-examples/raw/master/example/';
             var banners = [],
                 favicons = [];
             var examples = require('fur-examples');
