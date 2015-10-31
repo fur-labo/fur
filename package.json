@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/okunishinishi/node-fur.git"
+    "url": "git+https://github.com/fur-repo/fur.git"
   },
   "author": {
     "name": "Taka Okunishi",
@@ -25,9 +25,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/okunishinishi/node-fur/issues"
+    "url": "https://github.com/fur-repo/fur/issues"
   },
-  "homepage": "https://github.com/okunishinishi/node-fur#readme",
+  "homepage": "https://github.com/fur-repo/fur#readme",
   "devDependencies": {
     "ape-covering": "^1.1.0",
     "ape-deploying": "^1.0.8",
