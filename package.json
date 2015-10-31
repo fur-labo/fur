@@ -1,6 +1,6 @@
 {
   "name": "fur",
-  "version": "3.0.10",
+  "version": "3.0.11",
   "description": "Quick generator for banner, favicon, etc...",
   "main": "lib",
   "scripts": {
