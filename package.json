@@ -4,10 +4,7 @@
   "description": "Quick generator for banner, favicon, etc...",
   "main": "lib",
   "scripts": {
-    "build": "./ci/build.js",
-    "test": "./ci/test.js",
-    "cover": "./ci/cover.js",
-    "report": "./ci/report.js"
+    "test": "./ci/test.js"
   },
   "bin": {
     "fur": "bin/fur"
