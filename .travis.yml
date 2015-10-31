@@ -1,17 +1,14 @@
 language: node_js
 node_js:
 - '0.11'
-before_install: 
+before_install:
+- npm install nodeunit istanbul -g
 install:
 - npm install
 before_script:
 - npm link .
 script:
-- npm run build
-- npm run test
-- npm run cover
-- npm run report
-env:
-  global:
-  - secure: MjmHoBN/3OeHQG/B7m0Gi7sJ2k+so/TKnn5WHUX5WG9oznYuejo35ho8oMi9ag3YB24V/mC6J1rVBEcfFJBNBprvrbDQ0+OHU7Ud4OGb6T4MC/sjI/6rewCarDQovWkWbJbkmY8Uxhbf1QHBnrWDB7XxOo2i39MFQSfoyHnTfEoUwJeE3OwxjZZNlzCMzQxaiEklP73MWFgUcIE1GVHk3oHCNPq2ahCipYtyySBb3wkD79LKy020UDSnpu4n9Lq0f2GUxlrHFay8lqWZz+PU2110EEO0pE5rNMnbah9GIVkesJgoiarteCeiNCsN1vX39gFzHy2Hh8p8F0LaaBg8wMT7Omw7yd57VkS49QBTU/tM+QuZtjR58GFz9U2jyjH0iErCQ9XqJ9vBKpuTvnf8+2pfFY+jelaW9f2HWHZ+odaPOdIkqzqeLt+B3XYVxlkl1t/M2VjdR5jPeb/+JUZy4oqi3t6F2qEqM+y9ZtKbXlPwT0s2G1q0f4rIbYhIJ9ToS2TMTMR6RP4EMPPRYCIb+p8NIM6RTfaaJFgSSTSI5jkoUuvXN5dPuCylWg5KvLzdDtTD6Nj+y4rwgrQO+tpcXm+SoxUZvZzCFXjz+2RukTWvHLyesPucGYBNMGRScwYPaYskP2FU0C7IHfMo2Xl2rjVAqZsDJs1HVnGPxtVMbDQ=
-  - secure: ggN87BHfUg60FyzZ1NsFlLkm3Ls+4o/PRl8nVniHpc20sagInbWqlfkCiwm2O3YvOfifR8tBwh4rugJ4jjyLf5KfC0L9ditIXFEIE523BSafE82u7n8HWEDc7uSKhE3jKEKGZUDhYtUlyb30wJv0VP0fAbh8ZPe+4+OxMj3/GjMTmnHQVfGkqc1a1WgIXaUCpvYvW5RRL4r1jY/j+CaVmtSxwZNmRlq3yYmXzyWv7/SJU0z+pX2Jf4fDfv4CVZijGiOsaayaMCssw2mGch6IPMwew5ueGBQBRTjy6bTqcwTXTyXoztvjwZq3q1GFlBVzJxPl850dSKgkvts6sHOgX875X0DyDHxrAjBvieMewuVzqanJIuBpTX+94XyypJFyd9CfWeLTlbIldATxYoGMtvSor9q/IJzC4b5/JKpzJ1lavlCqPeEDCYHz4qJ0K3zaQA/Z1lMnkj8Hg2C/I+mQsbr3sytWTUZ/2FwmWQYAc811qJyKBfGc1eAdjSK6wSIvjg6ICxDr70lapdJErraA+R4gy6MKsrxnHuiHo2i6HcRb5FnC9nFJwegeqY+VB9BuRsBQIQabu8KN5sJFPT1H7PqzA9v7Lyv+x1btDVt/f56qMwkNRUOe+4n2dIX6sWt+0hXRN7zHiEaOzbVEZsUKyQtp3g5+MqO/jRLOnT3f/pE=
+- ./ci/build/build
+- ./ci/build/test
+- ./ci/build/cover
+- ./ci/build/report
