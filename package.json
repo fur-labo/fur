@@ -1,6 +1,6 @@
 {
   "name": "fur",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "Quick generator for banner, favicon, etc...",
   "main": "lib",
   "scripts": {
@@ -60,6 +60,7 @@
     "mkdirp": "^0.5.1"
   },
   "engines": {
-    "node": ">=0.10.3"
+    "node": ">=6",
+    "npm": ">=3"
   }
 }

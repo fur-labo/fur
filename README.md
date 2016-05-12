@@ -66,7 +66,7 @@ Getting started
 
 ### Requirements
 
-+ [node.js&gt;&#x3D;0.10.3][nodejs_url]
++ [node.js&gt;&#x3D;6][nodejs_url]
 + [phantomjs>=2.0.0](http://phantomjs.org/)
 
 ### Installation
