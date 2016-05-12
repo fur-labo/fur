@@ -25,23 +25,6 @@
     "url": "https://github.com/fur-repo/fur/issues"
   },
   "homepage": "https://github.com/fur-repo/fur#readme",
-  "devDependencies": {
-    "ape-covering": "^3.0.1",
-    "ape-deploying": "^4.0.2",
-    "ape-releasing": "^3.1.1",
-    "ape-reporting": "^3.0.1",
-    "ape-tasking": "^3.1.2",
-    "ape-testing": "^3.0.1",
-    "ape-tmpl": "^5.0.1",
-    "ape-updating": "^3.0.2",
-    "apiguide": "^1.0.10",
-    "coz": "^5.1.5",
-    "coz-examples": "^1.0.3",
-    "execcli": "^4.0.2",
-    "fur-examples": "^1.1.5",
-    "glob": "^7.0.3",
-    "mkdirp": "^0.5.1"
-  },
   "dependencies": {
     "argx": "^2.0.2",
     "co": "^4.6.0",
@@ -58,6 +41,23 @@
     "svgpng": "^1.1.4",
     "writeout": "^2.0.2",
     "writexml": "^1.1.0"
+  },
+  "devDependencies": {
+    "ape-covering": "^3.0.1",
+    "ape-deploying": "^4.0.2",
+    "ape-releasing": "^3.1.1",
+    "ape-reporting": "^3.0.1",
+    "ape-tasking": "^3.1.2",
+    "ape-testing": "^3.0.1",
+    "ape-tmpl": "^5.0.1",
+    "ape-updating": "^3.0.2",
+    "apiguide": "^1.0.10",
+    "coz": "^5.1.5",
+    "coz-examples": "^1.0.3",
+    "execcli": "^4.0.2",
+    "fur-examples": "^1.1.5",
+    "glob": "^7.0.3",
+    "mkdirp": "^0.5.1"
   },
   "engines": {
     "node": ">=0.10.3"
