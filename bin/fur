@@ -28,7 +28,7 @@ program
   .option('-t, --text <text>', "Banner text.")
   .option('-W, --width <width>', "Banner width.")
   .option('-v, --verbose', "Emit verbose log.")
-  .action(function (filename, options) {
+  .action((filename, options) => {
     const fur = new Fur({})
     fur.banner(filename, options)
       .then(() => process.exit(0))

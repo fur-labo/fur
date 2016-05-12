@@ -31,3 +31,7 @@ bower_components
 .idea
 .DS_Store
 tmp
+
+
+.svgpng.*.json
+.tmp.*.svg
