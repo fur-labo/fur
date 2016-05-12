@@ -1,34 +1,33 @@
 /**
  * Test case for bannerGenerator.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
 
-var BannerGenerator = require('../lib/generators/banner_generator.js'),
-    fs = require('fs'),
-    mkdirp = require('mkdirp');
+const BannerGenerator = require('../lib/generators/banner_generator.js')
+const fs = require('fs')
+const assert = require('assert')
+const co = require('co')
+const mkdirp = require('mkdirp')
 
-var tmpDir = __dirname + '/../tmp';
+let tmpDir = __dirname + '/../tmp'
 
-exports.setUp = function (done) {
-    mkdirp.sync(tmpDir);
-    done();
-};
+before(() => co(function * () {
+  mkdirp.sync(tmpDir)
 
-exports.tearDown = function (done) {
-    done();
-};
+}))
 
-exports['Banner generator'] = function (test) {
-    var generator = new BannerGenerator({
-        color: 'a',
-        shape:'a'
-    });
-    test.ok(generator);
-    var filename = tmpDir + '/testing-banner.svg';
-    generator.generate(filename, function (err) {
-        test.ifError(err);
-        test.ok(fs.existsSync(filename));
-        test.done();
-    });
-};
+after(() => co(function * () {
 
+}))
+
+it('Banner generator', () => co(function * () {
+  let generator = new BannerGenerator({
+    color: 'a',
+    shape: 'a'
+  })
+  assert.ok(generator)
+  let filename = tmpDir + '/testing-banner.svg'
+  yield generator.generate(filename)
+}))
+
+/* global describe, before, after, it */

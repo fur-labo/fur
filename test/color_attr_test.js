@@ -1,20 +1,25 @@
 /**
  * Test case for colorAttr.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
+'use strict'
 
-var colorAttr = require('../lib/element/color_attr.js');
+const colorAttr = require('../lib/element/color_attr.js')
+const assert = require('assert')
+const co = require('co')
 
-exports.setUp = function(done) {
-    done();
-};
+describe('color-attr', () => {
+  before(() => co(function * () {
 
-exports.tearDown = function(done) {
-    done();
-};
+  }))
 
-exports['Color attr'] = function(test){
+  after(() => co(function * () {
 
-    test.done();
-};
+  }))
 
+  it('Color attr', () => co(function * () {
+
+  }))
+})
+
+/* global describe, before, after, it */

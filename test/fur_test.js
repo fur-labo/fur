@@ -1,40 +1,40 @@
 /**
  * Test case for fur.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
+'use strict'
 
-var Fur = require('../lib/fur.js'),
-    fs = require('fs'),
-    mkdirp = require('mkdirp');
+const assert = require('assert')
+const co = require('co')
 
-var tmpDir = __dirname + '/../tmp';
+const Fur = require('../lib/fur.js')
+const fs = require('fs')
+const mkdirp = require('mkdirp')
 
-exports.setUp = function (done) {
-    mkdirp.sync(tmpDir);
-    done();
-};
+const tmpDir = __dirname + '/../tmp'
 
-exports.tearDown = function (done) {
-    done();
-};
+describe('fur', function () {
+  before(() => co(function * () {
+    mkdirp.sync(tmpDir)
+  }))
 
-exports['Generate favicon'] = function (test) {
-    var fur = new Fur({});
-    var filename = tmpDir + '/testing-fur-favicon.svg';
-    fur.favicon(filename, function (err) {
-        test.ifError(err);
-        test.ok(fs.existsSync(filename));
-        test.done();
-    });
-};
+  after(() => co(function * () {
 
-exports['Generate banner'] = function (test) {
-    var fur = new Fur({});
-    var filename = tmpDir + '/testing-fur-banner.svg';
-    fur.banner(filename, function (err) {
-        test.ifError(err);
-        test.ok(fs.existsSync(filename));
-        test.done();
-    });
-};
+  }))
 
+  it('Generate favicon', () => co(function * () {
+    let fur = new Fur({})
+    let filename = tmpDir + '/testing-fur-favicon.svg'
+    yield fur.favicon(filename)
+    assert.ok(fs.existsSync(filename))
+  }))
+
+  it('Generate banner', () => co(function * () {
+    let fur = new Fur({})
+    let filename = tmpDir + '/testing-fur-banner.svg'
+    yield fur.banner(filename)
+    assert.ok(fs.existsSync(filename))
+  }))
+})
+
+/* global describe, before, after, it */

@@ -1,20 +1,25 @@
 /**
  * Test case for fontStyleElm.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
+'use strict'
 
-var fontStyleElm = require('../lib/element/font_style_elm.js');
+const fontStyleElm = require('../lib/element/font_style_elm.js')
+const assert = require('assert')
+const co = require('co')
 
-exports.setUp = function(done) {
-    done();
-};
+describe('font-style-elm', () => {
+  before(() => co(function * () {
 
-exports.tearDown = function(done) {
-    done();
-};
+  }))
 
-exports['Font style elm'] = function(test){
+  after(() => co(function * () {
 
-    test.done();
-};
+  }))
 
+  it('Font style elm', () => co(function * () {
+
+  }))
+})
+
+/* global describe, before, after, it */

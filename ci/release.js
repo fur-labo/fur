@@ -4,24 +4,20 @@
  * Release this package.
  */
 
-"use strict";
+'use strict'
 
-var path = require('path'),
-    apeTasking = require('ape-tasking'),
-    apeReleasing = require('ape-releasing');
+process.chdir(`${__dirname}/..`)
 
-var basedir = path.resolve(__dirname, '..');
-process.chdir(basedir);
+const apeTasking = require('ape-tasking')
+const apeReleasing = require('ape-releasing')
 
 apeTasking.runTasks('release', [
-    function (callback) {
-        apeReleasing.releasePackage({
-            beforeRelease: [
-                './ci/build.js',
-                './ci/test.js',
-                './ci/cover.js',
-                './ci/deploy.js'
-            ]
-        }, callback);
-    }
-], true);
+  ()=> apeReleasing.releasePackage({
+    beforeRelease: [
+      './ci/build.js',
+      './ci/test.js',
+      './ci/cover.js',
+      './ci/deploy.js'
+    ]
+  })
+], true)

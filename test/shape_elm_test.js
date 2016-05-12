@@ -1,20 +1,25 @@
 /**
  * Test case for shapeElm.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
+'use strict'
 
-var shapeElm = require('../lib/element/shape_elm.js');
+const shapeElm = require('../lib/element/shape_elm.js')
+const assert = require('assert')
+const co = require('co')
 
-exports.setUp = function(done) {
-    done();
-};
+describe('shape-elm', () => {
+  before(() => co(function * () {
 
-exports.tearDown = function(done) {
-    done();
-};
+  }))
 
-exports['Shape elm'] = function(test){
+  after(() => co(function * () {
 
-    test.done();
-};
+  }))
 
+  it('Shape elm', () => co(function * () {
+
+  }))
+})
+
+/* global describe, before, after, it */

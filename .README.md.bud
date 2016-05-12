@@ -2,75 +2,76 @@
  * Bud file for README.md
  */
 
-"use strict";
+'use strict'
 
-var apeTmpl = require('ape-tmpl'),
-    path = require('path'),
-    childProcess = require('child_process'),
-    pkg = require('./package.json');
+const apeTmpl = require('ape-tmpl')
+const path = require('path')
+const childProcess = require('child_process')
+const pkg = require('./package.json')
 
 module.exports = apeTmpl.readmeMdBud({
-    pkg: pkg,
-    repo: 'fur-repo/' + pkg.name,
-    sections: 'doc/readme/*.md.hbs',
-    badges: {
-        travis: true,
-        codeclimate: true,
-        codeclimateCoverage: true,
-        gemnasium: true,
-        npm: true
-    },
-    links: require('./doc/links.json'),
-    overview: 'doc/overview.md',
-    vars: {
-        examplesUrl:'https://github.com/fur-repo/fur-examples',
-        get examples() {
-            var BASE_URL = 'https://github.com/fur-repo/fur-examples/raw/master/example/';
-            var banners = [],
-                favicons = [];
-            var examples = require('fur-examples');
-            Object.keys(examples).forEach(function (key) {
-                var example = examples[key],
-                    banner = example['$banner'],
-                    favicon = example['$favicon'];
-                if (banner) {
-                    banners.push({
-                        img: BASE_URL + key + '/banner.png',
-                        options: banner
-                    });
-                }
-                if (favicon) {
-                    favicons.push({
-                        img: BASE_URL + key + '/favicon.png',
-                        options: favicon
-                    });
-                }
-            });
-            return {
-                banners: banners,
-                favicons: favicons
-            }
-        },
-        get usages() {
-            var furBin = require.resolve('./bin/fur');
-            return {
-                get all() {
-                    var command = [furBin, '-h'].join(' ');
-                    return childProcess.execSync(command);
-                },
-                get banner() {
-                    var command = [furBin, 'banner', '-h'].join(' ');
-                    return childProcess.execSync(command);
-                },
-                get favicon() {
-                    var command = [furBin, 'favicon', '-h'].join(' ');
-                    return childProcess.execSync(command);
-                }
-            };
+  pkg: pkg,
+  repo: 'fur-repo/' + pkg.name,
+  sections: 'doc/gudies/*.md.hbs',
+  badges: {
+    travis: true,
+    codeclimate: true,
+    codeclimateCoverage: true,
+    gemnasium: true,
+    npm: true,
+    standard: true
+  },
+  links: require('./doc/links.json'),
+  overview: 'doc/overview.md',
+  vars: {
+    examplesUrl: 'https://github.com/fur-repo/fur-examples',
+    get examples () {
+      var BASE_URL = 'https://github.com/fur-repo/fur-examples/raw/master/example/'
+      var banners = [],
+        favicons = []
+      var examples = require('fur-examples')
+      Object.keys(examples).forEach(function (key) {
+        var example = examples[ key ],
+          banner = example[ '$banner' ],
+          favicon = example[ '$favicon' ]
+        if (banner) {
+          banners.push({
+            img: BASE_URL + key + '/banner.png',
+            options: banner
+          })
         }
+        if (favicon) {
+          favicons.push({
+            img: BASE_URL + key + '/favicon.png',
+            options: favicon
+          })
+        }
+      })
+      return {
+        banners: banners,
+        favicons: favicons
+      }
+    },
+    get usages () {
+      var furBin = require.resolve('./bin/fur')
+      return {
+        get all () {
+          var command = [ furBin, '-h' ].join(' ')
+          return childProcess.execSync(command)
+        },
+        get banner () {
+          var command = [ furBin, 'banner', '-h' ].join(' ')
+          return childProcess.execSync(command)
+        },
+        get favicon () {
+          var command = [ furBin, 'favicon', '-h' ].join(' ')
+          return childProcess.execSync(command)
+        }
+      }
     }
-});
+  }
+})
 
 if (!module.parent) {
-    require('coz').render(__filename);
+  require('coz').render(__filename)
 }

@@ -3,69 +3,68 @@
 /**
  * fur bin script.
  */
+'use strict'
 
-
-var program = require('commander'),
-    pkg = require('../package'),
-    Fur = require('../lib/fur');
+const program = require('commander')
+const pkg = require('../package')
+const Fur = require('../lib/fur')
+const co = require('co')
 
 program
-    .version(pkg['version']);
+  .version(pkg[ 'version' ])
 
-
-//=========================
+// =========================
 // Handle `banner` command
-//=========================
+// =========================
 program
-    .command("banner <filename>")
-    .description("Generate a banner.")
-    .option('-c, --color <color>', "Color expression string or color theme name.")
-    .option('-s, --shape <shape>', "Banner style.")
-    .option('-f, --font <font>', "Font file name or font theme name.")
-    .option('-F, --font-size <fontSize>', "Size of font.")
-    .option('-H, --height <height>', "Banner height.")
-    .option('-o, --format <format>', "File format. 'svg' or 'png'.")
-    .option('-t, --text <text>', "Banner text.")
-    .option('-W, --width <width>', "Banner width.")
-    .option('-v, --verbose', "Emit verbose log.")
-    .action(function (filename, options) {
-        var fur = new Fur({});
-        fur.banner(filename, options, _done);
-    });
+  .command("banner <filename>")
+  .description("Generate a banner.")
+  .option('-c, --color <color>', "Color expression string or color theme name.")
+  .option('-s, --shape <shape>', "Banner style.")
+  .option('-f, --font <font>', "Font file name or font theme name.")
+  .option('-F, --font-size <fontSize>', "Size of font.")
+  .option('-H, --height <height>', "Banner height.")
+  .option('-o, --format <format>', "File format. 'svg' or 'png'.")
+  .option('-t, --text <text>', "Banner text.")
+  .option('-W, --width <width>', "Banner width.")
+  .option('-v, --verbose', "Emit verbose log.")
+  .action(function (filename, options) {
+    const fur = new Fur({})
+    fur.banner(filename, options)
+      .then(() => process.exit(0))
+      .catch((e) => {
+        console.error(e)
+        process.exit(1)
+      })
+  })
 
-
-//=========================
+// =========================
 // Handle `favicon` command
-//=========================
+// =========================
 program
-    .command("favicon <filename>")
-    .description("Generate a favicon.")
-    .option('-c, --color <color>', "Color expression string or color theme name.")
-    .option('-f, --font <font>', "Font file name or font theme name.")
-    .option('-F, --font-size <fontSize>', "Size of font.")
-    .option('-S, --size <size>', "Favicon size.")
-    .option('-s, --shape <shape>', "Banner style.")
-    .option('-t, --text <text>', "Favicon text.")
-    .option('-o, --format <format>', "File format. 'svg' or 'png'.")
-    .option('-v, --verbose', "Emit verbose log.")
-    .action(function (filename, options) {
-        var fur = new Fur({});
-        fur.favicon(filename, options, _done);
-    });
-
+  .command("favicon <filename>")
+  .description("Generate a favicon.")
+  .option('-c, --color <color>', "Color expression string or color theme name.")
+  .option('-f, --font <font>', "Font file name or font theme name.")
+  .option('-F, --font-size <fontSize>', "Size of font.")
+  .option('-S, --size <size>', "Favicon size.")
+  .option('-s, --shape <shape>', "Banner style.")
+  .option('-t, --text <text>', "Favicon text.")
+  .option('-o, --format <format>', "File format. 'svg' or 'png'.")
+  .option('-v, --verbose', "Emit verbose log.")
+  .action((filename, options) => {
+    const fur = new Fur({})
+    fur.favicon(filename, options)
+      .then(() => process.exit(0))
+      .catch((e) => {
+        console.error(e)
+        process.exit(1)
+      })
+  })
 
 program
-    .parse(process.argv);
-
-function _done(err) {
-    if (err) {
-        console.error(err);
-        process.exit(1);
-    } else {
-        process.exit(0);
-    }
-}
+  .parse(process.argv)
 
 if (program.args.length === 0) {
-    program.help()
+  program.help()
 }

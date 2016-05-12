@@ -1,38 +1,39 @@
 /**
  * Test for fur bin.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
+'use strict'
 
-var fs = require('fs'),
-    furBin = require.resolve('../bin/fur'),
-    execcli = require('execcli'),
-    mkdirp = require('mkdirp');
+const assert = require('assert')
+const co = require('co')
 
-var tmpDir = __dirname + '/../tmp';
+const fs = require('fs')
+const furBin = require.resolve('../bin/fur')
+const execcli = require('execcli')
+const mkdirp = require('mkdirp')
 
-exports.setUp = function (done) {
-    mkdirp.sync(tmpDir);
-    done();
-};
+let tmpDir = __dirname + '/../tmp'
 
-exports.tearDown = function (done) {
-    done();
-};
+describe('bin', function () {
+  this.timeout(24000)
+  before(() => co(function * () {
+    mkdirp.sync(tmpDir)
+  }))
 
-exports['Generate favicon'] = function (test) {
-    var filename = tmpDir + '/testing-bin-favicon.png';
-    execcli(furBin, ['favicon', filename], function (err) {
-        test.ifError(err);
-        test.ok(fs.existsSync(filename));
-        test.done();
-    });
-};
+  after(() => co(function * () {
+  }))
 
-exports['Generate banner'] = function (test) {
-    var filename = tmpDir + '/testing-bin-banner.png';
-    execcli(furBin, ['banner', filename], function (err) {
-        test.ifError(err);
-        test.ok(fs.existsSync(filename));
-        test.done();
-    });
-};
+  it('Generate favicon', () => co(function * () {
+    let filename = tmpDir + '/testing-bin-favicon.png'
+    yield execcli(furBin, [ 'favicon', filename ])
+    assert.ok(fs.existsSync(filename))
+  }))
+
+  it('Generate banner', () => co(function * () {
+    let filename = tmpDir + '/testing-bin-banner.png'
+    yield execcli(furBin, [ 'banner', filename ])
+    assert.ok(fs.existsSync(filename))
+  }))
+})
+
+/* global describe, before, after, it */

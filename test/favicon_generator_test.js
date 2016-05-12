@@ -1,31 +1,34 @@
 /**
  * Test case for faviconGenerator.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
+'use strict'
 
-var FaviconGenerator = require('../lib/generators/favicon_generator.js'),
-    fs = require('fs'),
-    mkdirp = require('mkdirp');
+const assert = require('assert')
+const co = require('co')
 
-var tmpDir = __dirname + '/../tmp';
+const FaviconGenerator = require('../lib/generators/favicon_generator.js')
+const fs = require('fs')
+const mkdirp = require('mkdirp')
 
-exports.setUp = function (done) {
-    mkdirp.sync(tmpDir);
-    done();
-};
+const tmpDir = __dirname + '/../tmp'
 
-exports.tearDown = function (done) {
-    done();
-};
+describe('favicon generator', function () {
+  before(() => co(function * () {
+    mkdirp.sync(tmpDir)
+  }))
 
-exports['Favicon generator'] = function (test) {
-    var generator = new FaviconGenerator({});
-    test.ok(generator);
-    var filename = tmpDir + '/testing-favicon.svg';
-    generator.generate(filename, function (err) {
-        test.ifError(err);
-        test.ok(fs.existsSync(filename));
-        test.done();
-    });
-};
+  after(() => co(function * () {
+  }))
 
+  it('Favicon generator', () => co(function * () {
+    let generator = new FaviconGenerator({})
+    console.log(generator)
+    assert.ok(generator)
+    let filename = tmpDir + '/testing-favicon.svg'
+    yield generator.generate(filename)
+    assert.ok(fs.existsSync(filename))
+  }))
+})
+
+/* global describe, before, after, it */

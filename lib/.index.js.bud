@@ -1,14 +1,14 @@
 /**
  * Bud file for index.js
  */
-"use strict";
+'use strict'
 
-var pkg = require('../package');
+const pkg = require('../package')
 
 module.exports = {
-    force: true,
-    mode: '444',
-    data: {
-        pkg: pkg
-    }
-};
+  force: true,
+  mode: '444',
+  data: {
+    pkg: pkg
+  }
+}

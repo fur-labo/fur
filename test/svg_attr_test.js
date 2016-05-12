@@ -1,20 +1,25 @@
 /**
  * Test case for svgAttr.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
+'use strict'
 
-var svgAttr = require('../lib/element/svg_attr.js');
+const svgAttr = require('../lib/element/svg_attr.js')
+const assert = require('assert')
+const co = require('co')
 
-exports.setUp = function(done) {
-    done();
-};
+describe('svg-attr', () => {
+  before(() => co(function * () {
 
-exports.tearDown = function(done) {
-    done();
-};
+  }))
 
-exports['Svg attr'] = function(test){
+  after(() => co(function * () {
 
-    test.done();
-};
+  }))
 
+  it('Svg attr', () => co(function * () {
+
+  }))
+})
+
+/* global describe, before, after, it */

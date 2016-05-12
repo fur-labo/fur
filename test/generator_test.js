@@ -1,51 +1,48 @@
 /**
  * Test case for generator.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
+'use strict'
 
-var Generator = require('../lib/generators/generator.js'),
-    fs = require('fs'),
-    mkdirp = require('mkdirp');
+const assert = require('assert')
+const co = require('co')
 
-var tmpDir = __dirname + '/../tmp';
+const Generator = require('../lib/generators/generator.js')
+const fs = require('fs')
+const mkdirp = require('mkdirp')
 
-exports.setUp = function (done) {
-    mkdirp.sync(tmpDir);
-    done();
-};
+let tmpDir = __dirname + '/../tmp'
 
-exports.tearDown = function (done) {
-    done();
-};
+before(() => co(function * () {
+  mkdirp.sync(tmpDir)
+}))
 
-exports['Render svg'] = function (test) {
-    var generator = new Generator({});
-    test.ok(generator);
-    var filename = tmpDir + '/testing-generate-svg.svg';
-    generator.renderSvg(filename, {
-        text: {
-            '#': 'foo'
-        }
-    }, function (err) {
-        test.ok(fs.existsSync(filename));
-        test.ifError(err);
-        test.done();
-    });
-};
+after(() => co(function * () {
 
+}))
 
-exports['Render png'] = function (test) {
-    var generator = new Generator({});
-    test.ok(generator);
-    var filename = tmpDir + '/testing-generate-png.png';
-    generator.renderPng(filename, {
-        text: {
-            '#': 'foo'
-        }
-    }, function (err) {
-        test.ok(fs.existsSync(filename));
-        test.ifError(err);
-        test.done();
-    });
-};
+it('Render svg', () => co(function * () {
+  let generator = new Generator({})
+  assert.ok(generator)
+  let filename = tmpDir + '/testing-generate-svg.svg'
+  yield generator.renderSvg(filename, {
+    text: {
+      '#': 'foo'
+    }
+  })
+  assert.ok(fs.existsSync(filename))
+}))
+
+it('Render png', () => co(function * () {
+  let generator = new Generator({})
+  assert.ok(generator)
+  let filename = tmpDir + '/testing-generate-png.png'
+  yield generator.renderPng(filename, {
+    text: {
+      '#': 'foo'
+    }
+  })
+}))
+
+/* global describe, before, after, it */
 
