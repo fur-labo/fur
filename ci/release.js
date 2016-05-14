@@ -12,11 +12,12 @@ const apeTasking = require('ape-tasking')
 const apeReleasing = require('ape-releasing')
 
 apeTasking.runTasks('release', [
-  ()=> apeReleasing.releasePackage({
+  () => apeReleasing.releasePackage({
     beforeRelease: [
       './ci/build.js',
       './ci/test.js',
       './ci/cover.js',
+      './ci/doc.js',
       './ci/deploy.js'
     ]
   })
