@@ -15,6 +15,6 @@ apeTasking.runTasks('cover', [
   () => apeCovering.measureCoverage(
     '_mocha', [ 'test/*_test.js' ], {
       dir: 'coverage',
-      timeout: 12000
+      timeout: 18000
     })
 ], true)

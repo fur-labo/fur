@@ -11,7 +11,7 @@ const FaviconGenerator = require('../lib/generators/favicon_generator.js')
 const fs = require('fs')
 const mkdirp = require('mkdirp')
 
-const tmpDir = __dirname + '/../tmp'
+const tmpDir = `${__dirname}/../tmp`
 
 describe('favicon generator', function () {
   before(() => co(function * () {
@@ -25,9 +25,16 @@ describe('favicon generator', function () {
     let generator = new FaviconGenerator({})
     console.log(generator)
     assert.ok(generator)
-    let filename = tmpDir + '/testing-favicon.svg'
-    yield generator.generate(filename)
-    assert.ok(fs.existsSync(filename))
+    {
+      let filename = tmpDir + '/testing-favicon.svg'
+      yield generator.generate(filename)
+      assert.ok(fs.existsSync(filename))
+    }
+    {
+      let filename = tmpDir + '/testing-favicon.png'
+      yield generator.generate(filename)
+      assert.ok(fs.existsSync(filename))
+    }
   }))
 })
 

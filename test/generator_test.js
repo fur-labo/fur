@@ -14,7 +14,7 @@ const mkdirp = require('mkdirp')
 let tmpDir = __dirname + '/../tmp'
 
 describe('generator', function () {
-  this.timeout(4000)
+  this.timeout(14000)
   before(() => co(function * () {
     mkdirp.sync(tmpDir)
   }))
