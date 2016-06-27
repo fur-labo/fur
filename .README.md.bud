@@ -26,12 +26,12 @@ module.exports = apeTmpl.readmeMdBud({
   vars: {
     examplesUrl: 'https://github.com/fur-repo/fur-examples',
     get examples () {
-      var BASE_URL = 'https://github.com/fur-repo/fur-examples/raw/master/example/'
-      var banners = [],
+      let BASE_URL = 'https://github.com/fur-repo/fur-examples/raw/master/example/'
+      let banners = [],
         favicons = []
-      var examples = require('fur-examples')
-      Object.keys(examples).forEach(function (key) {
-        var example = examples[ key ],
+      let examples = require('fur-examples')
+      Object.keys(examples).forEach((key) => {
+        let example = examples[ key ],
           banner = example[ '$banner' ],
           favicon = example[ '$favicon' ]
         if (banner) {
@@ -53,18 +53,18 @@ module.exports = apeTmpl.readmeMdBud({
       }
     },
     get usages () {
-      var furBin = require.resolve('./bin/fur')
+      let furBin = require.resolve('./bin/fur')
       return {
         get all () {
-          var command = [ furBin, '-h' ].join(' ')
+          let command = [ furBin, '-h' ].join(' ')
           return childProcess.execSync(command)
         },
         get banner () {
-          var command = [ furBin, 'banner', '-h' ].join(' ')
+          let command = [ furBin, 'banner', '-h' ].join(' ')
           return childProcess.execSync(command)
         },
         get favicon () {
-          var command = [ furBin, 'favicon', '-h' ].join(' ')
+          let command = [ furBin, 'favicon', '-h' ].join(' ')
           return childProcess.execSync(command)
         }
       }

@@ -32,3 +32,5 @@ node_modules
 third_party
 
 ci
+
+doc/apiguide

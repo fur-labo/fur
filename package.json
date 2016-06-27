@@ -1,10 +1,11 @@
 {
   "name": "fur",
-  "version": "4.1.3",
+  "version": "4.1.4",
   "description": "Quick generator for banner, favicon, etc...",
   "main": "lib",
   "scripts": {
-    "test": "./ci/test.js"
+    "test": "./ci/test.js",
+    "prepublish": "./ci/build.js"
   },
   "bin": {
     "fur": "bin/fur"
