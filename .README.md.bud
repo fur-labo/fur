@@ -11,7 +11,7 @@ const pkg = require('./package.json')
 
 module.exports = apeTmpl.readmeMdBud({
   pkg: pkg,
-  repo: 'fur-repo/' + pkg.name,
+  repo: pkg.repository,
   sections: 'doc/gudies/*.md.hbs',
   badges: {
     travis: true,
@@ -24,9 +24,9 @@ module.exports = apeTmpl.readmeMdBud({
   links: require('./doc/links.json'),
   overview: 'doc/overview.md',
   vars: {
-    examplesUrl: 'https://github.com/fur-repo/fur-examples',
+    examplesUrl: 'https://github.com/fur-labo/fur-examples',
     get examples () {
-      let BASE_URL = 'https://github.com/fur-repo/fur-examples/raw/master/example/'
+      let BASE_URL = 'https://github.com/fur-labo/fur-examples/raw/master/example/'
       let banners = [],
         favicons = []
       let examples = require('fur-examples')

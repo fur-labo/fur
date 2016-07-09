@@ -1,6 +1,6 @@
 {
   "name": "fur",
-  "version": "4.1.4",
+  "version": "4.1.5",
   "description": "Quick generator for banner, favicon, etc...",
   "main": "lib",
   "scripts": {
@@ -10,7 +10,7 @@
   "bin": {
     "fur": "bin/fur"
   },
-  "repository": "fur-repo/fur",
+  "repository": "fur-labo/fur",
   "author": {
     "name": "Taka Okunishi",
     "url": "http://okunishitaka.com"
@@ -23,9 +23,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fur-repo/fur/issues"
+    "url": "https://github.com/fur-labo/fur/issues"
   },
-  "homepage": "https://github.com/fur-repo/fur#readme",
+  "homepage": "https://github.com/fur-labo/fur#readme",
   "dependencies": {
     "argx": "^2.0.2",
     "co": "^4.6.0",
