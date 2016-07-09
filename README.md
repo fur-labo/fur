@@ -143,7 +143,7 @@ Generating Logo Banner
 | <img src="https://github.com/fur-labo/fur-examples/raw/master/example/03-apeman/banner.png" height="40" style="height:40px;"/> | ` $ fur banner "apeman-banner.png" --text="apeman" --color="n" --font="p" --shape="a"  ` |
 | <img src="https://github.com/fur-labo/fur-examples/raw/master/example/04-pudding/banner.png" height="40" style="height:40px;"/> | ` $ fur banner "pudding-banner.png" --text="PUDDING" --color="bi" --font="cn" --shape="e"  ` |
 | <img src="https://github.com/fur-labo/fur-examples/raw/master/example/05-pon/banner.png" height="40" style="height:40px;"/> | ` $ fur banner "pon-banner.png" --text="pon" --color="ah" --font="ar" --shape="f"  ` |
-| <img src="https://github.com/fur-labo/fur-examples/raw/master/example/06-the/banner.png" height="40" style="height:40px;"/> | ` $ fur banner "the-banner.png" --text="the" --color="ac" --font="e" --shape="f"  ` |
+| <img src="https://github.com/fur-labo/fur-examples/raw/master/example/06-rfunc/banner.png" height="40" style="height:40px;"/> | ` $ fur banner "rfunc-banner.png" --text="rfunc" --color="ac" --font="e" --shape="f"  ` |
 
 These examples are available [here](https://github.com/fur-labo/fur-examples).
 
@@ -192,7 +192,7 @@ Generating Favicon
 | <img src="https://github.com/fur-labo/fur-examples/raw/master/example/03-apeman/favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon "ap-favicon.png" --text="ap" --color="n" --font="p" --shape="g"  ` |
 | <img src="https://github.com/fur-labo/fur-examples/raw/master/example/04-pudding/favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon "p-favicon.png" --text="P" --color="bi" --font="cn" --shape="a"  ` |
 | <img src="https://github.com/fur-labo/fur-examples/raw/master/example/05-pon/favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon "pon-favicon.png" --text="pon" --color="ah" --font="ar" --shape="g"  ` |
-| <img src="https://github.com/fur-labo/fur-examples/raw/master/example/06-the/favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon "the-favicon.png" --text="the" --color="ac" --font="e" --shape="c" --font-size="124"  ` |
+| <img src="https://github.com/fur-labo/fur-examples/raw/master/example/06-rfunc/favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon "rf-favicon.png" --text="rf" --color="ac" --font="e" --shape="c" --font-size="148"  ` |
 | <img src="https://github.com/fur-labo/fur-examples/raw/master/example/08-apeman-app-contrib/favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon "app-favicon.png" --text="app" --color="n" --font="p" --shape="i" --font-size="92"  ` |
 
 These examples are available [here](https://github.com/fur-labo/fur-examples).
