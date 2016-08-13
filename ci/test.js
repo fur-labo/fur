@@ -9,10 +9,8 @@
 process.chdir(`${__dirname}/..`)
 
 const apeTasking = require('ape-tasking')
-const apeTesting = require('ape-testing')
+const amocha = require('amocha')
 
 apeTasking.runTasks('test', [
-  () => apeTesting.runMocha('test/*_test.js', {
-    timeout: 16000
-  })
+  () => amocha('test/*_test.js')
 ], true)

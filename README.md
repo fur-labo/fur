@@ -63,6 +63,7 @@ $ fur favicon "my-favicon.png" --color b --font n --text oh --shape c
 <!-- Section from "doc/gudies/02-howto.md.hbs" Start -->
 
 <a name="section-doc-gudies-02-howto-md"></a>
+
 Getting started
 ------
 
@@ -131,6 +132,7 @@ shape: "k"
 <!-- Section from "doc/gudies/03-banners.md.hbs" Start -->
 
 <a name="section-doc-gudies-03-banners-md"></a>
+
 Generating Logo Banner
 ------------------
 
@@ -180,6 +182,7 @@ $ fur banner -h
 <!-- Section from "doc/gudies/04-favicons.md.hbs" Start -->
 
 <a name="section-doc-gudies-04-favicons-md"></a>
+
 Generating Favicon
 ------------------
 
@@ -193,7 +196,9 @@ Generating Favicon
 | <img src="https://github.com/fur-labo/fur-examples/raw/master/example/04-pudding/favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon "p-favicon.png" --text="P" --color="bi" --font="cn" --shape="a"  ` |
 | <img src="https://github.com/fur-labo/fur-examples/raw/master/example/05-pon/favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon "pon-favicon.png" --text="pon" --color="ah" --font="ar" --shape="g"  ` |
 | <img src="https://github.com/fur-labo/fur-examples/raw/master/example/06-rfunc/favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon "rf-favicon.png" --text="rf" --color="ac" --font="e" --shape="c" --font-size="148"  ` |
-| <img src="https://github.com/fur-labo/fur-examples/raw/master/example/08-apeman-app-contrib/favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon "app-favicon.png" --text="app" --color="n" --font="p" --shape="i" --font-size="92"  ` |
+| <img src="https://github.com/fur-labo/fur-examples/raw/master/example/07-apeman-middleware/favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon "mw-favicon.png" --text="mw" --color="n" --font="p" --shape="i" --font-size="92"  ` |
+| <img src="https://github.com/fur-labo/fur-examples/raw/master/example/08-apeman-api/favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon "api-favicon.png" --text="api" --color="n" --font="p" --shape="i" --font-size="92"  ` |
+| <img src="https://github.com/fur-labo/fur-examples/raw/master/example/09-a/favicon.png" height="40" style="height:40px;" /> | ` $ fur favicon "a-favicon.png" --text="a" --color="n" --font="p" --shape="g" --font-size="92"  ` |
 
 These examples are available [here](https://github.com/fur-labo/fur-examples).
 
@@ -229,6 +234,7 @@ $ fur favicon -h
 <!-- Section from "doc/gudies/05-Themes.md.hbs" Start -->
 
 <a name="section-doc-gudies-05-themes-md"></a>
+
 Theme Gallery
 ------------
 
@@ -243,6 +249,7 @@ Theme Gallery
 <!-- Section from "doc/gudies/11-project.md.hbs" Start -->
 
 <a name="section-doc-gudies-11-project-md"></a>
+
 About this project
 --------
 
