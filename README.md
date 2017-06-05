@@ -81,7 +81,7 @@ $ npm install fur -g
 Or you can install it without `-g` option and use [Programmatic API](#programmatic-api).
 
 
-<a name="available commands" />
+<a name="available commands"/>
 
 ### Available Commands
 
@@ -104,22 +104,25 @@ $ fur -h
 
 ```
 
-<a name="programmatic-api" />
+<a name="programmatic-api"/>
 
 ### Programmatic API
 
 fur provides programmatic API which enables you to execute fur commands from Node.js program.
 
 ```javascript
-var fur = require('fur');
-fur.banner('my-banner.svg', {
-text: "coz",
-color: "o",
-font: "aa",
-style: "plain",
-shape: "k"
-}, function (err) {
-});
+const fur = require('fur')
+
+;(async () => {
+  await fur.banner('my-banner.svg', {
+    text: 'coz',
+    color: 'o',
+    font: 'aa',
+    style: 'plain',
+    shape: 'k'
+  })
+})()
+
 ```
 
 
