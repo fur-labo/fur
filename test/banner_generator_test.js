@@ -26,8 +26,8 @@ it('Banner generator', () => co(function * () {
     shape: 'a'
   })
   assert.ok(generator)
-  let filename = tmpDir + '/testing-banner.svg'
-  yield generator.generate(filename)
+  yield generator.generate(tmpDir + '/testing-banner.svg')
+  yield generator.generate(tmpDir + '/testing-banner.png')
 }))
 
 /* global describe, before, after, it */

@@ -1,11 +1,11 @@
 {
   "name": "fur",
-  "version": "5.1.2",
+  "version": "6.0.0",
   "description": "Quick generator for banner, favicon, etc...",
   "main": "lib",
   "scripts": {
     "test": "./ci/test.js",
-    "prepublish": "./ci/build.js"
+    "prepare": "./ci/build.js"
   },
   "bin": {
     "fur": "bin/fur"
@@ -38,7 +38,7 @@
     "fur-shapes": "^2.0.4",
     "randomval": "^2.0.5",
     "stringcase": "^3.0.1",
-    "svgpng": "^2.0.0",
+    "svgpng": "^3.0.0",
     "writeout": "^2.0.7",
     "writexml": "^2.0.0"
   },
@@ -57,7 +57,7 @@
     "mkdirp": "^0.5.1"
   },
   "engines": {
-    "node": ">=6",
-    "npm": ">=3"
+    "node": ">=7.6",
+    "npm": ">=4"
   }
 }
