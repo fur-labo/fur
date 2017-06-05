@@ -1,6 +1,6 @@
 {
   "name": "fur",
-  "version": "5.0.3",
+  "version": "5.1.1",
   "description": "Quick generator for banner, favicon, etc...",
   "main": "lib",
   "scripts": {
@@ -30,9 +30,8 @@
     "argx": "^3.0.1",
     "co": "^4.6.0",
     "commander": "^2.9.0",
-    "execcli": "^4.0.8",
-    "filecopy": "^2.0.2",
-    "filedel": "^2.0.4",
+    "filecopy": "^3.0.1",
+    "filedel": "^3.0.0",
     "fur-colors": "^2.0.5",
     "fur-fonts": "^2.1.4",
     "fur-logger": "^2.0.2",
@@ -44,17 +43,15 @@
     "writexml": "^2.0.0"
   },
   "devDependencies": {
-    "amocha": "^1.0.14",
+    "amocha": "^2.0.0",
     "ape-deploying": "^5.0.5",
     "ape-releasing": "^4.0.4",
-    "ape-reporting": "^3.0.2",
     "ape-tasking": "^4.0.8",
     "ape-tmpl": "^5.0.15",
     "ape-updating": "^4.0.5",
     "apiguide": "^3.0.2",
     "coz": "^6.0.17",
-    "coz-examples": "^1.0.3",
-    "execcli": "^4.0.8",
+    "execcli": "^5.0.0",
     "fur-examples": "^1.1.9",
     "glob": "^7.0.5",
     "mkdirp": "^0.5.1"
