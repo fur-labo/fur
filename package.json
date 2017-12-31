@@ -1,6 +1,6 @@
 {
   "name": "fur",
-  "version": "6.1.1",
+  "version": "6.1.2",
   "description": "Quick generator for banner, favicon, etc...",
   "main": "lib",
   "scripts": {
@@ -35,7 +35,7 @@
     "fur-colors": "^2.0.5",
     "fur-fonts": "^2.1.4",
     "fur-logger": "^2.0.2",
-    "fur-shapes": "^2.1.0",
+    "fur-shapes": "^2.1.1",
     "randomval": "^2.0.5",
     "stringcase": "^4.0.0",
     "svgpng": "^3.0.0",
