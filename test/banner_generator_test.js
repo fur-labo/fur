@@ -11,23 +11,26 @@ const mkdirp = require('mkdirp')
 
 let tmpDir = __dirname + '/../tmp'
 
-before(() => co(function * () {
-  mkdirp.sync(tmpDir)
+describe('banner generator', function () {
+  this.timeout(8000)
+  before(() => co(function * () {
+    mkdirp.sync(tmpDir)
 
-}))
+  }))
 
-after(() => co(function * () {
+  after(() => co(function * () {
 
-}))
+  }))
 
-it('Banner generator', () => co(function * () {
-  let generator = new BannerGenerator({
-    color: 'a',
-    shape: 'a'
-  })
-  assert.ok(generator)
-  yield generator.generate(tmpDir + '/testing-banner.svg')
-  yield generator.generate(tmpDir + '/testing-banner.png')
-}))
+  it('Banner generator', () => co(function * () {
+    let generator = new BannerGenerator({
+      color: 'a',
+      shape: 'a'
+    })
+    assert.ok(generator)
+    yield generator.generate(tmpDir + '/testing-banner.svg')
+    yield generator.generate(tmpDir + '/testing-banner.png')
+  }))
 
+})
 /* global describe, before, after, it */

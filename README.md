@@ -90,16 +90,16 @@ $ fur -h
   Usage: fur [options] [command]
 
 
+  Options:
+
+    -V, --version  output the version number
+    -h, --help     output usage information
+
+
   Commands:
 
     banner [options] <filename>   Generate a banner.
     favicon [options] <filename>  Generate a favicon.
-
-  Options:
-
-    -h, --help     output usage information
-    -V, --version  output the version number
-
 
 ```
 
@@ -161,9 +161,9 @@ $ fur banner -h
 
   Generate a banner.
 
+
   Options:
 
-    -h, --help                  output usage information
     -c, --color <color>         Color expression string or color theme name.
     -s, --shape <shape>         Banner style.
     -f, --font <font>           Font file name or font theme name.
@@ -173,7 +173,7 @@ $ fur banner -h
     -t, --text <text>           Banner text.
     -W, --width <width>         Banner width.
     -v, --verbose               Emit verbose log.
-
+    -h, --help                  output usage information
 
 ```
 
@@ -215,9 +215,9 @@ $ fur favicon -h
 
   Generate a favicon.
 
+
   Options:
 
-    -h, --help                  output usage information
     -c, --color <color>         Color expression string or color theme name.
     -f, --font <font>           Font file name or font theme name.
     -F, --font-size <fontSize>  Size of font.
@@ -226,7 +226,7 @@ $ fur favicon -h
     -t, --text <text>           Favicon text.
     -o, --format <format>       File format. 'svg' or 'png'.
     -v, --verbose               Emit verbose log.
-
+    -h, --help                  output usage information
 
 ```
 

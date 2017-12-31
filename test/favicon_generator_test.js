@@ -14,6 +14,7 @@ const mkdirp = require('mkdirp')
 const tmpDir = `${__dirname}/../tmp`
 
 describe('favicon generator', function () {
+  this.timeout(8000)
   before(() => co(function * () {
     mkdirp.sync(tmpDir)
   }))
