@@ -5,7 +5,7 @@
 'use strict'
 
 const assert = require('assert')
-const co = require('co')
+
 
 const fs = require('fs')
 const furBin = require.resolve('../bin/fur')
@@ -16,24 +16,24 @@ let tmpDir = __dirname + '/../tmp'
 
 describe('bin', function () {
   this.timeout(24000)
-  before(() => co(function * () {
+  before(async () => {
     mkdirp.sync(tmpDir)
-  }))
+  })
 
-  after(() => co(function * () {
-  }))
+  after(async () => {
+  })
 
-  it('Generate favicon', () => co(function * () {
+  it('Generate favicon', async () => {
     let filename = tmpDir + '/testing-bin-favicon.png'
-    yield execcli(furBin, [ 'favicon', filename ])
+    await execcli(furBin, [ 'favicon', filename ])
     assert.ok(fs.existsSync(filename))
-  }))
+  })
 
-  it('Generate banner', () => co(function * () {
+  it('Generate banner', async () => {
     let filename = tmpDir + '/testing-bin-banner.png'
-    yield execcli(furBin, [ 'banner', filename ])
+    await execcli(furBin, [ 'banner', filename ])
     assert.ok(fs.existsSync(filename))
-  }))
+  })
 })
 
 /* global describe, before, after, it */

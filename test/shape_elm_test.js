@@ -6,20 +6,20 @@
 
 const shapeElm = require('../lib/element/shape_elm.js')
 const assert = require('assert')
-const co = require('co')
+
 
 describe('shape-elm', () => {
-  before(() => co(function * () {
+  before(async () => {
 
-  }))
+  })
 
-  after(() => co(function * () {
+  after(async () => {
 
-  }))
+  })
 
-  it('Shape elm', () => co(function * () {
+  it('Shape elm', async () => {
 
-  }))
+  })
 })
 
 /* global describe, before, after, it */

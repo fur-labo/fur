@@ -66,7 +66,7 @@ Getting started
 
 ### Requirements
 
-+ [node.js&gt;&#x3D;7.6][nodejs_url]
++ [node.js&gt;&#x3D;10][nodejs_url]
 
 ### Installation
 

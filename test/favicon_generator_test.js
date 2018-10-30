@@ -5,7 +5,7 @@
 'use strict'
 
 const assert = require('assert')
-const co = require('co')
+
 
 const FaviconGenerator = require('../lib/generators/favicon_generator.js')
 const fs = require('fs')
@@ -15,28 +15,28 @@ const tmpDir = `${__dirname}/../tmp`
 
 describe('favicon generator', function () {
   this.timeout(8000)
-  before(() => co(function * () {
+  before(async () => {
     mkdirp.sync(tmpDir)
-  }))
+  })
 
-  after(() => co(function * () {
-  }))
+  after(async () => {
+  })
 
-  it('Favicon generator', () => co(function * () {
+  it('Favicon generator', async () => {
     let generator = new FaviconGenerator({})
     console.log(generator)
     assert.ok(generator)
     {
       let filename = tmpDir + '/testing-favicon.svg'
-      yield generator.generate(filename)
+      await generator.generate(filename)
       assert.ok(fs.existsSync(filename))
     }
     {
       let filename = tmpDir + '/testing-favicon.png'
-      yield generator.generate(filename)
+      await generator.generate(filename)
       assert.ok(fs.existsSync(filename))
     }
-  }))
+  })
 })
 
 /* global describe, before, after, it */

@@ -5,7 +5,7 @@
 'use strict'
 
 const assert = require('assert')
-const co = require('co')
+
 
 const Fur = require('../lib/fur.js')
 const fs = require('fs')
@@ -16,27 +16,27 @@ const tmpDir = __dirname + '/../tmp'
 describe('fur', function () {
   this.timeout(8000)
 
-  before(() => co(function * () {
+  before(async () => {
     mkdirp.sync(tmpDir)
-  }))
+  })
 
-  after(() => co(function * () {
+  after(async () => {
 
-  }))
+  })
 
-  it('Generate favicon', () => co(function * () {
+  it('Generate favicon', async () => {
     let fur = new Fur({})
     let filename = tmpDir + '/testing-fur-favicon.svg'
-    yield fur.favicon(filename)
+    await fur.favicon(filename)
     assert.ok(fs.existsSync(filename))
-  }))
+  })
 
-  it('Generate banner', () => co(function * () {
+  it('Generate banner', async () => {
     let fur = new Fur({})
     let filename = tmpDir + '/testing-fur-banner.svg'
-    yield fur.banner(filename)
+    await fur.banner(filename)
     assert.ok(fs.existsSync(filename))
-  }))
+  })
 })
 
 /* global describe, before, after, it */

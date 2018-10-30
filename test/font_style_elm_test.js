@@ -6,20 +6,20 @@
 
 const fontStyleElm = require('../lib/element/font_style_elm.js')
 const assert = require('assert')
-const co = require('co')
+
 
 describe('font-style-elm', () => {
-  before(() => co(function * () {
+  before(async () => {
 
-  }))
+  })
 
-  after(() => co(function * () {
+  after(async () => {
 
-  }))
+  })
 
-  it('Font style elm', () => co(function * () {
+  it('Font style elm', async () => {
 
-  }))
+  })
 })
 
 /* global describe, before, after, it */

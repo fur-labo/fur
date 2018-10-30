@@ -6,20 +6,20 @@
 
 const textElm = require('../lib/element/text_elm.js')
 const assert = require('assert')
-const co = require('co')
+
 
 describe('text-elm', () => {
-  before(() => co(function * () {
+  before(async () => {
 
-  }))
+  })
 
-  after(() => co(function * () {
+  after(async () => {
 
-  }))
+  })
 
-  it('Text elm', () => co(function * () {
+  it('Text elm', async () => {
 
-  }))
+  })
 })
 
 /* global describe, before, after, it */

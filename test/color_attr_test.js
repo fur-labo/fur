@@ -6,20 +6,20 @@
 
 const colorAttr = require('../lib/element/color_attr.js')
 const assert = require('assert')
-const co = require('co')
+
 
 describe('color-attr', () => {
-  before(() => co(function * () {
+  before(async () => {
 
-  }))
+  })
 
-  after(() => co(function * () {
+  after(async () => {
 
-  }))
+  })
 
-  it('Color attr', () => co(function * () {
+  it('Color attr', async () => {
 
-  }))
+  })
 })
 
 /* global describe, before, after, it */

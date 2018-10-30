@@ -6,20 +6,20 @@
 
 const svgAttr = require('../lib/element/svg_attr.js')
 const assert = require('assert')
-const co = require('co')
+
 
 describe('svg-attr', () => {
-  before(() => co(function * () {
+  before(async () => {
 
-  }))
+  })
 
-  after(() => co(function * () {
+  after(async () => {
 
-  }))
+  })
 
-  it('Svg attr', () => co(function * () {
+  it('Svg attr', async () => {
 
-  }))
+  })
 })
 
 /* global describe, before, after, it */

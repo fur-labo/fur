@@ -5,7 +5,7 @@
 'use strict'
 
 const assert = require('assert')
-const co = require('co')
+
 
 const Generator = require('../lib/generators/generator.js')
 const fs = require('fs')
@@ -15,36 +15,36 @@ let tmpDir = __dirname + '/../tmp'
 
 describe('generator', function () {
   this.timeout(14000)
-  before(() => co(function * () {
+  before(async () => {
     mkdirp.sync(tmpDir)
-  }))
+  })
 
-  after(() => co(function * () {
+  after(async () => {
 
-  }))
+  })
 
-  it('Render svg', () => co(function * () {
+  it('Render svg', async () => {
     let generator = new Generator({})
     assert.ok(generator)
     let filename = tmpDir + '/testing-generate-svg.svg'
-    yield generator.renderSvg(filename, {
+    await generator.renderSvg(filename, {
       text: {
         '#': 'foo'
       }
     })
     assert.ok(fs.existsSync(filename))
-  }))
+  })
 
-  it('Render png', () => co(function * () {
+  it('Render png', async () => {
     let generator = new Generator({})
     assert.ok(generator)
     let filename = tmpDir + '/testing-generate-png.png'
-    yield generator.renderPng(filename, {
+    await generator.renderPng(filename, {
       text: {
         '#': 'foo'
       }
     })
-  }))
+  })
 })
 
 /* global describe, before, after, it */
