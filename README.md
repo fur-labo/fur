@@ -86,20 +86,15 @@ Or you can install it without `-g` option and use [Programmatic API](#programmat
 
 ```bash
 $ fur -h
+Usage: fur [options] [command]
 
-  Usage: fur [options] [command]
+Options:
+  -V, --version                 output the version number
+  -h, --help                    output usage information
 
-
-  Options:
-
-    -V, --version  output the version number
-    -h, --help     output usage information
-
-
-  Commands:
-
-    banner [options] <filename>   Generate a banner.
-    favicon [options] <filename>  Generate a favicon.
+Commands:
+  banner [options] <filename>   Generate a banner.
+  favicon [options] <filename>  Generate a favicon.
 
 ```
 
@@ -156,24 +151,21 @@ These examples are available [here](https://github.com/fur-labo/fur-examples).
 ```bash
 $ fur banner -h
 
+Usage: banner [options] <filename>
 
-  Usage: banner [options] <filename>
+Generate a banner.
 
-  Generate a banner.
-
-
-  Options:
-
-    -c, --color <color>         Color expression string or color theme name.
-    -s, --shape <shape>         Banner style.
-    -f, --font <font>           Font file name or font theme name.
-    -F, --font-size <fontSize>  Size of font.
-    -H, --height <height>       Banner height.
-    -o, --format <format>       File format. 'svg' or 'png'.
-    -t, --text <text>           Banner text.
-    -W, --width <width>         Banner width.
-    -v, --verbose               Emit verbose log.
-    -h, --help                  output usage information
+Options:
+  -c, --color <color>         Color expression string or color theme name.
+  -s, --shape <shape>         Banner style.
+  -f, --font <font>           Font file name or font theme name.
+  -F, --font-size <fontSize>  Size of font.
+  -H, --height <height>       Banner height.
+  -o, --format <format>       File format. 'svg' or 'png'.
+  -t, --text <text>           Banner text.
+  -W, --width <width>         Banner width.
+  -v, --verbose               Emit verbose log.
+  -h, --help                  output usage information
 
 ```
 
@@ -210,23 +202,20 @@ These examples are available [here](https://github.com/fur-labo/fur-examples).
 ```bash
 $ fur favicon -h
 
+Usage: favicon [options] <filename>
 
-  Usage: favicon [options] <filename>
+Generate a favicon.
 
-  Generate a favicon.
-
-
-  Options:
-
-    -c, --color <color>         Color expression string or color theme name.
-    -f, --font <font>           Font file name or font theme name.
-    -F, --font-size <fontSize>  Size of font.
-    -S, --size <size>           Favicon size.
-    -s, --shape <shape>         Banner style.
-    -t, --text <text>           Favicon text.
-    -o, --format <format>       File format. 'svg' or 'png'.
-    -v, --verbose               Emit verbose log.
-    -h, --help                  output usage information
+Options:
+  -c, --color <color>         Color expression string or color theme name.
+  -f, --font <font>           Font file name or font theme name.
+  -F, --font-size <fontSize>  Size of font.
+  -S, --size <size>           Favicon size.
+  -s, --shape <shape>         Banner style.
+  -t, --text <text>           Favicon text.
+  -o, --format <format>       File format. 'svg' or 'png'.
+  -v, --verbose               Emit verbose log.
+  -h, --help                  output usage information
 
 ```
 

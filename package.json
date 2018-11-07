@@ -1,6 +1,6 @@
 {
   "name": "fur",
-  "version": "7.0.3",
+  "version": "7.0.4",
   "description": "Quick generator for banner, favicon, etc...",
   "main": "lib",
   "scripts": {
@@ -28,31 +28,31 @@
   "homepage": "https://github.com/fur-labo/fur#readme",
   "dependencies": {
     "argx": "^3.0.1",
-    "commander": "^2.14.1",
+    "commander": "^2.19.0",
     "filecopy": "^4.0.1",
     "filedel": "^4.0.0",
     "fur-colors": "^2.0.5",
     "fur-fonts": "^2.1.4",
     "fur-logger": "^2.0.2",
-    "fur-shapes": "^2.1.1",
+    "fur-shapes": "^2.1.2",
     "randomval": "^2.0.5",
-    "stringcase": "^4.1.1",
-    "svgpng": "^3.0.0",
+    "stringcase": "^4.3.0",
+    "svgpng": "^4.0.0",
     "writeout": "^2.2.1",
     "writexml": "^2.0.0"
   },
   "devDependencies": {
     "amocha": "^5.0.0",
     "ape-deploying": "^5.0.5",
-    "ape-releasing": "^4.0.4",
+    "ape-releasing": "^5.0.0",
     "ape-tasking": "^4.0.8",
-    "ape-tmpl": "^6.0.10",
-    "ape-updating": "^4.0.5",
+    "ape-tmpl": "^6.0.11",
+    "ape-updating": "^5.0.1",
     "apiguide": "^3.0.2",
-    "coz": "^7.0.1",
+    "coz": "^7.0.2",
     "execcli": "^5.0.2",
     "fur-examples": "^1.1.9",
-    "glob": "^7.0.5",
+    "glob": "^7.1.3",
     "mkdirp": "^0.5.1"
   },
   "engines": {
