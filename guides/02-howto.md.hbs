@@ -1,0 +1,41 @@
+Getting started
+------
+
+### Requirements
+
++ [node.js{{pkg.engines.node}}][nodejs_url]
+
+### Installation
+
+{{pkg.name}} is available as an [npm][npm_url] package.
+
+```bash
+# Install {{pkg.name}} as a global module.
+$ npm install {{pkg.name}} -g
+```
+
+Or you can install it without `-g` option and use [Programmatic API](#programmatic-api).
+
+
+<a name="available commands"/>
+
+### Available Commands
+
+```bash
+$ fur -h
+{{{vars.usages.all}}}
+```
+
+<a name="programmatic-api"/>
+
+### Programmatic API
+
+{{pkg.name}} provides programmatic API which enables you to execute {{pkg.name}} commands from Node.js program.
+
+```javascript
+{{{render 'example/example-api.js'}}}
+```
+
+
+[nodejs_url]: https://nodejs.org/
+[npm_url]: https://www.npmjs.com

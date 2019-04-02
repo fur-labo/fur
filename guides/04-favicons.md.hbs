@@ -1,0 +1,20 @@
+Generating Favicon
+------------------
+
+### Favicon Examples
+
+| Image | Command |
+| ----- | ------- |
+{{#each vars.examples.favicons}}| <img src="{{{img}}}" height="40" style="height:40px;" /> | ` $ fur favicon "{{spinalcase options.text}}-favicon.png" {{#each options}}--{{spinalcase @key}}="{{this}}" {{/each}} ` |
+{{/each}}
+
+These examples are available [here]({{vars.examplesUrl}}).
+
+
+### Favicon Usage
+
+```bash
+$ fur favicon -h
+
+{{{vars.usages.favicon}}}
+```

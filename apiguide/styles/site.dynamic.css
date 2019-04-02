@@ -1,0 +1,106 @@
+@import url(./site.simplex.css);
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,700");
+body {
+  background: white; }
+
+.navbar.navbar-fixed-top {
+  background-color: rgba(250, 250, 250, 0.9);
+  border-bottom: 1px solid #D0D0D0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
+
+#toc {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #e1e1e1;
+  right: 24px; }
+  #toc li > a {
+    padding: 4px 8px; }
+  #toc .toc-active {
+    background: #ff9100; }
+    #toc .toc-active a, #toc .toc-active a:hover, #toc .toc-active a:active, #toc .toc-active a:visited {
+      color: white;
+      text-decoration: none; }
+
+a,
+a:hover,
+a:focus {
+  color: #ff9100; }
+
+.page-title {
+  font-size: 220%;
+  color: #6c737e;
+  font-weight: 700;
+  padding-top: 10px;
+  padding-bottom: 7px;
+  display: block; }
+
+.nav > li > a:hover, .nav > li > a:focus {
+  text-decoration: underline;
+  background: transparent; }
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #ff9100;
+  background-color: transparent; }
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #ff9100; }
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: #ff9100; }
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  background-color: #ff9100; }
+
+.jsdoc-message {
+  color: #AAA; }
+
+h4.name {
+  font-weight: bold;
+  font-size: 23px; }
+
+#main .page-title:nth-child(2),
+#main .page-title:nth-child(3) {
+  display: none; }
+
+.navbar-nav > li > .dropdown-menu {
+  border-radius: 4px;
+  width: auto;
+  max-height: 500px;
+  background-color: rgba(42, 42, 42, 0.91); }
+
+.dropdown-menu > li > a {
+  color: #cccccc; }
+
+.navbar .dropdown-menu {
+  border-radius: 4px;
+  width: auto;
+  max-height: 500px;
+  background-color: rgba(42, 42, 42, 0.91);
+  padding: 20px; }
+  .navbar .dropdown-menu a {
+    padding: 2px 4px; }
+  .navbar .dropdown-menu a,
+  .navbar .dropdown-menu a:visited {
+    color: #BBB; }
+
+.nav li a[href="#toc1"] {
+  display: none; }
+
+.sunlight-menu {
+  display: none; }
+
+@media (max-width: 992px) {
+  #main {
+    margin-right: 264px; } }
+@media (max-width: 767px) {
+  #main {
+    margin-top: 92px;
+    margin-right: 0; }
+
+  #toc {
+    display: none;
+    top: 104px; }
+
+  dd {
+    overflow-x: scroll; } }
+
+/*# sourceMappingURL=theme.css.map */
