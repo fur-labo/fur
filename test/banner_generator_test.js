@@ -14,7 +14,7 @@ let tmpDir = __dirname + '/../tmp'
 describe('banner generator', function () {
   this.timeout(8000)
   before(async () => {
-    mkdirp.sync(tmpDir)
+    await mkdirp(tmpDir)
 
   })
 

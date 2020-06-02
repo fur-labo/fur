@@ -16,7 +16,7 @@ let tmpDir = __dirname + '/../tmp'
 describe('generator', function () {
   this.timeout(14000)
   before(async () => {
-    mkdirp.sync(tmpDir)
+    await mkdirp(tmpDir)
   })
 
   after(async () => {

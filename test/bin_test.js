@@ -17,7 +17,7 @@ let tmpDir = __dirname + '/../tmp'
 describe('bin', function () {
   this.timeout(24000)
   before(async () => {
-    mkdirp.sync(tmpDir)
+    await mkdirp(tmpDir)
   })
 
   after(async () => {

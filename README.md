@@ -90,11 +90,12 @@ Usage: fur [options] [command]
 
 Options:
   -V, --version                 output the version number
-  -h, --help                    output usage information
+  -h, --help                    display help for command
 
 Commands:
   banner [options] <filename>   Generate a banner.
   favicon [options] <filename>  Generate a favicon.
+  help [command]                display help for command
 
 ```
 
@@ -151,7 +152,7 @@ These examples are available [here](https://github.com/fur-labo/fur-examples).
 ```bash
 $ fur banner -h
 
-Usage: banner [options] <filename>
+Usage: fur banner [options] <filename>
 
 Generate a banner.
 
@@ -165,7 +166,7 @@ Options:
   -t, --text <text>           Banner text.
   -W, --width <width>         Banner width.
   -v, --verbose               Emit verbose log.
-  -h, --help                  output usage information
+  -h, --help                  display help for command
 
 ```
 
@@ -202,7 +203,7 @@ These examples are available [here](https://github.com/fur-labo/fur-examples).
 ```bash
 $ fur favicon -h
 
-Usage: favicon [options] <filename>
+Usage: fur favicon [options] <filename>
 
 Generate a favicon.
 
@@ -215,7 +216,7 @@ Options:
   -t, --text <text>           Favicon text.
   -o, --format <format>       File format. 'svg' or 'png'.
   -v, --verbose               Emit verbose log.
-  -h, --help                  output usage information
+  -h, --help                  display help for command
 
 ```
 

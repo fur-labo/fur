@@ -17,7 +17,7 @@ describe('fur', function () {
   this.timeout(8000)
 
   before(async () => {
-    mkdirp.sync(tmpDir)
+    await mkdirp(tmpDir)
   })
 
   after(async () => {
